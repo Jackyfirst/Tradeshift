@@ -1,0 +1,6 @@
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "Product Demo Video Part 2 Need title. Play video »    Payment, ": Expected end of input but "," found.
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "Product Demo Video Part 3 Need title. Play video »    Payment, ": Expected end of input but "," found.
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "Product Demo Video Part 4 Need title. Play video »    Payment, ": Expected end of input but "," found.
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "+ copy 2": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "+ copy 3": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Tue Oct 27 2015 14:33:16 GMT-0700 (PDT)] layer "+ copy 4": Expected Either a default asset specification or a layer asset specification but "+" found.

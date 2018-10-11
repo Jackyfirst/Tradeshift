@@ -1,0 +1,600 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+main {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+
+/* Icons */
+
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+
+/* Calendar */
+
+.calendar-wrap {
+	position: relative;
+	height: 100vh;
+}
+
+.js .calendar-wrap {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.calendar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	/* we always want 7 boxes in a row */
+	padding: 3em calc((100vw - (7 * (7vw + 1vw)))/2);
+}
+
+.js .calendar {
+	position: absolute;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	padding: 0 calc((100vw - (7 * (7vw + 1vw)))/2) 5em;
+}
+
+.no-js .calendar {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+
+/* Cubes container */
+
+.cubes {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	//width: 100%;
+	width: 55.25vw;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+
+/* Single cube */
+
+.cube {
+	position: relative;
+	display: block;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	width: 7vw;
+	height: 7vw;
+	margin: 0.5vw;
+}
+
+.js .cube {
+	-webkit-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+
+/* push to the right weekday (we have to push 3 boxes) */
+
+
+.js .cube:first-child {
+	//margin-left: calc(((7vw + 1vw) * 3) + 0.5vw);
+	margin-left: calc(((5.3vw + 1vw) * 2) + 0.5vw) !important;
+}
+
+.js .cube:not(.cube--inactive) {
+	cursor: pointer;
+}
+
+
+/* cube sides and rotations */
+
+.cube__side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cube__side--front {
+	position: relative;
+	-webkit-transform: translateZ(3.5vw);
+	transform: translateZ(3.5vw);
+}
+
+.cube__side--back {
+	-webkit-transform: rotateY(180deg) translateZ(3.5vw);
+	transform: rotateY(180deg) translateZ(3.5vw);
+}
+
+.cube__side--right {
+	-webkit-transform: rotateY(90deg) translateZ(3.5vw);
+	transform: rotateY(90deg) translateZ(3.5vw);
+}
+
+.cube__side--left {
+	-webkit-transform: rotateY(-90deg) translateZ(3.5vw);
+	transform: rotateY(-90deg) translateZ(3.5vw);
+}
+
+.cube__side--top {
+	-webkit-transform: rotateX(90deg) translateZ(3.5vw);
+	transform: rotateX(90deg) translateZ(3.5vw);
+}
+
+.cube__side--bottom {
+	-webkit-transform: rotateX(-90deg) translateZ(3.5vw);
+	transform: rotateX(-90deg) translateZ(3.5vw);
+}
+
+
+/* Cube counters and numbers */
+
+
+/* Without JS we want an auto counter */
+
+.no-js .calendar {
+	counter-reset: boxes-counter;
+}
+
+.no-js .cube {
+	counter-increment: boxes-counter;
+}
+
+.no-js .cube::after {
+	content: counter(boxes-counter);
+}
+
+.cube__number,
+.no-js .cube::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+/* canvas for snow */
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	transition: background-color 0.8s;
+}
+
+
+/* title that appears on hover */
+
+.title {
+	font-size: 3.25vw;
+	font-weight: 700;
+	position: absolute;
+	right: 3vw;
+	bottom: 3vw;
+	margin: 0;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+}
+
+
+/* number before title */
+
+.title::before {
+	content: attr(data-number);
+	display: inline-block;
+	margin-right: 0.5em;
+	color: white;
+	font-weight: 900;
+	font-size: 3.75vw;
+}
+
+
+/* letter span for animations */
+
+[class*='letter'] {
+	position: relative;
+	display: inline-block;
+	white-space: pre;
+}
+
+[class*='letter']:blank {
+	padding-right: 10em;
+}
+
+
+/* content wrap */
+
+.content {
+	position: relative;
+}
+
+.js .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+
+/* individual content block */
+
+.content__block {
+	padding: 10vh 5vw;
+}
+
+.js .content__block {
+	padding: 20vh 5vw;
+	position: absolute;
+	z-index: 100;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 85%;
+	height: 100%;
+	padding: 3em 0 6em 7vw;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+}
+
+.content__title {
+	font-size: 7vw;
+	line-height: 0.85;
+	margin: 0;
+}
+
+.content__description {
+	font-size: 2.25vw;
+	margin: 1em 0;
+	padding: 0 0 0 5vw;
+}
+
+.content__meta {
+	margin: 0;
+	padding: 0 0 0 2vw;
+	font-size: 6vw !important;
+	line-height: 0.85 !important;
+	font-weight: 400 !important;
+}
+
+// .content__meta::before {
+// 	content: '\2014';
+// }
+
+.content__number {
+	position: absolute;
+}
+
+.btn-back {
+	font-size: 2em;
+	line-height: 2;
+	position: absolute;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	width: 2em;
+	margin: 0;
+	margin: 1em;
+	padding: 0;
+	pointer-events: auto;
+	color: currentColor;
+	border: 0;
+	border: 2px solid;
+	background: none;
+	cursor: pointer;
+}
+
+.btn-back:focus {
+	outline: none;
+}
+
+.no-js .content__number,
+.no-js .btn-back {
+	display: none;
+}
+
+.js .content__block,
+.js .content__description,
+.js .content__meta,
+.js .content__number,
+.js .btn-back {
+	opacity: 0;
+}
+
+.js .content__block--current {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+@media screen and (max-width: 50.75em) {
+	.calendar {
+		padding: 3em calc((100vw - (7 * (14vw + 1vw)))/2);
+	}
+	.js .calendar {
+		padding: 0 calc((100vw - (7 * (12vw + 1vw)))/2) 5em;
+	}
+	.cube {
+		width: 12vw;
+		height: 12vw;
+	}
+	/* push to the right weekday if in big view (we have to push 3 boxes) */
+	.js .cube:first-child {
+		margin-left: calc(((12vw + 1vw) * 3) + 0.5vw);
+	}
+	.cube__side--front {
+		-webkit-transform: translateZ(6vw);
+		transform: translateZ(6vw);
+	}
+	.cube__side--back {
+		-webkit-transform: rotateY(180deg) translateZ(6vw);
+		transform: rotateY(180deg) translateZ(6vw);
+	}
+	.cube__side--right {
+		-webkit-transform: rotateY(90deg) translateZ(6vw);
+		transform: rotateY(90deg) translateZ(6vw);
+	}
+	.cube__side--left {
+		-webkit-transform: rotateY(-90deg) translateZ(6vw);
+		transform: rotateY(-90deg) translateZ(6vw);
+	}
+	.cube__side--top {
+		-webkit-transform: rotateX(90deg) translateZ(6vw);
+		transform: rotateX(90deg) translateZ(6vw);
+	}
+	.cube__side--bottom {
+		-webkit-transform: rotateX(-90deg) translateZ(6vw);
+		transform: rotateX(-90deg) translateZ(6vw);
+	}
+	.title {
+		font-size: 5vw;
+	}
+	.content__description {
+		font-size: 1.15em;
+		padding: 0 0 0 0.5em;
+	}
+	.js .content__block {
+		padding: 2em;
+		width: 100%;
+	}
+	.btn-back {
+		font-size: 1.25em;
+		bottom: auto;
+		top: 0;
+		margin: 0.5em;
+	}
+}
+
+/* ############################################################################## */
+/* ###########################  customed styles  ################################ */
+/* ############################################################################## */
+
+.js .cube:first-child {
+	//margin-left: 196px !important;
+}
+
+.cube {
+	margin: 2vw !important;
+	margin-bottom: 0.5vw !important;
+}
+.js .cube {
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	-webkit-transform-style: preserve-3d;
+}
+.title {
+	right: 3vw;
+	bottom: 5.5vw !important;
+	font-weight: 300 !important;
+}
+.background {
+    height: auto !important;
+}
+.btn-back {
+    bottom: 5.5vw !important;
+    color: #ffffff !important;
+}
+.content__title {
+	font-size: 3.10vw !important;
+	font-weight: 200 !important;
+	line-height: 0.85;
+	margin: 0 0 25px 0;
+	padding-top: 25px;
+}
+.content__meta {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 !important;
+	font-size: 18px !important;
+	line-height: 28px !important;
+	font-weight: 400 !important;
+}
+.main_heading {
+	font-weight: 200 !important;
+}
+.title::before {
+	color: white;
+	font-size: 6.5vw;
+}
+.content__meta {
+	width: 40vw;
+	font-size: 1.1vw !important;
+}
+.content__meta a {
+	color: #fff;
+    font-weight: 700;
+}
+.content__meta a:hover {
+	cursor: pointer !important;
+	text-decoration: underline;
+}
+
+
+@media only screen and (max-device-width: 768px) {
+    /* For mobile phones: */
+    .js .cube:first-child {
+    	margin-left: calc(((5.3vw + 1vw) * 2) + 5.3vw) !important;
+	}
+	.cubes {
+		//border: 1px solid white;
+		width: 93vw !important;
+	}
+
+	.cube {
+    	width: 19vw;
+    	height: 19vw;
+	}
+	.js .cube:first-child {
+		margin-left: 2vw !important;
+	}
+	.cube__side--front {
+		position: relative;
+		-webkit-transform: translateZ(9.5vw);
+		transform: translateZ(9.5vw);
+	}
+
+	.cube__side--back {
+		-webkit-transform: rotateY(180deg) translateZ(9.5vw);
+		transform: rotateY(180deg) translateZ(9.5vw);
+	}
+
+	.cube__side--right {
+		-webkit-transform: rotateY(90deg) translateZ(9.5vw);
+		transform: rotateY(90deg) translateZ(9.5vw);
+	}
+
+	.cube__side--left {
+		-webkit-transform: rotateY(-90deg) translateZ(9.5vw);
+		transform: rotateY(-90deg) translateZ(9.5vw);
+	}
+
+	.cube__side--top {
+		-webkit-transform: rotateX(90deg) translateZ(9.5vw);
+		transform: rotateX(90deg) translateZ(9.5vw);
+	}
+
+	.cube__side--bottom {
+		-webkit-transform: rotateX(-90deg) translateZ(9.5vw);
+		transform: rotateX(-90deg) translateZ(9.5vw);
+	}
+	.calendar-wrap p.main_heading {
+	    font-size: 8.47vw !important;
+	    margin-bottom: 5vw !important;
+	    line-height: 10vw !important
+	}
+	.main-content .container, 
+	footer .container,
+	header .container {
+    	padding-left: 15px !important;
+    	padding-right: 15px !important;
+	}
+	.js .content__block {
+    	width: 100% !important;
+    }
+    .content__description {
+    	margin-top: 15vw !important;
+    }
+    .btn-back {
+    	height: 10vw !important;
+    	top: 5vh !important;
+    	font-size: 4vw !important;
+    	//width: 12vw !important;
+    	line-height: 1 !important;
+    	padding-top: 0px !important;
+    }
+    .content__title {
+    	font-size: 5.5vw !important;
+    }
+} 
+@media only screen 
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

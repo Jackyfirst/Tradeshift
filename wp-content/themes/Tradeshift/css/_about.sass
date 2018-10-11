@@ -1,0 +1,480 @@
+// Custom Styling for About Page
+// Each page in the CMS is defined by an individual SASS page saved under /layout
+// This is then imported into the _layout.sass folder to get included into the sitewide css: css/style.css
+// Check utilities.scss for mixins on +e and +m BEMy mixin
+// Responsive constraint formular: min-size + (max-size - min-size) * ( (100vw - min-width) / ( max-width - min-width) )
+
+.AboutPage // main element selector
+  position: relative
+  color: $hex-c-white
+  
+  &__hero
+    min-height: 440px
+    position: relative
+    background: url(../img/global/concord-bg.svg) no-repeat
+    background-position: center center
+    background-size: cover
+    background-attachment: scroll
+    color: $hex-c-white
+    
+    @media (min-width: 768px)
+      min-height: 550px
+      &.is-container
+        margin: 0
+      &::after
+        content: ''
+        bottom: -220px
+        height: 400px
+
+    &--heading-cta
+      align-items: center
+      text-align: center
+      height: 480px
+      .is-leading
+        padding: 0 15%
+
+    &--partners
+      justify-content: space-between
+      padding-bottom: 40px
+      &-list
+        font-size: responsive 14px 16px
+        font-range: 400px 1600px
+        @include make-col-offset(10)
+        @include make-col(80)
+        padding-bottom: 40px
+        @media (min-width: 768px)
+          @include make-col-offset(0)
+          @include make-col(30)
+  
+  &__logos
+    .is-row
+      align-items: center
+      justify-content: space-between
+    .is-column-heading
+      @include make-col-ready()
+      text-align: center
+    .is-column
+      padding: 33px 0
+      @include make-col(40)
+      img
+        width: 100%
+        max-width: 120px
+    @media (min-width: 768px)
+      .is-column
+        @include make-col(14)
+        img
+          max-width: 160px
+
+  &__core
+    // @extend .is-skewed-w-bg
+  
+    &--download
+      display: flex
+      align-items: center
+      max-width: 560px
+      background: $hex-c-white
+      color: $hex-c-black
+      padding: 22px 30px
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.39)
+      h4
+        margin-bottom: 0
+      img
+        width: 80px
+        height: 64px
+        margin-right: 30px
+        @media (min-width: 421px)
+          width: 140px
+          height: 124px
+      @media (min-width: 421px)
+        @include make-col-offset(40)
+        @include make-col(60)
+      @media (min-width: 1400px)
+        @include make-col-offset(60)
+        @include make-col(40)
+        max-width: 420px
+
+  &__story
+    background: url(../img/about/Draft-bground.svg) no-repeat
+    background-position: center center
+    background-size: cover
+    padding-top: 88px
+    padding-bottom: 44px
+    &.is-container
+        margin-top: 0px !important
+    h1
+      font-size: 30px
+      line-height: 40px
+      color: #042248
+      text-align: center
+      font-weight: 400
+    h2
+      background: white
+      padding: 22px 0px
+      margin-bottom: 0px
+      font-size: 26px
+      color: #042248
+      text-align: center
+    .pilar
+      background: white
+      width: 8px
+      height: 33px
+      display: block
+      margin: auto
+    .is-circle
+      background: #A4FFF5
+      padding: 66px 44px 44px 44px
+      border-radius: 50%
+      text-align: center
+      width: 420px
+      height: 420px
+      margin: auto
+      &:nth-of-type(2)
+        padding: 44px 14px
+        p 
+          &:last-child
+            padding-left: 44px
+            padding-right: 44px
+      .is-blue-extrabold
+        color: #1B59E8
+        font-weight: 900
+        font-size: 18px
+      h3
+        font-size: 24px
+        line-height: 32px
+        font-weight: 600
+        color: #042248
+        margin-bottom: 11px
+      p 
+        color: #231F20
+        font-size: 14px
+        line-height: 20px
+        padding: 0 10px
+    @media (max-width: 768px)
+      .is-circle
+        width: 320px
+        height: 320px
+        padding: 36px
+        h3
+          font-size: 18px
+          line-height: 24px
+        p 
+          font-size: 11px
+          line-height: 18px
+        .hidden-xs-down
+
+  &__why_us
+    background: #7BFFF1
+    padding-top: 88px
+    position: relative
+    &::before
+      content: ''
+      background: $hex-c-white
+      width: 100%
+      height: 100%
+      position: absolute
+      bottom: 0
+      z-index: -1
+      transform-origin: left top
+      transform: skewY(-10deg)
+    &::after
+      content: ''
+      background: $hex-c-blue-light2
+      width: 100%
+      height: 100%
+      position: absolute
+      bottom: 0
+      z-index: -5
+    &--intro
+      clear: left
+      margin-top: 22px
+      &.is-left
+        p 
+          padding-right: 22px
+      &.is-right 
+        padding: 0 85px 0 0
+    &--ss
+      margin-top: 0px
+      &.is-left
+        padding-right: 22px
+        img 
+          float: right
+    .is-column
+      padding-bottom: 88px
+    .show-sm-down
+      display: none
+
+    h1
+      flex: 100%
+      color: #042248
+      font-size: 30px
+      line-height: 40px
+      text-align: center
+      font-weight: 400
+    h2
+      color: #6335B9
+      font-size: 26px
+      line-height: 32px
+      font-weight: 300 
+    p 
+      font-size: 14px
+      line-height: 20px
+    img
+      width: 100%
+
+    @media (max-width: 768px)
+      img 
+        width: 140px
+      &--intro
+        &.is-left
+          p 
+            padding-right: 0px !important
+    @media (max-width: 992px)
+      .hidden-sm-down
+        display: none
+      .show-sm-down
+        display: block
+        padding-bottom: 0px !important
+      img 
+        display: block
+        margin: auto
+        float: none !important
+      &--intro,
+      &--ss 
+        padding: 0 44px 44px !important
+        text-align: center
+    @media (min-width: 768px)
+      img
+        width: 215px
+
+    @media (min-width: 992px)
+      &--intro
+        padding: 0 0px 88px 0
+        @include make-col(50)
+      &--ss
+        align-self: flex-start
+        @include make-col(50)
+    @media (min-width: 1200px)
+      &--intro
+        padding: 0
+        padding-right: 0px
+        &.is-left
+          p 
+            padding-right: 85px
+      &--ss
+        padding-left: 77px
+        &.is-left
+          padding-right: 65px
+    @media (min-width: 1350px)
+      &--intro
+        padding: 0 0 0 66px
+        &.is-right 
+          padding: 0 165px 0 0
+    @media (min-width: 1600px)
+      &--intro
+        padding: 0 0 0 99px
+      img
+        width: 100%
+        max-width: 215px
+
+
+  &__logos
+    &.is-trusted
+      &.is-container
+        padding: 0
+        margin: 77px 0
+      @media (min-width: 768px)
+        .is-row:nth-child(2)
+          margin-top: 44px
+    &--intro
+      .is-column
+        @include make-col(100)
+        @media (min-width: 768px)
+          text-align: center
+        @media (min-width: 992px)
+          @include make-col-offset(5)
+          @include make-col(90)
+  
+  &__leadership
+    background: #D0F3FB
+    padding: 88px 0
+    h1
+      flex: 100%
+      color: #042248
+      font-size: 30px
+      line-height: 40px
+      text-align: center
+      font-weight: 400
+    .leader
+      text-align: center
+      padding: 0 66px
+      h3
+        color: #072248
+        font-size: 26px
+        margin-bottom: 0px
+        padding-top: 22px
+      h4
+        color: #704BC1
+      p 
+        font-size: 14px
+    .has-two-leaders
+      .leader
+        padding: 0 44px
+    @media (max-width: 768px)
+      padding: 44px 0 0 !important
+      .leader
+        padding: 0 !important
+    @media (max-width: 991px)
+      .leader
+        flex: 0 0 100%
+        padding-bottom: 44px !important
+      .has-two-leaders
+        padding-top: 0px !important
+    @media (min-width: 992px)
+      .has-two-leaders
+        padding-top: 55px
+      .leader
+        flex: 1
+        padding: 0 22px
+  
+
+  &__locations
+    background: #FFFFFF
+    padding: 110px 0 0
+    &.is-container
+      margin-bottom: 0px
+    .is-row
+      justify-content: center
+    .is-paris
+      margin-left: 33px
+      margin-right: 33px
+    h1
+      flex: 100%
+      color: #042248
+      font-size: 30px
+      line-height: 40px
+      text-align: center
+      font-weight: 400
+    img 
+      width: 340px
+      height: 340px
+    @media (max-width: 768px)
+      padding: 66px 0 0
+      img 
+        width: 245px
+        height: 245px
+    @media (max-width: 991px)
+      img 
+        margin-bottom: 44px
+    @media (min-width: 992px)
+      img 
+        width: 220px
+        height: 220px
+    @media (min-width: 1200px)
+      img 
+        width: 260px
+        height: 260px
+    @media (min-width: 1500px)
+      img 
+        width: 340px
+        height: 340px
+  
+  &__speed
+    position: relative
+    border-bottom: 22px solid $hex-c-blue-light2
+    &::before
+      content: ''
+      background: $hex-c-white
+      width: 100%
+      height: 100%
+      position: absolute
+      bottom: 0
+      z-index: -1
+      transform-origin: left top
+      transform: skewY(-10deg)
+    &::after
+      content: ''
+      background: $hex-c-blue-light2
+      width: 100%
+      height: 100%
+      position: absolute
+      bottom: 0
+      z-index: -5
+    &--ss
+      margin-top: 44px  
+    img
+      width: 100%
+    @media (min-width: 768px)
+      img
+        width: 550px
+
+    @media (min-width: 992px)
+      &--intro
+        padding: 0 60px 88px 0
+        @include make-col(50)
+      &--ss
+        align-self: center
+        @include make-col(50)
+    @media (min-width: 1600px)
+      img
+        width: 100%
+        max-width: 550px
+
+  &__logos
+    &.is-trusted
+      &.is-container
+        padding: 0
+        margin: 77px 0
+      @media (min-width: 768px)
+        .is-row:nth-child(2)
+          margin-top: 44px
+    &--intro
+      .is-column
+        @include make-col(100)
+        @media (min-width: 768px)
+          text-align: center
+        @media (min-width: 992px)
+          @include make-col-offset(5)
+          @include make-col(90)
+
+  &__resources
+    background: $hex-c-blue-light2
+    &.is-container
+      padding: 44px 0
+    .is-column:not(:last-child)
+      margin-bottom: 22px
+    @media (min-width: 768px)
+      &.is-container
+        padding: 77px 0
+      .is-row
+        justify-content: space-between
+      .is-column
+        @include make-col(32)
+
+    &--cards
+      background: $hex-c-white
+      color: black
+      padding: 22px 30px
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.39)
+      @media (min-width: 768px)
+        display: flex
+        justify-content: space-between
+        flex-flow: column nowrap
+        min-height: 363px
+      h4
+        line-height: 1.4
+      p
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+      img
+        display: block
+        width: 150px
+        margin: 0 auto
+      @media (min-width: 992px)
+        min-height: 371px
+      @media (min-width: 1200px)
+        min-height: 341px
+
+  &__followupcta
+    .is-column
+      text-align: center

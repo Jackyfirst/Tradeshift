@@ -1,0 +1,696 @@
+@charset "UTF-8";
+
+/* Clearfix to separate content */
+.clearfix { height: 44px; display: block; }
+
+/* Background Treatment (Pertains to opacity overlays over background-images) */
+/* Reset Utilities */
+/* IE 10 in Windows 8 Viewport Patch */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+/* Typed.js styling */
+.typed-cursor { opacity: 1; -webkit-animation: blink 2s infinite; -moz-animation: blink 2s infinite; animation: blink 2s infinite; }
+
+@keyframes blink { 0% { opacity: 0.8; }
+  50% { opacity: 0; }
+  100% { opacity: 0.8; } }
+@-webkit-keyframes blink { 0% { opacity: 0.8; }
+  50% { opacity: 0; }
+  100% { opacity: 0.8; } }
+@-moz-keyframes blink { 0% { opacity: 0.8; }
+  50% { opacity: 0; }
+  100% { opacity: 0.8; } }
+/* Vertical Alignment of Elements */
+/* Refer to:  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css */
+/* To prevent blurry elements due to half pixel placement, assign the preserve-3d to parent container */
+h1, h2, .supplier-mgmt .platform h3, h3, h4, h5, h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 0; color: #1E1E1E; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h1.on-dark, h2.on-dark, .supplier-mgmt .platform h3.on-dark, h3.on-dark, h4.on-dark, h5.on-dark, h6.on-dark { color: #FFFFFF; }
+h1.centered, h2.centered, .supplier-mgmt .platform h3.centered, h3.centered, h4.centered, h5.centered, h6.centered { text-align: center; }
+
+h1 { font-weight: 800; font-size: 28px; line-height: 33px; }
+@media (min-width: 768px) { h1 { font-size: 48px; line-height: 55px; } }
+@media (min-width: 992px) { h1 { font-size: 48px; line-height: 55px; } }
+
+h2, .supplier-mgmt .platform h3 { font-weight: 300; font-size: 26px; line-height: 33px; color: #20A0E9; }
+@media (min-width: 768px) { h2, .supplier-mgmt .platform h3 { font-size: 34px; line-height: 44px; } }
+@media (min-width: 992px) { h2, .supplier-mgmt .platform h3 { font-size: 34px; line-height: 44px; } }
+
+h3 { font-weight: 400; font-size: 18px; line-height: 22px; }
+@media (min-width: 768px) { h3 { font-size: 26px; line-height: 33px; } }
+@media (min-width: 992px) { h3 { font-weight: 400; font-size: 26px; line-height: 33px; } }
+
+h4 { font-weight: 400; font-size: 18px; line-height: 22px; }
+
+h5 { font-weight: 400; font-size: 11px; line-height: 11px; }
+
+p { font-size: 14px; font-weight: 400; line-height: 22px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+p.on-dark { color: #FFFFFF; }
+p.centered { text-align: center; }
+@media (min-width: 768px) { p { font-size: 18px; line-height: 33px; } }
+
+p.lead { font-size: 18px; }
+
+p.sub { font-size: 12px; }
+
+a { color: #20A0E9; }
+
+.btn { display: inline-block; padding: 6px 0px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: left; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 0px; }
+.btn:focus { outline: none; }
+
+.btn-request-demo { padding: 0px 11px; height: 22px; border-radius: 11px; background: #FFFFFF; color: #20A0E9; text-transform: uppercase; font-size: 11px; text-align: center; margin-top: -4px; }
+
+.btn-request-demo-lg { padding: 0px 5px; width: 160px; height: 34px; border-radius: 17px; background-color: #FFFFFF; color: #20A0E9; text-transform: uppercase; font-size: 14px; text-align: center; margin-top: 0; }
+
+.btn-primary-cta, .main-content .newsletter-subscription .mktoButton, .modal .mktoForm .mktoButton, .cta-form .mktoForm .mktoButton, .btn-primary-cta-on-blue, .btn-secondary-cta, .btn-play-navy-cta { font-weight: 600 !important; font-size: 18px !important; text-align: left !important; height: 44px !important; border-radius: 22px !important; border: none !important; padding: 8px 22px 10px 22px !important; }
+
+.btn-primary-cta, .main-content .newsletter-subscription .mktoButton, .modal .mktoForm .mktoButton, .cta-form .mktoForm .mktoButton { color: #FFFFFF !important; background-color: #F05522 !important; background-image: initial !important; }
+.btn-primary-cta:active, .main-content .newsletter-subscription .mktoButton:active, .modal .mktoForm .mktoButton:active, .cta-form .mktoForm .mktoButton:active { color: #FFFFFF !important; background-color: #90181C !important; }
+.btn-primary-cta:hover, .main-content .newsletter-subscription .mktoButton:hover, .modal .mktoForm .mktoButton:hover, .cta-form .mktoForm .mktoButton:hover { color: #FFFFFF !important; background-color: #DB3A14 !important; }
+.btn-primary-cta:focus, .main-content .newsletter-subscription .mktoButton:focus, .modal .mktoForm .mktoButton:focus, .cta-form .mktoForm .mktoButton:focus { color: #FFFFFF !important; background-color: #F05522 !important; }
+
+.btn-primary-cta-on-blue { color: #20A0E9; background-color: #FFFFFF; }
+.btn-primary-cta-on-blue:active, .btn-primary-cta-on-blue:focus { color: #FFFFFF; background-color: #1E3D55; }
+.btn-primary-cta-on-blue:hover { color: #FFFFFF; background-color: #C5E1F7; }
+
+.btn-secondary-cta { color: #FFFFFF; background-color: #F4AD1B; }
+.btn-secondary-cta:active { color: #FFFFFF; background-color: #EA9103; }
+.btn-secondary-cta:hover, .btn-secondary-cta:visited { color: #FFFFFF; background-color: #F5B633; }
+
+.btn-play-navy-cta { color: #FFFFFF; background: #1E3D55 url("../img/icons/icon-play-alternative.png") no-repeat 22px center; border: 2px solid #FFFFFF !important; padding: 5px 22px 7px 55px !important; }
+.btn-play-navy-cta:active, .btn-play-navy-cta:hover, .btn-play-navy-cta:visited, .btn-play-navy-cta:focus { color: #FFFFFF; cursor: pointer; }
+
+.btn-play { background: url("../img/roles/finance/btn-play.png") no-repeat top center; width: 83px; height: 83px; }
+
+.btn-play-lg { background: url("../img/misc/btn-play-lg.png") no-repeat top center; width: 120px; height: 120px; color: #FFFFFF; }
+
+.btn-play-bordered { background: url("../img/misc/btn-play-bordered.png") no-repeat top center; width: 108px; height: 108px; position: relative; z-index: 480; }
+
+.btn-play-orange { background: url("../img/solutions/supplier-mgmt/btn-play-orange.png") no-repeat top center; width: 76px; height: 76px; }
+
+.btn-timeline { height: 30px; width: 30px; border-radius: 50%; }
+
+.btn-blue { background-color: #20A0E9; }
+
+.btn-green { background-color: #6BAE58; }
+
+.btn-red { background-color: #BE0000; }
+
+.btn-orange { background-color: #FF5200; }
+
+.btn-gold { background-color: #FFAF33; }
+
+.btn-white { color: #FF5200 !important; background-color: #FFFFFF !important; }
+
+.btn-tight { padding: 8px 14px !important; }
+
+.label-default, .main-content .fill-out-form .roles-pages label, .main-content .fill-out-form .modal .mktoForm label, .modal .main-content .fill-out-form .mktoForm label, .main-content .fill-out-form .cta-form .mktoForm label, .cta-form .main-content .fill-out-form .mktoForm label, .main-content .fill-out-form .form-step-1 label, .main-content.landing-pages .fill-out-form .lp label, .modal .mktoForm .mktoLabel, .cta-form .mktoForm .mktoLabel { font-weight: 300 !important; font-size: 11px !important; text-align: left !important; letter-spacing: 0.8px !important; text-transform: uppercase !important; background-color: transparent !important; color: #20A0E9 !important; font-family: "Open Sans", Helvetica, Arial, sans-serif !important; margin-bottom: 8px !important; }
+
+.input-fields-default, .main-content .fill-out-form .roles-pages input[type=text], .main-content .fill-out-form .modal .mktoForm input[type=text], .modal .main-content .fill-out-form .mktoForm input[type=text], .main-content .fill-out-form .cta-form .mktoForm input[type=text], .cta-form .main-content .fill-out-form .mktoForm input[type=text], .main-content .fill-out-form .roles-pages input[type=e-mail], .main-content .fill-out-form .modal .mktoForm input[type=e-mail], .modal .main-content .fill-out-form .mktoForm input[type=e-mail], .main-content .fill-out-form .cta-form .mktoForm input[type=e-mail], .cta-form .main-content .fill-out-form .mktoForm input[type=e-mail], .main-content .fill-out-form .roles-pages input[type=email], .main-content .fill-out-form .modal .mktoForm input[type=email], .modal .main-content .fill-out-form .mktoForm input[type=email], .main-content .fill-out-form .cta-form .mktoForm input[type=email], .cta-form .main-content .fill-out-form .mktoForm input[type=email], .main-content .fill-out-form .roles-pages textarea, .main-content .fill-out-form .modal .mktoForm textarea, .modal .main-content .fill-out-form .mktoForm textarea, .main-content .fill-out-form .cta-form .mktoForm textarea, .cta-form .main-content .fill-out-form .mktoForm textarea, .main-content .fill-out-form .form-step-1 input[type=text], .main-content .fill-out-form .form-step-1 input[type=e-mail], .main-content .fill-out-form .form-step-1 input[type=email], .main-content .fill-out-form .form-step-1 textarea, .main-content.landing-pages .fill-out-form .lp input, .main-content.landing-pages .fill-out-form .lp textarea, .main-content .newsletter-subscription input[type=email], .modal .mktoForm input[type=text], .modal .mktoForm input[type=url], .modal .mktoForm input[type=email], .modal .mktoForm input[type=e-mail], .modal .mktoForm input[type=tel], .modal .mktoForm input[type=number], .modal .mktoForm input[type=date], .modal .mktoForm select.mktoField, .modal .mktoForm textarea.mktoField, .cta-form .mktoForm input[type=text], .cta-form .mktoForm input[type=url], .cta-form .mktoForm input[type=email], .cta-form .mktoForm input[type=e-mail], .cta-form .mktoForm input[type=tel], .cta-form .mktoForm input[type=number], .cta-form .mktoForm input[type=date], .cta-form .mktoForm select.mktoField, .cta-form .mktoForm textarea.mktoField { background-color: #E6E7E8 !important; font-weight: 300 !important; font-size: 18px !important; text-align: left !important; letter-spacing: 0.8px !important; color: #646464 !important; border-radius: 0 !important; border: none !important; box-shadow: none !important; height: 44px !important; font-family: "Open Sans", Helvetica, Arial, sans-serif !important; padding: 6px 12px !important; line-height: initial !important; }
+
+.form-control::-webkit-input-placeholder, .main-content .newsletter-subscription input[type=email]::-webkit-input-placeholder, .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm textarea.mktoField::-webkit-input-placeholder, .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm textarea.mktoField::-webkit-input-placeholder, .input-fields-default::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages textarea::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm textarea::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp input::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder, .main-content .newsletter-subscription input[type=email]::-webkit-input-placeholder, .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm textarea.mktoField::-webkit-input-placeholder, .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm textarea.mktoField::-webkit-input-placeholder { font-family: "Open Sans", Helvetica, Arial, sans-serif !important; margin-top: 5px !important; border-radius: 0 !important; }
+
+html, body { overflow-x: hidden; }
+
+body { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+*, *::after, *::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a:hover, a:focus { color: inherit; text-decoration: none; }
+
+.main-content { position: relative; z-index: 0; margin-top: 55px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #FFFFFF; -webkit-transition: -webkit-transform 0.6s; -moz-transition: -moz-transform 0.6s; transition: transform 0.6s; }
+@media (min-width: 768px) { .main-content { padding-top: 0px; } }
+.main-content.nav-is-visible { -webkit-transform: translateX(260px); -moz-transform: translateX(260px); -ms-transform: translateX(260px); -o-transform: translateX(260px); transform: translateX(260px); overflow-x: hidden; }
+
+.case-studies-container { position: relative; z-index: 50; }
+.case-studies-container .customer-case-studies li { display: inline-block; text-align: center; }
+.case-studies-container .customer-case-studies li:first-child { text-align: left; }
+.case-studies-container .customer-case-studies li:last-child { text-align: right; }
+.case-studies-container .customer-case-studies .airfrance > img { margin-top: 10px; }
+.case-studies-container .customer-case-studies .dhl > a > img { margin-top: 4px; }
+.case-studies-container .customer-case-studies .linked-in > a > img { margin-top: 2px; }
+.case-studies-container .customer-case-studies .cbre > a > img { margin-top: 2px; }
+.case-studies-container .customer-case-studies .adm > a > img { margin-top: 0px; }
+.case-studies-container .customer-case-studies .vestas > a > img { margin-top: 2px; }
+.case-studies-container .customer-case-studies .nhs > a > img { margin-top: -2px; }
+
+.customer-logos-container { position: relative; z-index: 50; }
+.customer-logos-container .customer-logos li { display: inline-block; text-align: center; }
+.customer-logos-container .customer-logos li:first-child { text-align: left; }
+.customer-logos-container .customer-logos li:last-child { text-align: right; }
+.customer-logos-container .customer-logos .airfrance > img { margin-top: 10px; }
+.customer-logos-container .customer-logos .dhl > a > img { margin-top: 4px; }
+.customer-logos-container .customer-logos .linked-in > a > img { margin-top: 2px; }
+.customer-logos-container .customer-logos .cbre > a > img { margin-top: 2px; }
+.customer-logos-container .customer-logos .adm > a > img { margin-top: 0px; }
+.customer-logos-container .customer-logos .vestas > a > img { margin-top: 2px; }
+.customer-logos-container .customer-logos .nhs > a > img { margin-top: -2px; }
+
+.main-content .fill-out-form { padding: 30px 0; background: #c5e1f7; }
+.main-content .fill-out-form h2, .main-content .fill-out-form .supplier-mgmt .platform h3, .supplier-mgmt .platform .main-content .fill-out-form h3 { margin: 0 auto; color: #20A0E9; margin-bottom: 20px; padding: 0 15px; text-align: center; }
+.main-content .fill-out-form .roles-pages label, .main-content .fill-out-form .modal .mktoForm label, .modal .main-content .fill-out-form .mktoForm label, .main-content .fill-out-form .cta-form .mktoForm label, .cta-form .main-content .fill-out-form .mktoForm label, .main-content .fill-out-form .form-step-1 label { width: 100% !important; }
+.main-content .fill-out-form .roles-pages input[type=text], .main-content .fill-out-form .modal .mktoForm input[type=text], .modal .main-content .fill-out-form .mktoForm input[type=text], .main-content .fill-out-form .cta-form .mktoForm input[type=text], .cta-form .main-content .fill-out-form .mktoForm input[type=text], .main-content .fill-out-form .roles-pages input[type=e-mail], .main-content .fill-out-form .modal .mktoForm input[type=e-mail], .modal .main-content .fill-out-form .mktoForm input[type=e-mail], .main-content .fill-out-form .cta-form .mktoForm input[type=e-mail], .cta-form .main-content .fill-out-form .mktoForm input[type=e-mail], .main-content .fill-out-form .roles-pages input[type=email], .main-content .fill-out-form .modal .mktoForm input[type=email], .modal .main-content .fill-out-form .mktoForm input[type=email], .main-content .fill-out-form .cta-form .mktoForm input[type=email], .cta-form .main-content .fill-out-form .mktoForm input[type=email], .main-content .fill-out-form .roles-pages textarea, .main-content .fill-out-form .modal .mktoForm textarea, .modal .main-content .fill-out-form .mktoForm textarea, .main-content .fill-out-form .cta-form .mktoForm textarea, .cta-form .main-content .fill-out-form .mktoForm textarea, .main-content .fill-out-form .form-step-1 input[type=text], .main-content .fill-out-form .form-step-1 input[type=e-mail], .main-content .fill-out-form .form-step-1 input[type=email], .main-content .fill-out-form .form-step-1 textarea { background: #FFFFFF !important; color: #20A0E9 !important; }
+.main-content .fill-out-form .form { margin: 0 auto; text-align: center; }
+.main-content .fill-out-form .form-group, .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap, .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap, .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap, .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap, .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap { margin-bottom: 20px; }
+.main-content .fill-out-form .form-group:last-child, .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap:last-child, .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap:last-child, .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child { margin-bottom: 20px; text-align: center; }
+.main-content .fill-out-form .form-control::-webkit-input-placeholder, .main-content .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm textarea.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content .fill-out-form .input-fields-default::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=text]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=e-mail]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages input[type=email]::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .roles-pages textarea::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder, .modal .main-content .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm textarea::-webkit-input-placeholder, .cta-form .main-content .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .form-step-1 textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp input::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder, .main-content .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content .fill-out-form textarea.mktoField::-webkit-input-placeholder { color: #20A0E9 !important; }
+.main-content .fill-out-form .sub { color: #1F3D55; line-height: 1.3; text-align: center; margin-top: 0px; margin-bottom: 20px; }
+@media (min-width: 768px) { .main-content .fill-out-form .form-group, .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap, .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap, .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap, .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap, .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap { text-align: initial; }
+  .main-content .fill-out-form .form-group:last-child, .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap:last-child, .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap:last-child, .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child { text-align: left; } }
+@media (min-width: 992px) { .main-content .fill-out-form .form-group input[type=e-mail], .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap input[type=e-mail], .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap input[type=e-mail], .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap input[type=e-mail], .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=e-mail], .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap input[type=e-mail], .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=e-mail], .main-content .fill-out-form .form-group input[type=email], .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap input[type=email], .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap input[type=email], .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap input[type=email], .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=email], .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap input[type=email], .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=email], .main-content .fill-out-form .form-group input[type=text], .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap input[type=text], .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap input[type=text], .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap input[type=text], .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=text], .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap input[type=text], .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap input[type=text] { width: 110%; }
+  .main-content .fill-out-form .form-group:last-child, .main-content .fill-out-form .newsletter-subscription .mktoFieldWrap:last-child, .main-content .newsletter-subscription .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child, .main-content .fill-out-form .cta-form .mktoForm .mktoFieldWrap:last-child, .cta-form .mktoForm .main-content .fill-out-form .mktoFieldWrap:last-child { text-align: right; } }
+
+.main-content.landing-pages .fill-out-form { padding: 30px 0; background: #FFFFFF; }
+.main-content.landing-pages .fill-out-form h2, .main-content.landing-pages .fill-out-form .supplier-mgmt .platform h3, .supplier-mgmt .platform .main-content.landing-pages .fill-out-form h3 { margin: 0 auto; color: #20A0E9; margin-bottom: 20px; padding: 0 15px; text-align: center; }
+.main-content.landing-pages .fill-out-form .lp label { width: 100% !important; }
+.main-content.landing-pages .fill-out-form .lp input, .main-content.landing-pages .fill-out-form .lp textarea { background: #D2D2D2; color: #1E1E1E !important; }
+.main-content.landing-pages .fill-out-form .form { margin: 0 auto; text-align: center; }
+.main-content.landing-pages .fill-out-form .form-group, .main-content.landing-pages .fill-out-form .newsletter-subscription .mktoFieldWrap, .main-content.landing-pages .newsletter-subscription .fill-out-form .mktoFieldWrap, .main-content.landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap, .main-content.landing-pages .fill-out-form .cta-form .mktoForm .mktoFieldWrap, .cta-form .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap { margin-bottom: 20px; text-align: left; }
+.main-content.landing-pages .fill-out-form .form-group:last-child, .main-content.landing-pages .fill-out-form .newsletter-subscription .mktoFieldWrap:last-child, .main-content.landing-pages .newsletter-subscription .fill-out-form .mktoFieldWrap:last-child, .main-content.landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap:last-child, .main-content.landing-pages .fill-out-form .cta-form .mktoForm .mktoFieldWrap:last-child, .cta-form .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap:last-child { margin-bottom: 20px; text-align: center; }
+.main-content.landing-pages .fill-out-form .form-control::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm textarea.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .input-fields-default::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=text]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=e-mail]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=email]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm textarea::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp input::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder { color: #1E1E1E; text-align: center; }
+.main-content.landing-pages .fill-out-form .sub { color: #646464; line-height: 1.3; text-align: center; padding-left: 30px; margin-top: 0; margin-bottom: 20px; letter-spacing: -0.1px; }
+@media (min-width: 768px) { .main-content.landing-pages .fill-out-form .form-group, .main-content.landing-pages .fill-out-form .newsletter-subscription .mktoFieldWrap, .main-content.landing-pages .newsletter-subscription .fill-out-form .mktoFieldWrap, .main-content.landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap, .main-content.landing-pages .fill-out-form .cta-form .mktoForm .mktoFieldWrap, .cta-form .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap { text-align: left; }
+  .main-content.landing-pages .fill-out-form .form-group:last-child, .main-content.landing-pages .fill-out-form .newsletter-subscription .mktoFieldWrap:last-child, .main-content.landing-pages .newsletter-subscription .fill-out-form .mktoFieldWrap:last-child, .main-content.landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap:last-child, .main-content.landing-pages .fill-out-form .cta-form .mktoForm .mktoFieldWrap:last-child, .cta-form .mktoForm .main-content.landing-pages .fill-out-form .mktoFieldWrap:last-child { text-align: left; }
+  .main-content.landing-pages .fill-out-form .form-control::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm textarea.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .input-fields-default::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=text]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=e-mail]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages input[type=email]::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder, .modal .main-content.landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm textarea::-webkit-input-placeholder, .cta-form .main-content.landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .form-step-1 textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp input::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .newsletter-subscription input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .newsletter-subscription .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=e-mail]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .modal .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=text]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=url]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=email]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=e-mail]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=e-mail]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=tel]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=number]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm input[type=date]::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder, .main-content.landing-pages .fill-out-form .cta-form .mktoForm select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder, .cta-form .mktoForm .main-content.landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder { text-align: left; }
+  .main-content.landing-pages .fill-out-form .sub { text-align: left; } }
+
+.main-content .newsletter-subscription { width: 100% !important; }
+@media (min-width: 768px) { .main-content .newsletter-subscription { margin-left: 8.33% !important; width: 83.33% !important; } }
+@media (min-width: 992px) { .main-content .newsletter-subscription { margin-left: 16.67% !important; width: 66.67% !important; } }
+.main-content .newsletter-subscription .mktoFormRow { width: 100% !important; }
+@media (min-width: 768px) { .main-content .newsletter-subscription .mktoFormRow { width: 83.33% !important; float: left; } }
+.main-content .newsletter-subscription .mktoFormCol { float: none !important; }
+.main-content .newsletter-subscription .mktoFieldWrap { width: 100% !important; }
+.main-content .newsletter-subscription .mktoOffset { display: none !important; }
+.main-content .newsletter-subscription label { display: none !important; }
+.main-content .newsletter-subscription input[type=email] { background: #FFFFFF !important; color: #20A0E9 !important; width: 100% !important; }
+.main-content .newsletter-subscription .mktoButtonRow { float: none; text-align: center; width: 100%; margin-bottom: 22px; }
+@media (min-width: 768px) { .main-content .newsletter-subscription .mktoButtonRow { float: right; width: 16.67% !important; } }
+.main-content .newsletter-subscription .mktoButtonWrap { margin-left: 0 !important; }
+.main-content .newsletter-subscription .mktoButton { padding: 0; font-family: "Open Sans", Helvetica, Arial, sans-serif !important; background-image: none !important; }
+.main-content .newsletter-subscription .mktoError { left: 15px !important; right: 60% !important; }
+.main-content .newsletter-subscription .mktoError .mktoErrorArrow { border: none !important; background: #BE0000 !important; }
+.main-content .newsletter-subscription .mktoError .mktoErrorMsg { background: #BE0000 !important; border-radius: 0 !important; text-shadow: none !important; width: 180px !important; color: #FFFFFF !important; }
+
+.events-detail .agenda td { border-top: none !important; padding: 11px; }
+.events-detail .agenda td:first-child { width: 33%; font-weight: 700; }
+@media (min-width: 768px) { .events-detail .agenda td:first-child { width: 22%; } }
+
+.modal .modal-content, .cta-form .modal-content { border-radius: 0px !important; }
+.modal .modal-header, .cta-form .modal-header { background: #c5e1f7; padding: 30px; }
+.modal .modal-header h3, .cta-form .modal-header h3 { color: #20A0E9; }
+.modal .modal-header p.lead, .cta-form .modal-header p.lead { font-size: 18px; padding: 0; margin: 0; }
+.modal .modal-body, .cta-form .modal-body { padding: 30px; }
+.modal .modal-body .mktoForm div.placeholder, .cta-form .modal-body .mktoForm div.placeholder { display: none; }
+.modal .modal-footer, .cta-form .modal-footer { padding: 30px; }
+.modal .mktoForm, .cta-form .mktoForm { width: 100% !important; }
+.modal .mktoForm .mktoOffset, .modal .mktoForm .mktoGutter, .modal .mktoForm .mktoAsterix, .cta-form .mktoForm .mktoOffset, .cta-form .mktoForm .mktoGutter, .cta-form .mktoForm .mktoAsterix { display: none !important; }
+.modal .mktoForm .mktoFieldWrap, .cta-form .mktoForm .mktoFieldWrap { float: none; }
+.modal .mktoForm .mktoFormCol, .cta-form .mktoForm .mktoFormCol { float: none; }
+.modal .mktoForm input[type=text], .modal .mktoForm input[type=url], .modal .mktoForm input[type=email], .modal .mktoForm input[type=e-mail], .modal .mktoForm input[type=tel], .modal .mktoForm input[type=number], .modal .mktoForm input[type=date], .modal .mktoForm select.mktoField, .modal .mktoForm textarea.mktoField, .cta-form .mktoForm input[type=text], .cta-form .mktoForm input[type=url], .cta-form .mktoForm input[type=email], .cta-form .mktoForm input[type=e-mail], .cta-form .mktoForm input[type=tel], .cta-form .mktoForm input[type=number], .cta-form .mktoForm input[type=date], .cta-form .mktoForm select.mktoField, .cta-form .mktoForm textarea.mktoField { width: 100% !important; }
+.modal .mktoForm .mktoLabel, .cta-form .mktoForm .mktoLabel { width: 90% !important; }
+.modal .mktoForm .mktoError, .cta-form .mktoForm .mktoError { left: 0 !important; right: initial !important; }
+.modal .mktoForm .mktoButtonWrap, .cta-form .mktoForm .mktoButtonWrap { margin: 20px 0 0 0 !important; }
+.modal .mktoForm .mktoButton, .cta-form .mktoForm .mktoButton { padding: 0; font-family: "Open Sans", Helvetica, Arial, sans-serif !important; background-image: none !important; }
+.modal .mktoForm .mktoHtmlText, .cta-form .mktoForm .mktoHtmlText { width: 90% !important; }
+.modal .mktoForm .mktoHtmlText p.privacy, .cta-form .mktoForm .mktoHtmlText p.privacy { font-size: 12px !important; line-height: 18px !important; }
+.modal .mktoForm .mktoError .mktoErrorArrow, .cta-form .mktoForm .mktoError .mktoErrorArrow { border: none !important; background: #BE0000 !important; }
+.modal .mktoForm .mktoError .mktoErrorMsg, .cta-form .mktoForm .mktoError .mktoErrorMsg { background: #BE0000 !important; border-radius: 0 !important; text-shadow: none !important; width: 180px !important; color: #FFFFFF !important; }
+
+.eprocurement-page { position: relative; }
+.eprocurement-page h1, .eprocurement-page h2, .eprocurement-page .supplier-mgmt .platform h3, .supplier-mgmt .platform .eprocurement-page h3, .eprocurement-page h3, .eprocurement-page p, .eprocurement-page small { color: #FFFFFF; }
+.eprocurement-page h3 { font-weight: 300; }
+.eprocurement-page em { font-weight: 700; font-style: normal; text-transform: uppercase; }
+.eprocurement-page .path-white { width: 255px; height: 2481px; position: absolute; top: 413px; left: 0; right: 0; margin: 0 auto; z-index: 10; background: url("../img/eprocurement/path-xs.png") no-repeat; }
+@media (min-width: 768px) { .eprocurement-page .path-white { top: 377px; left: 66px; background: url("../img/eprocurement/path-sm.png") no-repeat; background-size: 690px; width: 690px; height: 2243px; } }
+@media (min-width: 992px) { .eprocurement-page .path-white { top: 330px; left: 55px; background: url("../img/eprocurement/path-md.png") no-repeat; background-size: 940px; width: 940px; height: 2243px; } }
+@media (min-width: 1200px) { .eprocurement-page .path-white { left: 88px; background: url("../img/eprocurement/path-lg.png") no-repeat; background-size: 1029px; width: 1029px; height: 2243px; } }
+.eprocurement-page .path-orange { position: absolute; top: 413px; left: 0; right: 0; margin: 0 auto; z-index: 9; background: url("../img/eprocurement/path-xs-orange.png") no-repeat; width: 255px; height: 2569px; }
+@media (min-width: 768px) { .eprocurement-page .path-orange { top: 377px; left: 66px; background: url("../img/eprocurement/path-sm-orange.png") no-repeat; background-size: 690px; width: 690px; height: 2243px; } }
+@media (min-width: 992px) { .eprocurement-page .path-orange { top: 330px; left: 55px; background: url("../img/eprocurement/path-md-orange.png") no-repeat; background-size: 940px; width: 940px; height: 2243px; } }
+@media (min-width: 1200px) { .eprocurement-page .path-orange { left: 88px; background: url("../img/eprocurement/path-lg-orange.png") no-repeat; background-size: 1029px; width: 1029px; height: 2243px; } }
+.eprocurement-page .hero.video { padding: 77px 0; height: 506px; position: relative; text-align: center; background: #282828; }
+.eprocurement-page .hero.video h1 { margin-bottom: 11px; }
+.eprocurement-page .hero.video h3 { margin-bottom: 33px; padding: 0 22px; }
+.eprocurement-page .hero.video p.sub { font-size: 14px; line-height: 22px; margin-top: 33px; }
+.eprocurement-page .hero.video .contents { z-index: 380; position: relative; }
+.eprocurement-page .hero.video .video-bg ul li img, .eprocurement-page .hero.video .video-bg ul li video { height: 100%; position: absolute; top: 0; opacity: 0; -webkit-transition: opacity, 1s; -moz-transition: opacity, 1s; transition: opacity, 1s; }
+.eprocurement-page .hero.video .video-bg ul li img { left: 50%; margin-left: -400px; }
+.eprocurement-page .hero.video .video-bg ul li.active img, .eprocurement-page .hero.video .video-bg ul li.active video { opacity: 1; -webkit-transition: opacity, 1s; -moz-transition: opacity, 1s; transition: opacity, 1s; }
+.eprocurement-page .hero.video .video-bg::after { content: ""; background: #282828; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; opacity: 0.6; }
+@media screen and (max-width: 767px) { .eprocurement-page .hero.video .contents { width: 320px; margin: 0 auto; } }
+@media (min-width: 768px) { .eprocurement-page .hero.video { padding: 88px 0; height: 506px; overflow: hidden; text-align: center; }
+  .eprocurement-page .hero.video h1 { margin: 0 auto 11px; width: 528px; }
+  .eprocurement-page .hero.video h3 { margin: 0 auto 44px; width: 660px; }
+  .eprocurement-page .hero.video .video-bg ul li img { margin-left: -960px; width: 1920px; }
+  .eprocurement-page .hero.video .video-bg ul li video { top: 0; left: 0; right: 0; width: auto; height: 100%; } }
+@media (min-width: 992px) { .eprocurement-page .hero.video { height: 506px; overflow: hidden; text-align: center; }
+  .eprocurement-page .hero.video h1 { margin-bottom: 11px; width: 100%; }
+  .eprocurement-page .hero.video h3 { margin-bottom: 44px; width: 770px; }
+  .eprocurement-page .hero.video .video-bg ul li img { margin-left: -960px; width: 1920px; left: 50%; }
+  .eprocurement-page .hero.video .video-bg ul li video { width: 100%; height: auto; } }
+.eprocurement-page .step-1 { padding: 319px 0 0 0; background: #1E3D55; height: 671px; }
+.eprocurement-page .step-1 .contents h3 { margin-bottom: 22px; }
+.eprocurement-page .step-1 .contents p { padding-right: 22px; margin-bottom: 22px; }
+.eprocurement-page .step-1 .contents p em { font-style: italic; font-weight: normal; text-transform: none; }
+@media screen and (max-width: 767px) { .eprocurement-page .step-1 .contents { width: 320px; margin: 0 auto; padding-right: 33px; } }
+@media (min-width: 768px) { .eprocurement-page .step-1 { padding: 77px 0; height: 341px; }
+  .eprocurement-page .step-1 .contents h3, .eprocurement-page .step-1 .contents p { margin-bottom: 22px; }
+  .eprocurement-page .step-1 .contents h3 { font-size: 22px; }
+  .eprocurement-page .step-1 .contents p { font-size: 16px; line-height: 22px; width: 428px; } }
+@media (min-width: 992px) { .eprocurement-page .step-1 { padding: 121px 0 0; height: 462px; }
+  .eprocurement-page .step-1 .contents { padding-left: 22px; }
+  .eprocurement-page .step-1 .contents h3 { font-size: 33px; line-height: 44px; }
+  .eprocurement-page .step-1 .contents p { font-size: 18px; padding-right: 0; } }
+@media (min-width: 1200px) { .eprocurement-page .step-1 { padding: 143px 0 0; height: 506px; }
+  .eprocurement-page .step-1 .contents { padding-left: 66px; } }
+.eprocurement-page .step-2 { padding: 308px 0 0 0; background: #18648F; height: 715px; }
+.eprocurement-page .step-2 .contents h3, .eprocurement-page .step-2 .contents p { margin-bottom: 22px; }
+@media screen and (max-width: 767px) { .eprocurement-page .step-2 .contents { width: 320px; margin: 0 auto; text-align: right; padding: 0 55px 0 44px; } }
+@media (min-width: 768px) { .eprocurement-page .step-2 { padding: 66px 0; height: 352px; }
+  .eprocurement-page .step-2 .contents { text-align: right; }
+  .eprocurement-page .step-2 .contents h3 { font-size: 22px; }
+  .eprocurement-page .step-2 .contents p { font-size: 16px; line-height: 22px; padding-left: 3%; } }
+@media (min-width: 992px) { .eprocurement-page .step-2 { padding: 132px 0 0; height: 473px; }
+  .eprocurement-page .step-2 .contents h3 { font-size: 33px; line-height: 44px; }
+  .eprocurement-page .step-2 .contents p { font-size: 18px; padding-left: 11%; } }
+@media (min-width: 1200px) { .eprocurement-page .step-2 { padding: 154px 0 0; height: 506px; }
+  .eprocurement-page .step-2 .contents p { padding-left: 30%; } }
+.eprocurement-page .step-3 { padding: 297px 0 0 0; background: #20A0E9; height: 550px; }
+.eprocurement-page .step-3 .contents h3, .eprocurement-page .step-3 .contents p { margin-bottom: 22px; }
+@media screen and (max-width: 767px) { .eprocurement-page .step-3 .contents { width: 320px; margin: 0 auto; text-align: left; padding: 0 44px 0 55px; } }
+@media (min-width: 768px) { .eprocurement-page .step-3 { padding: 77px 0; height: 330px; }
+  .eprocurement-page .step-3 .contents h3 { font-size: 22px; margin-bottom: 11px; }
+  .eprocurement-page .step-3 .contents p { font-size: 16px; line-height: 22px; width: 418px; margin-bottom: 11px; } }
+@media (min-width: 992px) { .eprocurement-page .step-3 { padding: 132px 0 0; height: 472px; }
+  .eprocurement-page .step-3 .contents h3 { font-size: 33px; line-height: 44px; margin-bottom: 22px; }
+  .eprocurement-page .step-3 .contents p { font-size: 18px; padding-right: 0; margin-bottom: 22px; } }
+@media (min-width: 1200px) { .eprocurement-page .step-3 { padding: 187px 0 0; height: 538px; }
+  .eprocurement-page .step-3 .contents { padding-left: 66px; } }
+.eprocurement-page .procurecon { background: #282828 url("../img/eprocurement/procurecon-bg-xs.jpg") no-repeat center top; background-size: cover; position: relative; height: 1079px; padding: 66px 0 0; }
+.eprocurement-page .procurecon em { text-transform: uppercase; font-weight: 400; display: inline-block; font-size: 22px; }
+.eprocurement-page .procurecon::before { content: ""; background: #282828; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; opacity: 0.6; }
+.eprocurement-page .procurecon .contents h3, .eprocurement-page .procurecon .contents p { padding-right: 33px; margin-bottom: 22px; }
+.eprocurement-page .procurecon .contents p { font-size: 14px; line-height: 22px; padding-left: 5px; }
+.eprocurement-page .procurecon .contents p.sub { font-size: 11px; padding: 11px 0; line-height: 1.2; text-align: center; z-index: 1010; position: relative; }
+.eprocurement-page .procurecon .contents .btn { margin-right: 55px; margin-top: 5px; z-index: 410; text-align: center !important; margin-bottom: 33px; }
+.eprocurement-page .procurecon .contents .tweet-for-trip, .eprocurement-page .procurecon .contents .twitter-feed { padding: 0; }
+.eprocurement-page .procurecon .contents .tweet-for-trip { padding-bottom: 11px; text-align: right; }
+.eprocurement-page .procurecon .contents .twitter-feed { height: 340px; background: url("../img/eprocurement/tweets-container-bg.png") no-repeat center top; background-size: contain; z-index: 450; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container { padding: 0 22px; height: 240px; overflow-x: scroll; margin: 55px 22px 0; width: 230px; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container ul { word-wrap: break-word; font-size: 12px; line-height: 16px; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container .user img[data-scribe='element:avatar'] { display: none; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container .user span[data-scribe='element:name'] { font-weight: 800; margin-right: 3px; color: #FFFFFF; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container .user span[data-scribe='element:screen_name'] { color: #FFFFFF; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container .timePosted { color: #FFFFFF; margin: 0; padding: 0; font-size: 12px; }
+.eprocurement-page .procurecon .contents .twitter-feed .tweets-container .tweet { font-size: 12px; line-height: 18px; font-style: italic; padding: 0; margin: 0 0 22px 0; }
+.eprocurement-page .procurecon .contents .tweet-and-win { position: absolute; bottom: 44px; left: 0; right: 0; margin: 0 auto; text-align: center; }
+.eprocurement-page .procurecon .contents .tweet-and-win p { text-align: left; padding: 11px 15px 0; line-height: 18px; width: 320px; margin: 0 auto; }
+@media screen and (max-width: 767px) { .eprocurement-page .procurecon .contents { position: relative; width: 320px; margin: 0 auto; padding: 0 15px; z-index: 520; } }
+@media (min-width: 768px) { .eprocurement-page .procurecon { padding: 44px 0 0; background: #282828 url("../img/eprocurement/procurecon-bg.jpg") no-repeat center top; background-size: 1920px; height: 572px; position: relative; }
+  .eprocurement-page .procurecon::after { content: " "; text-align: center; margin: 0 auto; width: 26px; height: 16px; border-style: solid; border-width: 16px 13px 0 13px; border-color: #20A0E9 transparent transparent transparent; position: absolute; top: 0; left: 0; right: 0; z-index: 450; }
+  .eprocurement-page .procurecon .contents .tweet-for-trip { text-align: center; }
+  .eprocurement-page .procurecon .contents .tweet-for-trip .tweet-for-trip-wrapper { max-width: 369px; }
+  .eprocurement-page .procurecon .contents .twitter-feed { height: 440px; }
+  .eprocurement-page .procurecon .contents .twitter-feed .tweets-container { background-size: 398px; padding: 0; height: 308px; margin: 77px auto 0; width: 264px; }
+  .eprocurement-page .procurecon .contents h3 { font-size: 22px; line-height: 33px; padding: 0; margin-top: 0; margin-bottom: 0; }
+  .eprocurement-page .procurecon .contents p { font-size: 14px; line-height: 18px; padding: 0; }
+  .eprocurement-page .procurecon .contents .btn { z-index: 1010; position: relative; font-weight: 500; margin-right: 0; margin-top: 0; margin-bottom: 11px; }
+  .eprocurement-page .procurecon .contents p.sub { font-size: 11px; line-height: 1.4; margin-top: 22px; padding: 0; } }
+@media (min-width: 992px) { .eprocurement-page .procurecon { padding: 77px 0 0; height: 660px; background-size: cover; }
+  .eprocurement-page .procurecon::after { content: " "; width: 64px; height: 32px; border-style: solid; border-width: 32px 32px 0 32px; }
+  .eprocurement-page .procurecon .contents h3 { font-size: 33px; line-height: 44px; padding: 0; margin-top: 11px; }
+  .eprocurement-page .procurecon .contents h3 em { font-size: 33px; display: block; letter-spacing: -0.02em; }
+  .eprocurement-page .procurecon .contents p { font-size: 18px; line-height: 22px; padding: 0; letter-spacing: -0.02em; }
+  .eprocurement-page .procurecon .contents p.sub { padding: 0 33px; }
+  .eprocurement-page .procurecon .contents .twitter-feed { height: 537px; }
+  .eprocurement-page .procurecon .contents .twitter-feed .tweets-container { height: 390px; margin: 77px auto 0; width: 330px; }
+  .eprocurement-page .procurecon .contents .twitter-feed .tweets-container ul li { font-size: 14px; line-height: 22px; }
+  .eprocurement-page .procurecon .contents .twitter-feed .tweets-container .tweet { font-size: 18px; line-height: 22px; }
+  .eprocurement-page .procurecon .contents .tweet-for-trip .tweet-for-trip-wrapper { max-width: 100%; }
+  .eprocurement-page .procurecon .contents .btn { margin-right: 44px; margin-top: 5px; margin-bottom: 33px; } }
+@media (min-width: 1200px) { .eprocurement-page .procurecon .contents .tweet-for-trip .tweet-for-trip-wrapper { padding: 11px 55px 0 0; }
+  .eprocurement-page .procurecon .contents .tweet-for-trip .btn { margin-right: 0; margin-top: 11px; }
+  .eprocurement-page .procurecon .contents .tweet-for-trip p.sub { margin-top: 44px; } }
+.eprocurement-page .fill-out-form { padding: 55px 0; text-align: center; }
+.eprocurement-page .fill-out-form .form-subscribe form { padding: 22px 0; display: inline-block; width: 260px; }
+.eprocurement-page .fill-out-form .form-subscribe h2, .eprocurement-page .fill-out-form .form-subscribe .supplier-mgmt .platform h3, .supplier-mgmt .platform .eprocurement-page .fill-out-form .form-subscribe h3 { margin-bottom: 11px; }
+.eprocurement-page .fill-out-form .form-subscribe p { color: #282828; line-height: 22px; }
+@media screen and (max-width: 767px) { .eprocurement-page .fill-out-form .form-subscribe, .eprocurement-page .fill-out-form .sub { width: 320px; margin: 0 auto; } }
+@media (min-width: 768px) { .eprocurement-page .fill-out-form .form-subscribe { padding: 0 110px; }
+  .eprocurement-page .fill-out-form .form-subscribe p { font-size: 14px; line-height: 18px; padding: 0 66px; }
+  .eprocurement-page .fill-out-form .form-subscribe form { padding: 11px 0; width: 450px; } }
+@media (min-width: 992px) { .eprocurement-page .fill-out-form .form-subscribe p { padding: 0 121px; }
+  .eprocurement-page .fill-out-form .form-subscribe form { padding: 22px 0 0; }
+  .eprocurement-page .fill-out-form .form-subscribe .newsletter-subscription { margin-left: 0 !important; width: 55% !important; } }
+
+/* Looking for the Marketo Form: go to _layout.sass */
+/* Internationalization styling overrides below */
+.supplier-mgmt .hero.story-intro { background: #FFFFFF url("../img/solutions/supplier-mgmt/hero-bg-xs.jpg") no-repeat center top; height: 385px; position: relative; }
+.supplier-mgmt .hero.story-intro .contents-wrapper { width: 280px; padding: 22px 68px 0px 11px; text-align: left; margin: 0 auto; position: relative; }
+.supplier-mgmt .hero.story-intro .contents-wrapper h1 { margin: 0; color: #FFFFFF; margin-bottom: 11px; }
+.supplier-mgmt .hero.story-intro .contents-wrapper h3 { color: #FFFFFF; margin-bottom: 22px; }
+.supplier-mgmt .hero.story-intro .contents-wrapper .btn.btn-play-orange { position: absolute; top: 231px; left: 110px; background: url("../img/solutions/supplier-mgmt/btn-play-orange.png") no-repeat top center; width: 76px; height: 76px; }
+@media (min-width: 768px) { .supplier-mgmt .hero.story-intro { background: #FFFFFF url("../img/solutions/supplier-mgmt/hero-bg.jpg") no-repeat center bottom; background-size: 1920px; height: 710px; }
+  .supplier-mgmt .hero.story-intro .contents-wrapper { width: 440px; padding: 44px 150px 22px 0; margin: 0; }
+  .supplier-mgmt .hero.story-intro .contents-wrapper .btn.btn-play-orange { position: absolute; top: 331px; left: 100%; } }
+@media (min-width: 992px) { .supplier-mgmt .hero.story-intro h1 { font-size: 48px; }
+  .supplier-mgmt .hero.story-intro .contents-wrapper .btn.btn-play-orange { left: 140%; } }
+.supplier-mgmt .networked-approach { background: #FFFFFF; padding: 33px 0; text-align: center; position: relative; }
+.supplier-mgmt .networked-approach img { margin: 44px auto 11px; width: 86px; }
+.supplier-mgmt .networked-approach h2, .supplier-mgmt .networked-approach .platform h3, .supplier-mgmt .platform .networked-approach h3 { color: #FF5200; }
+.supplier-mgmt .networked-approach h3 { color: #FF5200; font-size: 26px; line-height: 33px; font-weight: 300; margin-bottom: 5px; }
+.supplier-mgmt .networked-approach p { color: #282828; text-align: center; line-height: 22px; padding: 0; margin: 0; }
+@media (min-width: 768px) { .supplier-mgmt .networked-approach { padding: 66px 0; } }
+@media (min-width: 1200px) { .supplier-mgmt .networked-approach h2, .supplier-mgmt .networked-approach .platform h3, .supplier-mgmt .platform .networked-approach h3 { padding: 0 88px; } }
+.supplier-mgmt .testimonials { background: #FF5200; padding: 33px 0; text-align: center; }
+.supplier-mgmt .testimonials img { display: block; margin: 0 auto; width: 88px; border-radius: 44px; }
+.supplier-mgmt .testimonials .quotation { font-size: 18px; padding: 11px 0 5px; color: #FFFFFF; text-align: left; font-weight: 300; }
+.supplier-mgmt .testimonials .quoted-person { color: #FFFFFF; font-size: 10px; text-align: left; }
+@media (min-width: 768px) { .supplier-mgmt .testimonials { padding: 33px 0; }
+  .supplier-mgmt .testimonials img { float: left; margin-right: 11px; width: 106px; border-radius: 50%; display: table-cell; }
+  .supplier-mgmt .testimonials .quotation { font-size: 26px; line-height: 33px; text-align: left; font-weight: 300; padding: 0; display: table-row; }
+  .supplier-mgmt .testimonials .quoted-person { text-align: left; font-size: 14px; margin-top: 5px; font-weight: 300; display: table-row; } }
+.supplier-mgmt .complete-solution-lead { background: #20A0E9 url("../img/solutions/supplier-mgmt/platform-bg-xs.jpg") no-repeat center bottom; height: 233px; position: relative; }
+.supplier-mgmt .complete-solution-lead .arrow { position: absolute; bottom: 0; width: 100%; height: 0; background-color: #272727; }
+.supplier-mgmt .complete-solution-lead .arrow:before, .supplier-mgmt .complete-solution-lead .arrow:after { content: ""; position: absolute; bottom: 100%; width: 50%; box-sizing: border-box; }
+.supplier-mgmt .complete-solution-lead .arrow:before { right: 50%; border-bottom: 16px solid #272727; border-right: 14px solid transparent; }
+.supplier-mgmt .complete-solution-lead .arrow:after { left: 50%; border-bottom: 16px solid #272727; border-left: 14px solid transparent; }
+@media (min-width: 768px) { .supplier-mgmt .complete-solution-lead { background: #20A0E9 url("../img/solutions/supplier-mgmt/platform-bg.jpg") no-repeat center bottom; height: 432px; }
+  .supplier-mgmt .complete-solution-lead .arrow { background-color: #272727; }
+  .supplier-mgmt .complete-solution-lead .arrow:before { border-bottom: 16px solid #272727; }
+  .supplier-mgmt .complete-solution-lead .arrow:after { border-bottom: 16px solid #272727; } }
+.supplier-mgmt .complete-solution { padding: 18px 0; background: #272727; height: 946px; }
+.supplier-mgmt .complete-solution h2, .supplier-mgmt .complete-solution .platform h3, .supplier-mgmt .platform .complete-solution h3 { text-align: center; color: #FFFFFF; margin: 11px auto; padding: 0 11px; }
+.supplier-mgmt .complete-solution p.lead { text-align: center; color: #D2D2D2; margin: 0 auto; padding: 0; }
+.supplier-mgmt .complete-solution .content-wrapper { margin-top: 44px; position: relative; }
+.supplier-mgmt .complete-solution .container, .supplier-mgmt .complete-solution hr { background: #272727 url("../img/solutions/supplier-mgmt/complete-solution-bg-xs.png") no-repeat -242px top; position: relative; z-index: 105; height: 574px; }
+.supplier-mgmt .complete-solution .performance, .supplier-mgmt .complete-solution .risk, .supplier-mgmt .complete-solution .compliance, .supplier-mgmt .complete-solution .subscription, .supplier-mgmt .complete-solution .verified-profile { height: 114px; }
+.supplier-mgmt .complete-solution .performance .contents, .supplier-mgmt .complete-solution .risk .contents, .supplier-mgmt .complete-solution .compliance .contents, .supplier-mgmt .complete-solution .subscription .contents, .supplier-mgmt .complete-solution .verified-profile .contents { cursor: pointer; }
+.supplier-mgmt .complete-solution .performance .wrapper h3, .supplier-mgmt .complete-solution .risk .wrapper h3, .supplier-mgmt .complete-solution .compliance .wrapper h3, .supplier-mgmt .complete-solution .subscription .wrapper h3, .supplier-mgmt .complete-solution .verified-profile .wrapper h3 { color: #FFFFFF; font-weight: 300; font-size: 22px; width: 220px; }
+.supplier-mgmt .complete-solution .performance .wrapper h3::after, .supplier-mgmt .complete-solution .risk .wrapper h3::after, .supplier-mgmt .complete-solution .compliance .wrapper h3::after, .supplier-mgmt .complete-solution .subscription .wrapper h3::after, .supplier-mgmt .complete-solution .verified-profile .wrapper h3::after { content: "i"; text-align: center; font-size: 12px; display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #FFFFFF; margin-left: 6px; vertical-align: middle; line-height: 1.2em; opacity: 0.8; font-weight: 600; }
+.supplier-mgmt .complete-solution .performance .wrapper p, .supplier-mgmt .complete-solution .risk .wrapper p, .supplier-mgmt .complete-solution .compliance .wrapper p, .supplier-mgmt .complete-solution .subscription .wrapper p, .supplier-mgmt .complete-solution .verified-profile .wrapper p { color: #FFFFFF; margin: 2px 0 0 0; font-size: 11px; line-height: 1.2; }
+.supplier-mgmt .complete-solution .performance .popover, .supplier-mgmt .complete-solution .risk .popover, .supplier-mgmt .complete-solution .compliance .popover, .supplier-mgmt .complete-solution .subscription .popover, .supplier-mgmt .complete-solution .verified-profile .popover { font-size: 12px; border-radius: 0 !important; border: none; font-family: "Open Sans", Helvetica, Arial, sans-serif; padding: 0; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content { padding: 33px 11px 11px; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content p, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content p, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content p, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content p, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content p { padding: 0; margin: 0; font-size: 18px; line-height: 1.4; color: #1E1E1E; font-weight: 300; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content p + p, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content p + p, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content p + p, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content p + p, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content p + p { margin-top: 11px; font-weight: 300; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content ul, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content ul, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content ul, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content ul, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content ul { padding-left: 22px; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content ul li, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content ul li, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content ul li, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content ul li, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content ul li { margin-top: 11px; font-size: 18px; line-height: 1.4; font-weight: 300; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content button#close, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content button#close, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content button#close, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content button#close, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content button#close { margin-top: -22px; }
+.supplier-mgmt .complete-solution .performance .popover .popover-content .popover-content .close, .supplier-mgmt .complete-solution .risk .popover .popover-content .popover-content .close, .supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content .close, .supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content .close, .supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content .close { opacity: 0.6; }
+.supplier-mgmt .complete-solution .performance .contents { padding: 22px 22px 22px 32px; }
+.supplier-mgmt .complete-solution .performance .wrapper h3::after { color: #FF5200; }
+.supplier-mgmt .complete-solution .risk .contents { padding: 22px 22px 22px 47px; }
+.supplier-mgmt .complete-solution .risk .wrapper h3::after { color: #FFAF33; }
+.supplier-mgmt .complete-solution .risk .popover { width: 280px !important; left: 22px !important; }
+.supplier-mgmt .complete-solution .compliance .contents { padding: 22px 22px 22px 67px; }
+.supplier-mgmt .complete-solution .compliance .wrapper h3::after { color: #6BAE58; }
+.supplier-mgmt .complete-solution .compliance .popover { width: 280px !important; left: 22px !important; }
+.supplier-mgmt .complete-solution .compliance .popover .popover-content .popover-content p { padding: 0; margin: 0; font-size: 18px; line-height: 28px; color: #1E1E1E; }
+.supplier-mgmt .complete-solution .subscription .contents { padding: 22px 22px 22px 82px; }
+.supplier-mgmt .complete-solution .subscription .wrapper h3::after { color: #1E3D55; }
+.supplier-mgmt .complete-solution .subscription .popover { width: 280px !important; left: 22px !important; }
+.supplier-mgmt .complete-solution .subscription .popover .popover-content .popover-content p { padding: 0; margin: 0; font-size: 18px; line-height: 33px; color: #1E1E1E; }
+.supplier-mgmt .complete-solution .verified-profile .contents { padding: 22px 22px 22px 102px; }
+.supplier-mgmt .complete-solution .verified-profile .wrapper h3::after { color: #20A0E9; }
+.supplier-mgmt .complete-solution .verified-profile .popover { width: 280px !important; left: 22px !important; }
+.supplier-mgmt .complete-solution .verified-profile .popover .popover-content .popover-content p { padding: 0; margin: 0; font-size: 18px; line-height: 33px; color: #1E1E1E; }
+@media (min-width: 768px) { .supplier-mgmt .complete-solution { padding: 44px 0 0; height: 880px; }
+  .supplier-mgmt .complete-solution .content-wrapper { margin-top: 44px; position: relative; }
+  .supplier-mgmt .complete-solution .content-wrapper::before { content: ""; background: url("../img/solutions/supplier-mgmt/programs-bg-md.png") repeat-x left top; width: 25%; height: 100%; position: absolute; top: 0; left: 0; z-index: 100; }
+  .supplier-mgmt .complete-solution .container, .supplier-mgmt .complete-solution hr { background: #272727 url("../img/solutions/supplier-mgmt/programs-bg3.png") no-repeat -4px top; position: relative; z-index: 105; height: 574px; }
+  .supplier-mgmt .complete-solution .container::before, .supplier-mgmt .complete-solution hr::before { content: ""; background: url("../img/solutions/supplier-mgmt/programs-bg3-md.png") no-repeat 0 top; height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 100; }
+  .supplier-mgmt .complete-solution .container::after, .supplier-mgmt .complete-solution hr::after { content: ""; background: url("../img/solutions/supplier-mgmt/programs-bg4.png") no-repeat right top; position: absolute; top: 0; right: 0; z-index: 110; height: 100%; width: 22px; }
+  .supplier-mgmt .complete-solution .performance, .supplier-mgmt .complete-solution .risk, .supplier-mgmt .complete-solution .compliance, .supplier-mgmt .complete-solution .subscription, .supplier-mgmt .complete-solution .verified-profile { height: 115px; position: relative; z-index: 120; }
+  .supplier-mgmt .complete-solution .performance .wrapper h3, .supplier-mgmt .complete-solution .risk .wrapper h3, .supplier-mgmt .complete-solution .compliance .wrapper h3, .supplier-mgmt .complete-solution .subscription .wrapper h3, .supplier-mgmt .complete-solution .verified-profile .wrapper h3 { font-size: 34px; width: 100%; margin: 0; }
+  .supplier-mgmt .complete-solution .performance .wrapper h3::after, .supplier-mgmt .complete-solution .risk .wrapper h3::after, .supplier-mgmt .complete-solution .compliance .wrapper h3::after, .supplier-mgmt .complete-solution .subscription .wrapper h3::after, .supplier-mgmt .complete-solution .verified-profile .wrapper h3::after { content: "i"; text-align: center; font-size: 14px; display: inline-block; width: 18px; height: 18px; border-radius: 50%; background: #FFFFFF; margin-left: 11px; vertical-align: middle; line-height: 1.2em; opacity: 0.8; font-weight: 600; }
+  .supplier-mgmt .complete-solution .performance .wrapper p, .supplier-mgmt .complete-solution .risk .wrapper p, .supplier-mgmt .complete-solution .compliance .wrapper p, .supplier-mgmt .complete-solution .subscription .wrapper p, .supplier-mgmt .complete-solution .verified-profile .wrapper p { font-size: 16px; margin: 6px 0 0 0; }
+  .supplier-mgmt .complete-solution .performance .popover, .supplier-mgmt .complete-solution .risk .popover, .supplier-mgmt .complete-solution .compliance .popover, .supplier-mgmt .complete-solution .subscription .popover, .supplier-mgmt .complete-solution .verified-profile .popover { z-index: 200; }
+  .supplier-mgmt .complete-solution .performance .contents { padding: 11px 0 11px 11px; width: 418px; height: 88px; display: inline-block; }
+  .supplier-mgmt .complete-solution .performance .popover { width: auto !important; left: 418px !important; }
+  .supplier-mgmt .complete-solution .risk .contents { padding: 11px 0 11px 11px; width: 440px; height: 88px; display: inline-block; margin-left: 44px; }
+  .supplier-mgmt .complete-solution .risk .popover { width: auto !important; left: 484px !important; }
+  .supplier-mgmt .complete-solution .compliance .contents { padding: 11px 0 11px 11px; width: 473px; height: 88px; display: inline-block; margin-left: 88px; }
+  .supplier-mgmt .complete-solution .compliance .popover { width: auto !important; left: 220px !important; max-width: 440px; }
+  .supplier-mgmt .complete-solution .subscription .contents { padding: 22px 0 22px 11px; width: 528px; height: 88px; display: inline-block; margin-left: 133px; }
+  .supplier-mgmt .complete-solution .subscription .popover { width: auto !important; left: 230px !important; max-width: 440px; }
+  .supplier-mgmt .complete-solution .verified-profile .contents { padding: 33px 0 22px 11px; width: 484px; height: 88px; display: inline-block; margin-left: 177px; }
+  .supplier-mgmt .complete-solution .verified-profile .popover { width: auto !important; left: 250px !important; max-width: 440px; } }
+@media (min-width: 992px) { .supplier-mgmt .complete-solution h2, .supplier-mgmt .complete-solution .platform h3, .supplier-mgmt .platform .complete-solution h3 { padding: 0 110px; }
+  .supplier-mgmt .complete-solution p.lead { padding: 0 110px; }
+  .supplier-mgmt .complete-solution .performance .popover { max-width: 484px; }
+  .supplier-mgmt .complete-solution .risk .popover { max-width: 440px; }
+  .supplier-mgmt .complete-solution .compliance .popover, .supplier-mgmt .complete-solution .subscription .popover, .supplier-mgmt .complete-solution .verified-profile .popover { max-width: 660px; } }
+@media (min-width: 1200px) { .supplier-mgmt .complete-solution h2, .supplier-mgmt .complete-solution .platform h3, .supplier-mgmt .platform .complete-solution h3 { padding: 0 220px; }
+  .supplier-mgmt .complete-solution p.lead { padding: 0 220px; }
+  .supplier-mgmt .complete-solution .container, .supplier-mgmt .complete-solution hr { background: #272727 url("../img/solutions/supplier-mgmt/programs-bg3.png") no-repeat -2px top; }
+  .supplier-mgmt .complete-solution .container::after, .supplier-mgmt .complete-solution hr::after { right: 55px; }
+  .supplier-mgmt .complete-solution .performance .popover { max-width: 550x; }
+  .supplier-mgmt .complete-solution .risk .popover { max-width: 550px; } }
+.supplier-mgmt .how-it-works { background: #F1F9Fd; padding: 33px 0; text-align: center; }
+.supplier-mgmt .how-it-works h2, .supplier-mgmt .how-it-works .platform h3, .supplier-mgmt .platform .how-it-works h3 { color: #FF5200; text-transform: capitalize; }
+@media screen and (max-width: 767px) { .supplier-mgmt .how-it-works .wrapper { height: 352px; border-left: 1px dotted #1E3D55; text-align: left; margin-top: 33px; position: relative; }
+  .supplier-mgmt .how-it-works .step-one, .supplier-mgmt .how-it-works .step-two, .supplier-mgmt .how-it-works .step-three, .supplier-mgmt .how-it-works .step-four, .supplier-mgmt .how-it-works .step-five { height: 50px; position: absolute; }
+  .supplier-mgmt .how-it-works .step-one.active, .supplier-mgmt .how-it-works .step-two.active, .supplier-mgmt .how-it-works .step-three.active, .supplier-mgmt .how-it-works .step-four.active, .supplier-mgmt .how-it-works .step-five.active { color: #FF5200; }
+  .supplier-mgmt .how-it-works .step-one.active .step-number::before, .supplier-mgmt .how-it-works .step-two.active .step-number::before, .supplier-mgmt .how-it-works .step-three.active .step-number::before, .supplier-mgmt .how-it-works .step-four.active .step-number::before, .supplier-mgmt .how-it-works .step-five.active .step-number::before { background: #FF5200; }
+  .supplier-mgmt .how-it-works .step-one .step-number, .supplier-mgmt .how-it-works .step-two .step-number, .supplier-mgmt .how-it-works .step-three .step-number, .supplier-mgmt .how-it-works .step-four .step-number, .supplier-mgmt .how-it-works .step-five .step-number { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); font-size: 50px; float: left; padding: 0 11px; }
+  .supplier-mgmt .how-it-works .step-one .step-number::before, .supplier-mgmt .how-it-works .step-two .step-number::before, .supplier-mgmt .how-it-works .step-three .step-number::before, .supplier-mgmt .how-it-works .step-four .step-number::before, .supplier-mgmt .how-it-works .step-five .step-number::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: #1E3D55; position: absolute; left: -8px; top: 40%; }
+  .supplier-mgmt .how-it-works .step-one .step-description, .supplier-mgmt .how-it-works .step-two .step-description, .supplier-mgmt .how-it-works .step-three .step-description, .supplier-mgmt .how-it-works .step-four .step-description, .supplier-mgmt .how-it-works .step-five .step-description { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 300px; }
+  .supplier-mgmt .how-it-works .step-one { top: -22px; }
+  .supplier-mgmt .how-it-works .step-two { top: 66px; }
+  .supplier-mgmt .how-it-works .step-three { top: 154px; }
+  .supplier-mgmt .how-it-works .step-four { bottom: 66px; }
+  .supplier-mgmt .how-it-works .step-five { bottom: -22px; } }
+@media (min-width: 768px) { .supplier-mgmt .how-it-works { padding: 44px 0; background: #F1F9Fd url("../img/solutions/supplier-mgmt/how-it-works-dot-bg.png") repeat-x 0 413px; }
+  .supplier-mgmt .how-it-works h2, .supplier-mgmt .how-it-works .platform h3, .supplier-mgmt .platform .how-it-works h3 { margin: 0; }
+  .supplier-mgmt .how-it-works .wrapper { width: 750px; height: 264px; margin: 33px auto 0; position: relative; }
+  .supplier-mgmt .how-it-works .step-one, .supplier-mgmt .how-it-works .step-two, .supplier-mgmt .how-it-works .step-three, .supplier-mgmt .how-it-works .step-four, .supplier-mgmt .how-it-works .step-five { height: 100%; width: 150px; float: left; position: relative; }
+  .supplier-mgmt .how-it-works .step-one .step-number, .supplier-mgmt .how-it-works .step-two .step-number, .supplier-mgmt .how-it-works .step-three .step-number, .supplier-mgmt .how-it-works .step-four .step-number, .supplier-mgmt .how-it-works .step-five .step-number { position: absolute; bottom: 0; left: 0; right: 0; font-size: 50px; font-weight: 300; line-height: 1; padding-bottom: 33px; cursor: pointer; -webkit-transition: font-size, 0.3s; -moz-transition: font-size, 0.3s; transition: font-size, 0.3s; }
+  .supplier-mgmt .how-it-works .step-one .step-number::before, .supplier-mgmt .how-it-works .step-two .step-number::before, .supplier-mgmt .how-it-works .step-three .step-number::before, .supplier-mgmt .how-it-works .step-four .step-number::before, .supplier-mgmt .how-it-works .step-five .step-number::before { content: ""; width: 26px; height: 26px; border-radius: 50%; background: #1E3D55; position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; }
+  .supplier-mgmt .how-it-works .step-one .step-description, .supplier-mgmt .how-it-works .step-two .step-description, .supplier-mgmt .how-it-works .step-three .step-description, .supplier-mgmt .how-it-works .step-four .step-description, .supplier-mgmt .how-it-works .step-five .step-description { position: absolute; height: 171px; font-size: 18px; line-height: 26px; font-weight: 300; -webkit-transition: opacity, 0.3s; -moz-transition: opacity, 0.3s; transition: opacity, 0.3s; }
+  .supplier-mgmt .how-it-works .step-one.active, .supplier-mgmt .how-it-works .step-two.active, .supplier-mgmt .how-it-works .step-three.active, .supplier-mgmt .how-it-works .step-four.active, .supplier-mgmt .how-it-works .step-five.active { color: #FF5200; }
+  .supplier-mgmt .how-it-works .step-one.active .step-number, .supplier-mgmt .how-it-works .step-two.active .step-number, .supplier-mgmt .how-it-works .step-three.active .step-number, .supplier-mgmt .how-it-works .step-four.active .step-number, .supplier-mgmt .how-it-works .step-five.active .step-number { font-size: 275px; cursor: arrow; line-height: 0.9; -webkit-transition: font-size, 0.8s; -moz-transition: font-size, 0.8s; transition: font-size, 0.8s; }
+  .supplier-mgmt .how-it-works .step-one.active .step-number::before, .supplier-mgmt .how-it-works .step-two.active .step-number::before, .supplier-mgmt .how-it-works .step-three.active .step-number::before, .supplier-mgmt .how-it-works .step-four.active .step-number::before, .supplier-mgmt .how-it-works .step-five.active .step-number::before { background: #FF5200; }
+  .supplier-mgmt .how-it-works .step-one.active .step-description, .supplier-mgmt .how-it-works .step-two.active .step-description, .supplier-mgmt .how-it-works .step-three.active .step-description, .supplier-mgmt .how-it-works .step-four.active .step-description, .supplier-mgmt .how-it-works .step-five.active .step-description { opacity: 1; -webkit-transition: opacity, 2s; -moz-transition: opacity, 2s; transition: opacity, 2s; }
+  .supplier-mgmt .how-it-works .step-one .step-description { top: 66px; left: 110px; text-align: left; width: 280px; opacity: 0; }
+  .supplier-mgmt .how-it-works .step-one.active #one:first-letter { margin-left: -15px; }
+  .supplier-mgmt .how-it-works .step-two .step-description { top: 66px; left: 155px; text-align: left; width: 330px; opacity: 0; }
+  .supplier-mgmt .how-it-works .step-three .step-description { top: 55px; left: 165px; text-align: left; width: 220px; opacity: 0; }
+  .supplier-mgmt .how-it-works .step-four .step-description { top: 55px; left: -440px; text-align: right; width: 420px; opacity: 0; }
+  .supplier-mgmt .how-it-works .step-five .step-description { top: 66px; left: -99px; text-align: left; width: 440px; opacity: 0; } }
+@media (min-width: 1200px) { .supplier-mgmt .how-it-works .step-four .step-description { top: 55px; left: 180px; text-align: left; width: 300px; opacity: 0; }
+  .supplier-mgmt .how-it-works .step-five .step-description { top: 88px; left: 160px; text-align: left; width: 330px; opacity: 0; } }
+.supplier-mgmt .platform { padding: 33px 0 0; background: #FFFFFF; text-align: center; }
+.supplier-mgmt .platform .all-your-suppliers, .supplier-mgmt .platform .direct-indirect, .supplier-mgmt .platform .networked-platform { text-align: center; }
+.supplier-mgmt .platform img { width: 86px; margin-bottom: 11px; }
+.supplier-mgmt .platform h3 { margin-bottom: 11px; text-transform: capitalize; color: #FF5200; }
+.supplier-mgmt .platform p { margin: 0 0 33px; padding: 0; }
+@media (min-width: 768px) { .supplier-mgmt .platform { padding: 66px 0; }
+  .supplier-mgmt .platform .all-your-suppliers img, .supplier-mgmt .platform .direct-indirect img, .supplier-mgmt .platform .networked-platform img { width: 110px; }
+  .supplier-mgmt .platform h3 { font-size: 22px; line-height: 22px; white-space: nowrap; }
+  .supplier-mgmt .platform p { margin: 11px auto 0; font-size: 14px; line-height: 22px; } }
+@media (min-width: 992px) { .supplier-mgmt .platform h3 { font-size: 26px; line-height: 33px; }
+  .supplier-mgmt .platform .all-your-suppliers p, .supplier-mgmt .platform .direct-indirect p { padding: 0 22px; } }
+
+/* Looking for the Marketo Form: go to _layout.sass */
+/* Internationalization styling overrides below */
+.sitewide-nav { position: fixed; width: 100%; z-index: 500; top: 0; height: 55px; background: #20A0E9; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; /* border-bottom: 1px solid $brand-blue-opaque */ box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.3); /* Force Hardware Acceleration */ -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: -webkit-transform 0.6s; -moz-transition: -moz-transform 0.6s; transition: transform 0.6s; }
+.sitewide-nav.nav-is-visible { -webkit-transform: translateX(260px); -moz-transform: translateX(260px); -ms-transform: translateX(260px); -o-transform: translateX(260px); transform: translateX(260px); }
+.sitewide-nav::before { /* never visible - this is used in jQuery to check the current MQ */ display: none; content: "mobile"; }
+@media only screen and (min-width: 992px) { .sitewide-nav { height: 55px; }
+  .sitewide-nav.nav-is-visible { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+  .sitewide-nav::before { content: "desktop"; } }
+.sitewide-nav .site-navbar { /* @extend .col-sm-12 */ }
+.sitewide-nav .navbar { border-radius: 0px; margin-bottom: 0px; border: 0; }
+.sitewide-nav .navbar > li > ul { width: 100%; border-radius: 0px; border: 0; background: #18648f; }
+.sitewide-nav .navbar { float: none; }
+.sitewide-nav .navbar-top { background: #20A0E9; }
+.sitewide-nav .navbar-brand { margin: 18px 0 0 50px; padding: 0; /* remove jump on iOS devices - when we fire the navigation */ -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.sitewide-nav .navbar-brand img { width: 145px; }
+@media (min-width: 992px) { .sitewide-nav .navbar-brand { margin: 18px 0 0 0; float: left; } }
+.sitewide-nav .nav li { float: left; }
+.sitewide-nav .nav .open > a { color: #18648F; background-color: transparent; height: auto; letter-spacing: 0.05em; }
+.sitewide-nav .nav .open > a:hover, .sitewide-nav .nav .open > a:focus, .sitewide-nav .nav .open > a:active { background-color: transparent; border-color: inherit; }
+.sitewide-nav .nav > li > a { color: #FFFFFF; text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em; padding: 19px 8px; font-size: 12px; font-family: "Open Sans", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; cursor: pointer; }
+.sitewide-nav .nav > li > a:hover, .sitewide-nav .nav > li > a:focus, .sitewide-nav .nav > li > a:active { text-decoration: none; background-color: inherit; color: #282828; }
+.sitewide-nav .nav > li > a:hover .btn { color: #282828; font-weight: inherit; transition: color 0.3s ease-in-out; }
+.sitewide-nav .nav > li > a.is-active { color: #282828; }
+.sitewide-nav .dropdown { float: left; }
+.sitewide-nav .dropdown:hover > ul.dropdown-menu { display: inline-block; }
+.sitewide-nav .dropdown-menu { height: auto; border-radius: 0px; border: 0; background: #18648f; margin: 0; padding-left: 3000px; margin-left: -3000px; padding-right: 3000px; margin-right: -3000px; width: 100%; box-shadow: none; transition: height 1s ease; }
+.sitewide-nav .dropdown-menu > .active > a, .sitewide-nav .dropdown-menu > .active > a:hover, .sitewide-nav .dropdown-menu > .active > a:focus { color: #20A0E9; text-decoration: none; outline: 0; background-color: initial; }
+.sitewide-nav .dropdown-menu li { line-height: 0.3; width: 150px; }
+.sitewide-nav .dropdown-menu li a { display: block; font-size: 14px; color: #FFFFFF; text-transform: capitalize; padding: 8px 0 8px 8px; line-height: 1; font-family: "Open Sans", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.sitewide-nav .dropdown-menu li a:hover, .sitewide-nav .dropdown-menu li a:active, .sitewide-nav .dropdown-menu li a:focus { text-decoration: none; background: initial; color: #20A0E9; }
+.sitewide-nav .sign-up-login { margin: 0; }
+.sitewide-nav .sign-up-login li a { color: #FFFFFF; }
+@media (min-width: 768px) { .sitewide-nav { /* border-bottom: 1px solid $brand-blue-opaque */ -webkit-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15); box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15); } }
+@media (min-width: 992px) { .sitewide-nav .main-nav-wrapper { float: left; margin: 0 0 0 10px; }
+  .sitewide-nav a[title="IT"] { border-bottom: 1px solid #FFFFFF; padding: 0 0 15px 0 !important; margin: 8px; } }
+
+.header-sitewide-lp { position: fixed; width: 100%; z-index: 500; top: 0; height: 55px; background: #20A0E9; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header-sitewide-lp .brand { margin-top: 16px; margin-left: 15px; }
+
+.main-nav-trigger { position: absolute; display: block; height: 55px; width: 50px; /* hide text */ overflow: hidden; white-space: nowrap; color: transparent; }
+.main-nav-trigger span { /* hamburger icon created in CSS */ position: absolute; height: 2px; width: 20px; top: 50%; margin-top: -1px; left: 50%; margin-left: -10px; background-color: #FFFFFF; -webkit-transition: background-color 0.3s 0.3s; -moz-transition: background-color 0.3s 0.3s; transition: background-color 0.3s 0.3s; background-color: #FFFFFF; }
+.main-nav-trigger span::before, .main-nav-trigger span::after { /* upper and lower lines of the menu icon */ content: ""; position: absolute; width: 100%; height: 100%; background-color: #FFFFFF; /* Force Hardware Acceleration */ -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: -webkit-transform 0.3s 0.3s; -moz-transition: -moz-transform 0.3s 0.3s; transition: transform 0.3s 0.3s; }
+.main-nav-trigger span::before { -webkit-transform: translateY(-6px); -moz-transform: translateY(-6px); -ms-transform: translateY(-6px); -o-transform: translateY(-6px); transform: translateY(-6px); }
+.main-nav-trigger span::after { -webkit-transform: translateY(6px); -moz-transform: translateY(6px); -ms-transform: translateY(6px); -o-transform: translateY(6px); transform: translateY(6px); }
+.nav-is-visible .main-nav-trigger span { background-color: rgba(255, 255, 255, 0); }
+.nav-is-visible .main-nav-trigger span::before { -webkit-transform: translateY(0) rotate(-45deg); -moz-transform: translateY(0) rotate(-45deg); -ms-transform: translateY(0) rotate(-45deg); -o-transform: translateY(0) rotate(-45deg); transform: translateY(0) rotate(-45deg); }
+.nav-is-visible .main-nav-trigger span::after { -webkit-transform: translateY(0) rotate(45deg); -moz-transform: translateY(0) rotate(45deg); -ms-transform: translateY(0) rotate(45deg); -o-transform: translateY(0) rotate(45deg); transform: translateY(0) rotate(45deg); }
+@media (min-width: 992px) { .main-nav-trigger { display: none; } }
+
+.main-nav { position: fixed; z-index: 500; top: 0; left: 0; width: 260px; height: 100vh; overflow-x: hidden; -webkit-overflow-scrolling: touch; background: #20A0E9; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; transition: all 0.6s; -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); /* Take out any background remnants from main mobile nav */ }
+.main-nav.nav-is-visible { opacity: 1; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.main-nav::after { content: ""; z-index: 5; display: block; position: absolute; height: 100vh; width: 260px; top: 0; left: 0; background-color: #20A0E9; }
+.main-nav a { display: block; margin: 0; padding: 18px 18px 17px; z-index: 15; text-transform: uppercase; font-family: "Open Sans", Helvetica, Arial, sans-serif; color: #FFFFFF; border-bottom: 1px solid rgba(250, 250, 250, 0.25); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-transition: -webkit-transform 0.6s, opacity 0.6s; -moz-transition: -moz-transform 0.6s, opacity 0.6s; transition: transform 0.6s, opacity 0.6s; }
+.main-nav a:hover { text-decoration: none; color: #FFFFFF; background: rgba(24, 100, 143, 0.5); }
+.main-nav li ul { position: absolute; top: 0; right: 0; width: 100%; z-index: 10; -webkit-transform: translateX(260px); -moz-transform: translateX(260px); -ms-transform: translateX(260px); -o-transform: translateX(260px); transform: translateX(260px); -webkit-transition: -webkit-transform 0.6s; -moz-transition: -moz-transform 0.6s; transition: transform 0.6s; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.main-nav.moves-out > li > a { /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */ -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); transform: translateX(-100%); opacity: 0; /* Reveal secondary nav */ }
+.main-nav.moves-out > li > ul { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.main-nav.moves-out > li.register, .main-nav.moves-out > li.log-in { background: #20A0E9; }
+
+.subnav-trigger { position: relative; }
+.subnav-trigger::before, .subnav-trigger::after { /* arrow icon in CSS */ content: ""; position: absolute; top: 50%; margin-top: -1px; display: inline-block; height: 2px; width: 10px; background: #FFFFFF; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.subnav-trigger::before { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.subnav-trigger::after { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.subnav-trigger::before, .subnav-trigger::after { /* arrow goes on the right side - children navigation */ right: 15px; -webkit-transform-origin: 9px 50%; -moz-transform-origin: 9px 50%; -ms-transform-origin: 9px 50%; -o-transform-origin: 9px 50%; transform-origin: 9px 50%; }
+
+.go-back a { position: relative; padding: 16px 16px 17px; line-height: 1; }
+.go-back a::before { content: "«"; font-size: 22px; }
+
+.go-back a { padding-left: 15px; }
+.go-back a::before, .go-back a::after { /* arrow goes on the left side - go back button if needed */ left: 20px; -webkit-transform-origin: 1px 50%; -moz-transform-origin: 1px 50%; -ms-transform-origin: 1px 50%; -o-transform-origin: 1px 50%; transform-origin: 1px 50%; }
+
+.demo { margin: 5px 0 0 35px; }
+.demo a { border-bottom: none; }
+.demo a .btn:hover { background-color: #18648f; transition: all 0.3s ease-in-out; color: #FFFFFF; }
+.demo a:hover { background: initial; }
+
+.register, .log-in { background: #34AEF4; }
+
+.what-is-tradeshift-subnav, .solutions-subnav, .roles-subnav, .learn-subnav, .nav-is-hidden { visibility: hidden; opacity: 0; }
+
+.what-is-tradeshift-subnav, .solutions-subnav, .roles-subnav, .learn-subnav { margin-top: 55px; }
+.what-is-tradeshift-subnav.nav-is-visible, .solutions-subnav.nav-is-visible, .roles-subnav.nav-is-visible, .learn-subnav.nav-is-visible { visibility: visible; trasition: visibility 0.3s ease-in-out; opacity: 1; }
+
+.no-subnav { position: relative; }
+
+#smt-lang-selector { float: right; width: auto; margin: 19px 0 0 0; }
+#smt-lang-selector .smt-menu { position: static; top: 0; left: 0; z-index: 500; width: auto !important; background: transparent; color: #1E1E1E !important; }
+#smt-lang-selector .smt-menu ul { background-color: transparent; padding-top: 5px !important; }
+#smt-lang-selector .smt-menu ul:before, #smt-lang-selector .smt-menu ul:after { position: initial; }
+#smt-lang-selector .smt-menu .smt-trigger:hover .smt-trigger-link { background-image: url("../img/icons/icon-carat.png") !important; }
+#smt-lang-selector .smt-menu .smt-trigger:hover .smt-trigger-link .smt-lang { color: #1E1E1E; }
+#smt-lang-selector .smt-menu .smt-trigger > ul { border: none; background: #20A0E9; }
+#smt-lang-selector .smt-menu .smt-trigger > ul::before { width: 100% !important; }
+#smt-lang-selector .smt-menu .smt-trigger .smt-trigger-link { padding: 0 30px 0 10px !important; font-weight: normal; font-family: "Open Sans", Helvetica, Arial, sans-serif; background-position: 85% 50%; background-image: url("../img/icons/icon-carat-white.png") !important; min-width: initial !important; background-color: inherit; letter-spacing: 0.05em; -webkit-box-shadow: none; box-shadow: none; }
+#smt-lang-selector .smt-menu .smt-trigger .smt-lang, #smt-lang-selector .smt-menu .smt-trigger .smt-link { font-weight: 500; font-size: 12px !important; color: #FFFFFF; text-transform: uppercase; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+#smt-lang-selector .smt-menu .smt-trigger .smt-link { padding: 5px 0 5px 10px; text-align: left !important; }
+#smt-lang-selector .smt-menu .smt-item { float: none; }
+#smt-lang-selector .smt-menu .smt-item:first-child { padding-top: 8px; }
+#smt-lang-selector .smt-menu .smt-item:last-child { padding-bottom: 8px; }
+#smt-lang-selector .smt-menu .smt-item a:hover { background: inherit; color: #1E1E1E !important; }
+
+footer.sitewide { background: #282828; padding: 33px 0 44px 0; color: #D2D2D2; font-size: 12px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; /* This slides the footer to the right on mobile nav */ }
+footer.sitewide h5 { font-weight: 700; text-transform: uppercase; color: #FFFFFF; margin-top: 0; margin-bottom: 11px; font-size: 12px; }
+footer.sitewide p { color: #D2D2D2; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.4; margin: 0; }
+footer.sitewide ul { padding: 0; margin: 0; }
+footer.sitewide ul li { list-style: none; padding: 0 0 6px 0; margin: 0; }
+footer.sitewide a { color: #D2D2D2; font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+footer.sitewide a:hover { color: #20A0E9; text-decoration: none; }
+footer.sitewide.nav-is-visible { -webkit-transform: translateX(260px); -moz-transform: translateX(260px); -ms-transform: translateX(260px); -o-transform: translateX(260px); transform: translateX(260px); }
+@media (min-width: 768px) { footer.sitewide { padding-top: 33px; text-align: left; }
+  footer.sitewide h5 { margin-top: 0; }
+  footer.sitewide .give-us-a-call .sales-phone { display: inline-block; } }
+footer.sitewide .brand { margin-bottom: 20px; }
+footer.sitewide .brand img { width: 59px; }
+@media (min-width: 768px) { footer.sitewide .brand img { width: 50px; } }
+@media (min-width: 992px) { footer.sitewide .brand { padding-left: 0; }
+  footer.sitewide .brand img { width: 59px; } }
+footer.sitewide .give-us-a-call { margin: 0 0 33px 0; padding: 0; }
+footer.sitewide .give-us-a-call p { line-height: 1.6; }
+footer.sitewide .give-us-a-call .sales-phone { white-space: nowrap; color: #FF5200; font-weight: 700; }
+footer.sitewide .give-us-a-call .sales-phone .active { display: inline; }
+footer.sitewide .give-us-a-call .sales-phone .non-active { display: none; }
+@media (min-width: 992px) { footer.sitewide .give-us-a-call { float: right; }
+  footer.sitewide .give-us-a-call h5 { width: 200px; }
+  footer.sitewide .give-us-a-call p { width: 200px; } }
+footer.sitewide .sitewide-footer-menu { padding: 0; }
+footer.sitewide .company, footer.sitewide .media, footer.sitewide .connect, footer.sitewide .support { margin: 0 0 22px 0; padding: 0; }
+footer.sitewide .privacy-terms { padding-top: 22px; padding-bottom: 22px; font-size: 12px; border-top: 1px solid #646464; border-bottom: none; }
+footer.sitewide .privacy-terms ul { padding: 0; }
+footer.sitewide .privacy-terms ul li { list-style: none; float: left; width: 50%; }
+@media (min-width: 768px) { footer.sitewide .privacy-terms { border-bottom: none; }
+  footer.sitewide .privacy-terms ul li { width: initial; padding-right: 20px; } }
+@media (min-width: 992px) { footer.sitewide .privacy-terms { border-top: none; padding-left: 0; } }
+footer.sitewide .social { padding-top: 22px; padding-bottom: 22px; text-align: center; }
+footer.sitewide .social a { color: #282828; margin-right: 15px; }
+footer.sitewide .social a:last-child { margin-right: 0px; }
+@media (min-width: 768px) { footer.sitewide .social a { margin-right: 5px; } }
+@media (min-width: 992px) { footer.sitewide .social a { margin-right: 10px; } }
+@media (min-width: 768px) { footer.sitewide .social { padding-top: 11px; border-top: 1px solid #646464; text-align: right; } }
+@media (min-width: 992px) { footer.sitewide .social { float: right; padding-right: 0; border-top: none; border-bottom: none; }
+  footer.sitewide .social .social-icons { float: right; } }
+footer.sitewide .copyright { display: inline-block; width: 100%; text-align: center; margin: 22px 0 0; }
+@media (min-width: 768px) { footer.sitewide .copyright { margin: 0; padding-left: 15px; text-align: left; color: #FFFFFF; } }
+@media (min-width: 992px) { footer.sitewide .copyright { padding-left: 0; } }
+@media (min-width: 768px) { footer.sitewide .copyright-tablet { display: inline-block; } }
+@media (min-width: 992px) { footer.sitewide .copyright-tablet { display: inline; } }
+@media (min-width: 992px) { footer.sitewide .privacy-terms-copyright-social { border-top: 1px solid #646464; } }
+
+@media (min-width: 768px) { .footer-sticky footer.sitewide { position: absolute; bottom: 0; left: 0; right: 0; } }
+
+.brand-copyright { background: #282828; padding: 33px 11px; color: #D2D2D2; font-size: 12px; text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.brand-copyright .lp-brand { margin-bottom: 11px; }
+.brand-copyright p { color: #D2D2D2; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.4; margin: 0; }
+.brand-copyright .sales-phone { white-space: nowrap; color: #FF5200; font-weight: 700; }
+.brand-copyright .sales-phone .active { display: inline; }
+.brand-copyright .sales-phone .non-active { display: none; }
+
+.menu-social-container ul { margin: 0; padding: 0; list-style: none; }
+.menu-social-container li { display: inline-block; }
+.menu-social-container li a:before { display: inline-block; vertical-align: top; font-size: 20px; color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 32px; width: 35px; content: " "; }
+.menu-social-container li a[href*="facebook.com"]::before { background: url(../img/icons/fb.png) no-repeat center center; }
+.menu-social-container li a[href*="twitter.com"]::before { background: url(../img/icons/tw.png) no-repeat center center; }
+.menu-social-container li a[href*="linkedin.com"]::before { background: url(../img/icons/in.png) no-repeat center center; }
+.menu-social-container li a[href*="google.com"]::before { background: url(../img/icons/gplus.png) no-repeat center center; }
+
+/* Internationalization styling overrides below */
+.smartling-de .sitewide-nav .nav > li > a { padding: 19px 5px; }
+
+.icons { width: 34px; height: 34px; border-radius: 17px; padding: 0; margin: 0; display: inline-block; text-align: center; padding-top: 7px; }
+
+.icons-footer { background: #646464; color: #FFFFFF; }
+.icons-footer .fa { font-size: 20px; }
+.icons-footer:hover { color: inherit; text-decoration: none; }
+
+.icons-colored { color: #FFFFFF; margin-right: 10px; }
+.icons-colored .fa { font-size: 20px; }
+.icons-colored:hover { text-decoration: none; color: #D2D2D2; }
+
+.facebook { background: #3b5998; }
+
+.twitter { background: #00aced; }
+
+.linkedin { background: #007bb6; }
+
+.google-plus { background: #d34836; }
+
+hr { padding-left: 15px; padding-right: 15px; }
+
+hr.dash { background: url("../img/hr-dash.png") repeat-x; height: 2px; margin-top: 0; margin-bottom: 0; border-top: none; }
+
+hr.dashed { height: 2px; margin-top: 0; margin-bottom: 0; border-bottom: 1px dashed #646464; border-top: none; }
+
+.gradient-white100-white55 { background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0.55))); background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%); background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%); background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%); background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.55) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8cffffff',GradientType=0 ); }
+
+.gradient-black70-white10 { background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(229, 229, 229, 0.1))); background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%); background: -o-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%); background: -ms-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%); background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#1ae5e5e5',GradientType=1 ); }
+
+.gradient-customer-logos { background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5))); background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', endColorstr='#80000000',GradientType=0 ); }
+
+input.ie9-placeholder { color: #1E1E1E; }

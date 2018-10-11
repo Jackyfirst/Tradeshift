@@ -1,0 +1,23 @@
+﻿var countries = {
+	"http://tradeshift.com/supplier/adm/": "ADM",
+	"http://alturl.com/t592h": "Archer Daniels Midland Company",
+	"http://alturl.com/bmxir": "Brødrene Hartmann",
+	"http://alturl.com/bj79q": "Hartmann",
+	"http://tradeshift.com/supplier/brodrene-hartmann/": "Broedrene Hartmann",
+	"http://tradeshift.com/supplier/cbre/": "CBRE",
+	"http://tradeshift.com/supplier/dsm/": "DSM",
+	"http://alturl.com/rds7h": "DHL",
+	"http://tradeshift.com/supplier/dhl/": "Deutsche Post DHL",
+	"http://alturl.com/7er4m": "Kuehne + Nagel",
+	"http://alturl.com/d7a56": "Kühne + nagel",
+	"http://bit.ly/1q0I8Ur": "Kuh",
+	"http://tradeshift.com/supplier/kn/": "K+N",
+	"http://tradeshift.com/supplier/adm/": "ADM",
+	"http://tradeshift.com/supplier/nike/": "Nike",
+	"http://alturl.com/h73qk": "NHS SBS",
+	"http://alturl.com/wfjuc": "National Health Service SBS",
+	"http://bit.ly/V4Y3Vh": "Shared Business Services",
+	"http://tradeshift.com/supplier/nhs/": "SBS",
+    "http://tradeshift.com/supplier/sos-international/": "SOS International",
+    "http://tradeshift.com/supplier/vestas/": "Vestas"
+}

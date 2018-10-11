@@ -1,0 +1,1052 @@
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, nav u, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video  { 
+	font-family: inherit; 
+	font-family: 'Open Sans', sans-serif;
+	src: url(http://mailtemplates.s3.amazonaws.com/OpenSans-Regular.ttf);
+    font-size: 14px;
+	line-height: 22px;
+	font-weight: inherit; 
+	font-style: inherit; 
+	vertical-align: baseline; 
+	white-space: normal;
+	text-align: left; 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0;
+	color: #000;
+	background: transparent; 
+}
+html, body {
+	height: 100%;
+	overflow-x:shidden;
+	background-color: #ffffff;
+}
+html{
+	-webkit-text-size-adjust: none;
+}
+.container{
+	width: 960px;
+}
+@font-face {
+        font-family: "Tradeshiftlogo";
+        font-style: normal;
+        font-weight: normal;
+        src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: #20a0e9;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; }
+								  
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+:focus { outline: 0; }
+
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0; }
+header{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	width: 100%;
+	z-index: 9;
+	height: 74px;
+}
+.alert{
+	border: 1px solid red !important;
+}
+strong{ 
+	font-weight: bold;
+}
+p{
+	font-size: 14px;
+    line-height: 22px;
+    padding-top: 22px;
+}
+nav{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+  	right: 0;
+	text-align: left; 
+	background: #ffffff;
+	display: block;
+  	width: 100%;
+  	z-index: 90;
+}
+nav a{
+	text-transform: uppercase;
+	color: #444444;
+	padding-left: 22px;
+	padding-right: 36px;
+	line-height: 44px;
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	z-index: 90;
+	font-weight: 200;
+}
+nav a:last-child{
+	color: #7bbc4a;
+	float: right;
+	padding-right: 30px;
+	margin-right: -30px;
+}
+nav a:last-child span{
+	margin-left: 20px;
+}
+nav a:nth-child(2){
+	float: right;
+	color: #3a9fec;
+
+}
+h1{
+	font-size: 70px;
+	line-height: 77px;
+	letter-spacing: -3px;
+	margin-bottom: 42px;
+	margin-top: 22px;
+	font-weight: 200;
+}
+h2{
+	font-size: 48px;
+	line-height: 44px;
+	font-weight: 200;
+	margin-bottom: 44px;
+	text-align: center;
+}
+h3{
+	font-size: 20px;
+	line-height: 24px;
+}
+h4{
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	font-style:italic;
+}
+hr{
+	border: solid #cccccc;
+	border-width: 1px 0 0;
+	clear: both;
+	height: 0;
+	margin-top: 40px;
+	width: 100%;
+}
+section{
+	text-align: center;
+	color: #444444;
+	background-color: #ffffff;
+	margin-top: 50px !important;
+}
+article{
+	padding: 22px;
+}
+::-webkit-input-placeholder {
+   color: #ffffff !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #ffffff !important;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffffff !important;  
+}
+:-ms-input-placeholder {  
+   color: #ffffff !important;  
+}
+.untouched {
+	color: #444444 !important;
+}
+.non-active{
+	display: none !important;
+}
+.active{
+	display: block !important;
+}
+.full_width{
+	display: none !important;
+}
+.mobile_show{
+	display: none;
+}
+.mobile_show_portrait{
+	display: none;
+}
+.mobile_show_landscape{
+	display: none;
+}
+.comment{
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
+}
+.border_r{
+	border-right: 1px solid #c4c4c4; 
+}
+ footer{
+ 	background-color: #404040;
+ 	color: #ffffff !important;
+ }
+ footer h3, footer p{
+ 	color: #ffffff !important;
+ }
+ footer a{
+ 	color: #ffffff !important;
+ 	text-decoration: underline;
+ 	padding-top: 20px !important;
+ 	text-align: left !important;
+}
+ .nav_shadow{
+	-webkit-box-shadow: 0 8px 6px -6px #bbbbbb;
+	   -moz-box-shadow: 0 8px 6px -6px #bbbbbb;
+	        box-shadow: 0 8px 6px -6px #bbbbbb;
+}
+.logo:before{
+	color: #000000 !important;
+    content: "K";
+}
+.logo:after {
+    color: #000000 !important;
+    content: "L";
+}
+.logo:before, .logo:after {
+    display: inline-block;
+    font-family: Tradeshiftlogo,fantasy;
+}
+.logo{
+	display: block;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+    margin-top: 11px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none !important;
+}
+ .screen{
+ 	display: block;
+ 	background: url('/tradeshift.com/themes/tradeshift/i/change/screen.png' ) top right no-repeat;
+	height: 500px;
+	margin-top: 55px;
+}
+.phones{
+	margin: auto;
+	display: block;
+}
+.ipad{
+	display: block;
+ 	background: url('/tradeshift.com/themes/tradeshift/i/change/ipad.jpg' ) center left no-repeat;
+  	background-size: contain;
+	height: 415px;
+	margin-top: -22px;
+}
+.geoff{
+	width: 60%;
+	float: right;
+	margin-bottom: 168px;
+	margin-top: 40px;
+}
+#public_profile h2{
+	width: 70%;
+}
+#responsive h2, #public_profile h2{
+	text-align: left;
+}
+#responsive{
+	background: url('/tradeshift.com/themes/tradeshift/i/change/mihir.png' ) bottom left no-repeat;
+}
+.screen_1{
+	display: block;
+ 	background: url('/tradeshift.com/themes/tradeshift/i/change/screen1.png' ) center right no-repeat;
+	height: 409px;
+    margin: auto;
+	margin-top: -22px;
+	margin-bottom: -17px;
+}
+.screen_2{
+	display: block;
+ 	background: url('/tradeshift.com/themes/tradeshift/i/change/screen2.png' ) center left no-repeat;
+	height: 409px;
+	margin-top: -22px;
+}
+.action_items{
+	margin-top: 44px;
+}
+#public_profile{
+	background: url('/tradeshift.com/themes/tradeshift/i/change/mikkel1.jpg' ) bottom right no-repeat;
+	margin-bottom: 44px;
+}
+#public_profile a{
+	margin-right: 9px;
+}
+#public_profile a img{
+		margin-top: 33px;
+		box-shadow: 3px 3px 2px #cccccc;
+}
+.mikkel{
+	width: 57%;
+	float: left;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+#check{
+	margin-top: 0px !important;
+}
+#check a{
+	display: block;
+ 	background: url('/tradeshift.com/themes/tradeshift/i/change/sign_up.jpg' ) top center no-repeat;
+  	background-size: contain;
+	height: 410px;
+	margin-top: -40px;
+}
+.sign_up{
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 200;
+    height: 30px;
+    padding: 10px 10% 10px 11px;
+    position: relative;
+    text-transform: uppercase;
+    top: 120px;
+}
+#new_design ul li{
+	font-size: 18px;
+	margin-top: 22px;
+	font-weight: 600;
+	margin-left: 22px;
+}
+#new_design ul {list-style-type: disc;}
+
+.note{
+	font-size: 11px;
+	line-height: 11px;
+	margin-top: 120px;
+}
+.embed{
+	width: 312px;
+	height: 369px;
+	overflow: hidden;
+	position: relative;
+	margin-top: -513px;
+	margin-left: 38px;
+	z-index: 1;
+}
+.border_l{
+	border-left: 1px solid #c4c4c4; 
+}
+.light_gray, #check_it{
+	background-color: #f4f4f4 !important; 
+}
+.foot article:last-child h3{
+		text-align: center;
+}
+.top{
+	background: #00a7e5;
+	display: block;
+}
+.top article{
+	margin: 0px;
+}
+.c_footer{
+	width: 100%;
+	text-align: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { .embed{
+		margin-top: -513px;
+	} 
+}
+.e_img{
+	overflow: hidden;
+	width: 312px;
+	height: 369px;
+	position: relative;
+}
+.mini{
+	position: absolute;
+	display: inline;
+	left: 0px;
+}
+footer article:last-child a img{
+	padding-left: 14px;
+	margin-top: 60px;
+}
+
+input{
+	width: 270px;
+	background-color: #FDFDFD;
+	border: none;
+	height: 44px;
+	margin-top: 22px;
+	font-size: 1em;
+	padding-left: 10px;
+}
+.reg{
+	font-size: 20px;
+	color: #7bbc4a !important;
+	font-weight: 200;
+}
+.log{
+	font-size: 20px !important;
+	font-weight: 200;
+}
+.sec_info{ font-size: 11px;
+    width: 270px;
+}
+.head_china{
+	margin-top: 70px;
+	font-size: 64px;
+}
+.china_gray{
+	background-color: #eaeaea !important;
+	width: 100%
+}
+.china_gray2{
+	background-color: #eaeaea !important;
+}
+.china_gray a{
+	color: #fff;
+	background-color: #83c35b;
+	margin-top: 50px;
+	width: 220px;
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 16px;
+}
+.china_gray a span{
+	font-size: 28px;
+	color: #fff;
+}
+.ch_list h2{
+	font-size: 64px;
+	text-align: left;
+	color: #000;
+	line-height: 77px;
+}
+.ch_list p{
+	font-size: 20px;
+}
+.ch_list img{
+	padding-top: 100px;
+}
+.ch_center h2{
+	font-size: 64px;
+	color: #000;
+}
+.ch_center h3{
+	font-size:20px;
+	color: #000;
+	text-align: center;
+}
+.ch_col_des h2{
+	text-align: left;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 30px;
+}
+.ch_col_des p{
+	font-size: 20px;
+	color: #000;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.ch_listing h2{
+	font-size: 64px;
+	line-height: 77px;
+	color: #000;
+	text-align: left;
+}
+.ch_listing ul li{
+	font-size: 28px !important;
+	line-height: 33px;
+	color: #000;
+	font-weight: normal !important;
+	text-align: left;
+}
+.ch_listing p{
+	font-size: 20px;
+	color: #000;
+	line-height: 33px;
+}
+.ch_listing a{
+	font-size: 20px;
+}
+.download_form #mktFrmSubmit{
+	background-color: #79C245;
+	color: #ffffff !important;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: relative;
+	margin-right: 36px;
+	width: 270px !important;
+	-webkit-appearance: none;
+	border: none;
+	float: right;
+	margin-top: -62px;
+	border-radius: 3px;
+}
+.sign_up_ch{
+	background:  #79C245;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 200;
+    height: 30px;
+    width: 300px;
+    padding: 10px 220px 10px 11px;
+    position: relative;
+    text-transform: uppercase;
+    top: 34px;
+
+}
+.china_filled{
+	margin-bottom: 44px !important;
+}
+.next_to{
+	float: left;
+	margin-right: 22px;
+}
+@media ( max-width : 960px ) {
+	h1{
+		font-size: 56px;
+		line-height: 64px;
+	}
+	.screen{
+		display: block;
+	 	background: url('/tradeshift.com/themes/tradeshift/i/change/screen.png' ) center right no-repeat;
+	  	background-size: 100%;
+		position: relative;
+	}
+	.ipad{
+		height: 370px;
+	}
+	.sign_up{
+		padding-right: 22px;
+		font-size: 14px;
+		background: #79c245;
+	}
+	footer article:last-child a img:last-child{
+		padding-left: 0px;
+		margin-left: -2px;
+	}
+	.embed{
+	width: 242px;
+	height: 289px;
+	overflow: hidden;
+	position: relative;
+	margin-top: -513px;
+	margin-left: 30px;
+	z-index: 1;
+	}
+	.e_img{
+		overflow: hidden;
+		width: 242px;
+		height: 289px;
+		position: relative;
+	}
+	.mini{
+		position: absolute;
+		display: inline;
+		left: 0px;
+	}
+	#public_profile h2{
+		width: 90%;
+	}
+	#responsive h2{
+		font-size: 44px;
+	}
+	.geoff {
+		width: 50%;
+		margin-top: 0px;
+	}
+	.sign_up_ch{
+		padding-right: 150px;
+		margin-bottom: 44px;
+	}
+	.download_form #mktFrmSubmit{
+		float: left;
+		margin-top: 20px;
+	}
+	#check_it article:first-child{
+		margin-bottom: 44px;
+	}
+
+@media (max-width : 800px ) {
+	
+
+}
+@media ( max-width : 740px ) {
+	.full_width{
+		display: block !important;
+	}
+	.no_full_width{
+		display: none !important;
+	}
+	.report{
+		width: 100%;
+		background: #79c245 !important;
+		color: #ffffff;
+		margin-top: 0px;
+	}
+	article{
+		padding: 22px;
+	}
+	section{
+	margin-top: 30px !important;
+	}
+	header{
+		width: 100%;
+		margin-top: 0px;
+	}
+	nav{
+		background: #404040;
+	  	margin-bottom: 256px;
+	}
+	nav a{
+		font-size: 20px !important;
+		padding-left: 11px;
+		background: #242424;
+		color: #ffffff !important;
+	}
+	nav ul li a{
+		width: 100%;
+		background-color: #242424 !important;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid #404040;
+	}
+	nav a:last-child{
+		margin-bottom: 0px;
+		border-radius: 0px;
+	}
+	.report{
+		text-align: center ;
+	}
+	.mobile_top{
+		height: 44px;
+	}
+	h1{
+		font-size: 40px;
+    	line-height: 44px;
+    	margin-top: 75px;
+    	width: 80%;
+	}
+	h2{
+		font-size: 30px;
+    	line-height: 33px;
+    	margin-bottom: 11px;
+	}
+	.ts_logo:before{
+		color: #ffffff !important;
+	    content: "K";
+	    background: #404040;
+	}
+	.ts_logo:after {
+	    color: #ffffff !important;
+	    content: "L";
+	    background: #404040;
+	}
+	.ts_logo:before, .ts_logo:after {
+	    display: inline-block;
+	    background: #404040;
+	    font-family: Tradeshiftlogo,fantasy;
+	}
+	.ts_logo{
+		display: block;
+	    font-size: 34px;
+	    font-style: normal;
+	    font-weight: normal;
+	    height: 100%;
+	    margin-top: 0px;
+	    background: #404040;
+	    position: relative;
+	    text-decoration: none;
+	    text-transform: none !important;
+	}
+	.arrow{
+		float: right;
+		position: absolute;
+		top: 10px;
+		right: 0px;
+	}
+	.screen{
+		background: url('/tradeshift.com/themes/tradeshift/i/change/mobile_top.png' ) center no-repeat;
+		display: block;
+		margin-top: 0px;
+		height: 340px;
+	}
+	.note{
+		position: absolute;
+		bottom: 0px;
+	}
+
+ 	#responsive h2, #public_profile h2{
+ 		text-align: center;
+ 		font-size: 30px;
+ 		margin-bottom: 44px;
+ 	}
+ 	#responsive{
+		background: none;
+	}
+	.mihir, .mikkel{
+		background-color: #3a9fec;
+		margin-top: 44px;
+		margin-left: 0px;
+		padding: 22px;
+	}
+	.mihir{
+		margin-bottom: -22px;
+	}
+	.mihir h4{
+		font-style: italic;
+	}
+	.mihir h4, .mihir p, .mikkel h4, .mikkel p{
+		color: #ffffff !important;
+		text-align: left !important;
+	}
+	#responsive, #public_profile{
+		background: none;
+	}
+	#public_profile{
+		margin-bottom: 0px !important;
+	}
+	#public_profile article:first-child{
+		display: none !important;
+	}
+	.geoff, .mikkel{
+		width: 100%;
+	}
+	.foot article:last-child{
+		text-align: center;
+		text-transform: uppercase;
+	}
+	footer article  a img{
+		margin-top: 30px;
+		margin-left: 10px !important;
+		margin-right: 10px;
+	}
+	.p_mobile{
+		margin-bottom: -44px;
+		margin-top: 22px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	.f_menu a{
+		width: 100%;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding-left: 22px;
+		padding-bottom: 11px;
+		background-color: #242424 !important;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid #404040;
+	}
+
+	.download_form #mktFrmSubmit{
+		float: left;
+		margin-top: 20px;
+	}
+
+}
+
+
+@media screen and (device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	 #responsive{
+		background: none;
+	}
+	.light_gray_top{
+		margin-top: 100px !important;
+	}
+
+}
+@media ( max-width : 568px ) {
+		nav a:last-child{
+			margin-right: 0px;
+			width: 50%;
+			float:left;
+		}
+		nav a:nth-child(2){
+			width: 50%;
+			background: #3A9FEC !important;
+			
+		}
+		.ts_logo{
+			position: relative;
+			width: 100%;
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.head_china {
+	    font-size: 64px;
+	    margin-top: 70px;
+	    line-height: 80px;
+		}
+		.china_gray a{
+			width: 100%
+		}
+		hr{
+			display: none !important;
+		}
+		.ch_list img{
+			padding-top: 0px !important;
+		}
+		.ch_center h2{
+			line-height: 70px;
+			padding-bottom: 20px;
+		}
+		.ch_2_col img{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+/* google Nexus */
+@media ( max-width : 480px ) {
+	 
+	.geoff, .mikkel{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	footer article:last-child a img{
+		margin-top: 30px;
+		margin-left: 5px !important;
+		margin-right: 5px;
+	}
+	#check a{
+		height: 200px
+	}
+	.screen_1{
+		position: relative;
+		background: url('/tradeshift.com/themes/tradeshift/i/change/mobile_screen1.png' ) center no-repeat;
+		margin-bottom: -67px;
+		background-size: contain;
+		height: 200px;
+	}
+	.screen_2{
+		position: relative;
+	 	background: url('/tradeshift.com/themes/tradeshift/i/change/mobile_screen2.png' ) center  no-repeat;
+		background-size: contain;
+		height: 200px;
+	}
+	.ipad{
+		margin-top: -40px;
+		margin-bottom: -20px;
+		height: 300px;
+	}
+
+
+
+}
+@media ( max-width : 320px ) {
+	h1{
+		width: 100%;
+	}
+	.ipad{
+		margin-top: -40px;
+		margin-bottom: -40px;
+		height: 300px;
+	}
+
+}
+.ie8 body{
+	overflow:scroll;
+}
+ .ie8 .sign_up {
+ 	font-size: 17px;
+ 	background: #79C245;
+ }
+
+
+div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top .pp_left,div.pp_default .pp_top .pp_right,div.pp_default .pp_bottom,div.pp_default .pp_bottom .pp_left,div.pp_default .pp_bottom .pp_middle,div.pp_default .pp_bottom .pp_right{height:13px}
+div.pp_default .pp_top .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -78px -93px no-repeat}
+div.pp_default .pp_top .pp_middle{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_x.png) top left repeat-x}
+div.pp_default .pp_top .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -112px -93px no-repeat}
+div.pp_default .pp_content .ppt{color:#f8f8f8}
+div.pp_default .pp_content_container .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_y.png) -7px 0 repeat-y;padding-left:13px}
+div.pp_default .pp_content_container .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_y.png) top right repeat-y;padding-right:13px}
+div.pp_default .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_next.png) center right no-repeat;cursor:pointer}
+div.pp_default .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_prev.png) center left no-repeat;cursor:pointer}
+div.pp_default .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) 0 -29px no-repeat;cursor:pointer;height:28px;width:28px}
+div.pp_default .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) 0 -56px no-repeat;cursor:pointer}
+div.pp_default .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) 0 -84px no-repeat;cursor:pointer;height:28px;width:28px}
+div.pp_default .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) 0 -113px no-repeat;cursor:pointer}
+div.pp_default .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) 2px 1px no-repeat;cursor:pointer;height:30px;width:30px}
+div.pp_default .pp_gallery ul li a{background:url(/tradeshift.com/themes/tradeshift/i/default/default_thumb.png) center center #f8f8f8;border:1px solid #aaa}
+div.pp_default .pp_social{margin-top:7px}
+div.pp_default .pp_gallery a.pp_arrow_previous,div.pp_default .pp_gallery a.pp_arrow_next{left:auto;position:static}
+div.pp_default .pp_nav .pp_play,div.pp_default .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -51px 1px no-repeat;height:30px;width:30px}
+div.pp_default .pp_nav .pp_pause{background-position:-51px -29px}
+div.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -31px -3px no-repeat;height:20px;margin:4px 0 0;width:20px}
+div.pp_default a.pp_arrow_next{background-position:-82px -3px;left:52px}
+div.pp_default .pp_content_container .pp_details{margin-top:5px}
+div.pp_default .pp_nav{clear:none;height:30px;position:relative;width:110px}
+div.pp_default .pp_nav .currentTextHolder{color:#999;font-family:Georgia;font-size:11px;font-style:italic;left:75px;line-height:25px;margin:0;padding:0 0 0 10px;position:absolute;top:2px}
+div.pp_default .pp_close:hover,div.pp_default .pp_nav .pp_play:hover,div.pp_default .pp_nav .pp_pause:hover,div.pp_default .pp_arrow_next:hover,div.pp_default .pp_arrow_previous:hover{opacity:0.7}
+div.pp_default .pp_description{font-size:11px;font-weight:700;line-height:14px;margin:5px 50px 5px 0}
+div.pp_default .pp_bottom .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -78px -127px no-repeat}
+div.pp_default .pp_bottom .pp_middle{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite_x.png) bottom left repeat-x}
+div.pp_default .pp_bottom .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/default/sprite.png) -112px -127px no-repeat}
+div.pp_default .pp_loaderIcon{background:url(/tradeshift.com/themes/tradeshift/i/default/loader.gif) center center no-repeat}
+div.light_rounded .pp_top .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -88px -53px no-repeat}
+div.light_rounded .pp_top .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -110px -53px no-repeat}
+div.light_rounded .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/btnNext.png) center right no-repeat;cursor:pointer}
+div.light_rounded .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.light_rounded .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.light_rounded .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.light_rounded .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.light_rounded .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.light_rounded .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -1px -1px no-repeat;cursor:pointer;height:22px;width:75px}
+div.light_rounded .pp_nav .pp_play{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -1px -100px no-repeat;height:15px;width:14px}
+div.light_rounded .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -24px -100px no-repeat;height:15px;width:14px}
+div.light_rounded .pp_arrow_previous{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) 0 -71px no-repeat}
+div.light_rounded .pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -22px -71px no-repeat}
+div.light_rounded .pp_bottom .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -88px -80px no-repeat}
+div.light_rounded .pp_bottom .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/sprite.png) -110px -80px no-repeat}
+div.dark_rounded .pp_top .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -88px -53px no-repeat}
+div.dark_rounded .pp_top .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -110px -53px no-repeat}
+div.dark_rounded .pp_content_container .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/contentPattern.png) top left repeat-y}
+div.dark_rounded .pp_content_container .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/contentPattern.png) top right repeat-y}
+div.dark_rounded .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/btnNext.png) center right no-repeat;cursor:pointer}
+div.dark_rounded .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.dark_rounded .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.dark_rounded .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.dark_rounded .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.dark_rounded .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.dark_rounded .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -1px -1px no-repeat;cursor:pointer;height:22px;width:75px}
+div.dark_rounded .pp_description{color:#fff;margin-right:85px}
+div.dark_rounded .pp_nav .pp_play{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -1px -100px no-repeat;height:15px;width:14px}
+div.dark_rounded .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -24px -100px no-repeat;height:15px;width:14px}
+div.dark_rounded .pp_arrow_previous{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) 0 -71px no-repeat}
+div.dark_rounded .pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -22px -71px no-repeat}
+div.dark_rounded .pp_bottom .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -88px -80px no-repeat}
+div.dark_rounded .pp_bottom .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/sprite.png) -110px -80px no-repeat}
+div.dark_rounded .pp_loaderIcon{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/loader.gif) center center no-repeat}
+div.dark_square .pp_left,div.dark_square .pp_middle,div.dark_square .pp_right,div.dark_square .pp_content{background:#000}
+div.dark_square .pp_description{color:#fff;margin:0 85px 0 0}
+div.dark_square .pp_loaderIcon{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/loader.gif) center center no-repeat}
+div.dark_square .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.dark_square .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.dark_square .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.dark_square .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.dark_square .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -1px -1px no-repeat;cursor:pointer;height:22px;width:75px}
+div.dark_square .pp_nav{clear:none}
+div.dark_square .pp_nav .pp_play{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -1px -100px no-repeat;height:15px;width:14px}
+div.dark_square .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -24px -100px no-repeat;height:15px;width:14px}
+div.dark_square .pp_arrow_previous{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) 0 -71px no-repeat}
+div.dark_square .pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/sprite.png) -22px -71px no-repeat}
+div.dark_square .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/btnNext.png) center right no-repeat;cursor:pointer}
+div.dark_square .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/dark_square/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.light_square .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.light_square .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.light_square .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.light_square .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.light_square .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -1px -1px no-repeat;cursor:pointer;height:22px;width:75px}
+div.light_square .pp_nav .pp_play{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -1px -100px no-repeat;height:15px;width:14px}
+div.light_square .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -24px -100px no-repeat;height:15px;width:14px}
+div.light_square .pp_arrow_previous{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) 0 -71px no-repeat}
+div.light_square .pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/light_square/sprite.png) -22px -71px no-repeat}
+div.light_square .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_square/btnNext.png) center right no-repeat;cursor:pointer}
+div.light_square .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/light_square/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.facebook .pp_top .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -88px -53px no-repeat}
+div.facebook .pp_top .pp_middle{background:url(/tradeshift.com/themes/tradeshift/i/facebook/contentPatternTop.png) top left repeat-x}
+div.facebook .pp_top .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -110px -53px no-repeat}
+div.facebook .pp_content_container .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/facebook/contentPatternLeft.png) top left repeat-y}
+div.facebook .pp_content_container .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/facebook/contentPatternRight.png) top right repeat-y}
+div.facebook .pp_expand{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -31px -26px no-repeat;cursor:pointer}
+div.facebook .pp_expand:hover{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -31px -47px no-repeat;cursor:pointer}
+div.facebook .pp_contract{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) 0 -26px no-repeat;cursor:pointer}
+div.facebook .pp_contract:hover{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) 0 -47px no-repeat;cursor:pointer}
+div.facebook .pp_close{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -1px -1px no-repeat;cursor:pointer;height:22px;width:22px}
+div.facebook .pp_description{margin:0 37px 0 0}
+div.facebook .pp_loaderIcon{background:url(/tradeshift.com/themes/tradeshift/i/facebook/loader.gif) center center no-repeat}
+div.facebook .pp_arrow_previous{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) 0 -71px no-repeat;height:22px;margin-top:0;width:22px}
+div.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default}
+div.facebook .pp_arrow_next{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -32px -71px no-repeat;height:22px;margin-top:0;width:22px}
+div.facebook .pp_arrow_next.disabled{background-position:-32px -96px;cursor:default}
+div.facebook .pp_nav{margin-top:0}
+div.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px}
+div.facebook .pp_nav .pp_play{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -1px -123px no-repeat;height:22px;width:22px}
+div.facebook .pp_nav .pp_pause{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -32px -123px no-repeat;height:22px;width:22px}
+div.facebook .pp_next:hover{background:url(/tradeshift.com/themes/tradeshift/i/facebook/btnNext.png) center right no-repeat;cursor:pointer}
+div.facebook .pp_previous:hover{background:url(/tradeshift.com/themes/tradeshift/i/facebook/btnPrevious.png) center left no-repeat;cursor:pointer}
+div.facebook .pp_bottom .pp_left{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -88px -80px no-repeat}
+div.facebook .pp_bottom .pp_middle{background:url(/tradeshift.com/themes/tradeshift/i/facebook/contentPatternBottom.png) top left repeat-x}
+div.facebook .pp_bottom .pp_right{background:url(/tradeshift.com/themes/tradeshift/i/facebook/sprite.png) -110px -80px no-repeat}
+div.pp_pic_holder a:focus{outline:none}
+div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
+div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
+.pp_content{height:40px;min-width:40px}
+* html .pp_content{width:40px}
+.pp_content_container{position:relative;text-align:left;width:100%}
+.pp_content_container .pp_left{padding-left:20px}
+.pp_content_container .pp_right{padding-right:20px}
+.pp_content_container .pp_details{float:left;margin:10px 0 2px}
+.pp_description{display:none;margin:0}
+.pp_social{float:left;margin:0}
+.pp_social .facebook{float:left;margin-left:5px;overflow:hidden;width:55px}
+.pp_social .twitter{float:left}
+.pp_nav{clear:right;float:left;margin:3px 10px 0 0}
+.pp_nav p{float:left;margin:2px 4px;white-space:nowrap}
+.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:4px;text-indent:-10000px}
+a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}
+.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}
+.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}
+.pp_gallery div{float:left;overflow:hidden;position:relative}
+.pp_gallery ul{float:left;height:35px;margin:0 0 0 5px;padding:0;position:relative;white-space:nowrap}
+.pp_gallery ul a{border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}
+.pp_gallery ul a img{border:0}
+.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}
+.pp_gallery li.default a{background:url(/tradeshift.com/themes/tradeshift/i/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px}
+.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px!important}
+a.pp_next{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%}
+a.pp_previous{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%}
+a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
+a.pp_close{display:block;line-height:22px;position:absolute;right:0;text-indent:-10000px;top:0}
+.pp_loaderIcon{display:block;height:24px;left:50%;margin:-12px 0 0 -12px;position:absolute;top:50%;width:24px}
+#pp_full_res{line-height:1!important}
+#pp_full_res .pp_inline{text-align:left}
+#pp_full_res .pp_inline p{margin:0 0 15px}
+div.ppt{color:#fff;display:none;font-size:17px;margin:0 0 5px 15px;z-index:9999}
+div.pp_default .pp_content,div.light_rounded .pp_content{background-color:#fff}
+div.pp_default #pp_full_res .pp_inline,div.light_rounded .pp_content .ppt,div.light_rounded #pp_full_res .pp_inline,div.light_square .pp_content .ppt,div.light_square #pp_full_res .pp_inline,div.facebook .pp_content .ppt,div.facebook #pp_full_res .pp_inline{color:#000}
+div.pp_default .pp_gallery ul li a:hover,div.pp_default .pp_gallery ul li.selected a,.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff}
+div.pp_default .pp_details,div.light_rounded .pp_details,div.dark_rounded .pp_details,div.dark_square .pp_details,div.light_square .pp_details,div.facebook .pp_details{position:relative}
+div.light_rounded .pp_top .pp_middle,div.light_rounded .pp_content_container .pp_left,div.light_rounded .pp_content_container .pp_right,div.light_rounded .pp_bottom .pp_middle,div.light_square .pp_left,div.light_square .pp_middle,div.light_square .pp_right,div.light_square .pp_content,div.facebook .pp_content{background:#fff}
+div.light_rounded .pp_description,div.light_square .pp_description{margin-right:85px}
+div.light_rounded .pp_gallery a.pp_arrow_previous,div.light_rounded .pp_gallery a.pp_arrow_next,div.dark_rounded .pp_gallery a.pp_arrow_previous,div.dark_rounded .pp_gallery a.pp_arrow_next,div.dark_square .pp_gallery a.pp_arrow_previous,div.dark_square .pp_gallery a.pp_arrow_next,div.light_square .pp_gallery a.pp_arrow_previous,div.light_square .pp_gallery a.pp_arrow_next{margin-top:12px!important}
+div.light_rounded .pp_arrow_previous.disabled,div.dark_rounded .pp_arrow_previous.disabled,div.dark_square .pp_arrow_previous.disabled,div.light_square .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}
+div.light_rounded .pp_arrow_next.disabled,div.dark_rounded .pp_arrow_next.disabled,div.dark_square .pp_arrow_next.disabled,div.light_square .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}
+div.light_rounded .pp_loaderIcon,div.light_square .pp_loaderIcon{background:url(/tradeshift.com/themes/tradeshift/i/light_rounded/loader.gif) center center no-repeat}
+div.dark_rounded .pp_top .pp_middle,div.dark_rounded .pp_content,div.dark_rounded .pp_bottom .pp_middle{background:url(/tradeshift.com/themes/tradeshift/i/dark_rounded/contentPattern.png) top left repeat}
+div.dark_rounded .currentTextHolder,div.dark_square .currentTextHolder{color:#c4c4c4}
+div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline{color:#fff}
+.pp_top,.pp_bottom{height:20px;position:relative} 
+* html .pp_top,* html .pp_bottom{padding:0 20px}
+.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}
+.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}
+* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
+.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
+.pp_fade,.pp_gallery li.default a img{display:none}
+

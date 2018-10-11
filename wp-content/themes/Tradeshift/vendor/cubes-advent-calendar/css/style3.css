@@ -1,0 +1,279 @@
+
+.codrops-demos a.current-demo {
+	color: #fceeb8;
+}
+
+.calendar {
+	-webkit-perspective: 2500px;
+	perspective: 2500px;
+}
+
+.cube__side,
+.no-js .cube {
+	border: 3px solid #fff;
+	outline: 1px solid #fff;
+	background: url(../img/c1.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.cube:not(.cube--inactive):nth-child(2n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(2n) {
+	background-image: url(../img/c2.png);
+}
+
+.cube:not(.cube--inactive):nth-child(3n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(3n) {
+	background-image: url(../img/c3.png);
+}
+
+.cube:not(.cube--inactive):nth-child(4n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(4n) {
+	background-image: url(../img/c4.png);
+}
+
+.cube:not(.cube--inactive):nth-child(5n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(5n) {
+	background-image: url(../img/c5.png);
+}
+
+.cube--inactive .cube__side,
+.no-js .cube--inactive {
+	background: #e6e6e6;
+}
+
+
+/* With JS we insert a number span into the cube */
+
+.cube__number,
+.no-js .cube::after {
+	font-weight: 700;
+	color: #cc0019;
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	height: 1.5em;
+	line-height: 1.5;
+	bottom: auto;
+	margin: -0.75em 0 0;
+}
+
+.cube--inactive .cube__number,
+.no-js .cube--inactive::after {
+	color: #cac9c9;
+}
+
+.js .content__block {
+	width: 100%;
+	padding: 0 5vw 0 20vw;
+}
+
+.js .content__description {
+	padding: 0 0 0 4vw;
+}
+
+.content__number {
+	color: #000;
+	font-weight: bold;
+	line-height: 0.5;
+	letter-spacing: -0.175em;
+	font-size: 30vw;
+	left: -5vw;
+	bottom: 8vh;
+}
+
+.content__title {
+	//font-size: 6vw;
+}
+
+.title {
+	color: #fceeb8;
+	right: auto;
+	left: 3vw;
+}
+
+@media screen and (max-width: 50.75em) {
+	.js .content__block {
+		padding: 4em 2em 0;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	.content__number {
+		bottom: 30vh;
+	}
+}
+
+/* ############################################################################## */
+/* ############################  customed styles  ############################### */
+/* ############################################################################## */
+
+.cube__side, .no-js .cube {
+	border: 1px solid #fff !important;
+}
+.cube__side,
+.no-js .cube {
+	border: 1px solid #fff;
+	outline: 1px solid #fff;
+}
+.cube__number,
+.no-js .cube::after {
+	font-weight: 900;
+	color: #FFFFFF;
+	background: none !important;
+	font-size: 3.75vw !important;
+}
+.cubes {
+	height: auto !important;
+}
+.cube:not(.cube--inactive):nth-child(2n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(2n),
+.cube:not(.cube--inactive):nth-child(5n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(5n)
+ {
+	background-image: url(../img/c2.png) !important;
+}
+
+.cube:not(.cube--inactive):nth-child(3n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(3n),
+.cube:not(.cube--inactive):nth-child(6n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(6n),
+.cube:not(.cube--inactive):nth-child(13n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(13n) 
+{
+	background-image: url(../img/c3.png) !important;
+}
+
+.cube:not(.cube--inactive):nth-child(4n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(4n),
+.cube:not(.cube--inactive):nth-child(7n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(7n),
+.cube:not(.cube--inactive):nth-child(10n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(10n) 
+{
+	background-image: url(../img/c4.png) !important;
+}
+.cube:not(.cube--inactive):nth-child(9n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(9n),
+.cube:not(.cube--inactive):nth-child(12n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(12n) 
+{
+	background-image: url(../img/c5.png) !important;
+}
+.cube:not(.cube--inactive):nth-child(8n) .cube__side,
+.no-js .cube:not(.cube--inactive):nth-child(8n)
+{
+	background-image: url(../img/c1.png) !important;
+}
+.js .content__block {
+    padding-left: 0px !important;
+}
+.content__description {
+	margin-bottom: 0px !important;
+	margin-top: -70px;
+}
+.content__block img {
+	display: block;
+    margin: auto;
+    margin-bottom: 0px;
+}
+.js .content__block {
+	text-align: center;
+	color: #ffffff;
+}
+.content__block h3 {
+	color: #ffffff;
+	//display: none;
+}
+main.main-content .container {
+	transition-timing-function: ease-in;
+	transition: 1.6s;
+}
+.red {
+	background: #be0000 !important;
+	
+}
+.blue {
+	background: #00b0ff !important;	
+}
+.p2p_wonderland {
+	background: url(../../../img/holiday-2016/holiday2016-horse.jpg) no-repeat center center !important;
+	transition: background-color 1s ease;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+.p2p_wonderland .btn-back {
+	color: #000000 !important;
+}
+.p2p_wonderland .content__block h3,
+.p2p_wonderland .content__block p,
+.p2p_wonderland .content__block a {
+	color: #000000 !important;
+}
+.p2p_wonderland .content__description {
+	margin-bottom: 0px !important;
+	//margin-top: 335px !important;
+	margin-top: 40vh !important;
+}
+.js .content__block {
+	width: 100%;
+	padding: 0 0vw 0 20vw;
+}
+
+.js .content__description {
+	padding: 0px;
+}
+.content__number {
+	display: none;
+}
+.content_meta {
+	font-size: 6vw !important;
+	line-height: 0.85 !important;
+	font-weight: 400 !important;
+}
+.title {
+    color: #fff !important;
+    font-size: 2vw !important;
+}
+
+@media only screen and (max-device-width: 768px) {
+    /* For mobile phones: */
+	.content__block img {
+	    width: 100% !important;
+	}
+	.content__block img.imageclass_21 {
+    	width: 70% !important;
+    }
+	.p2p_wonderland {
+    	background: url(../../../img/holiday-2016/holiday2016-horse.jpg) no-repeat right 47% top 50% !important;
+    	background-size: cover !important;
+    }
+    .cube__number, .no-js .cube::after {
+	    font-size: 10.75vw !important;
+	}
+	.p2p_wonderland .content__description {
+    	margin-top: 60vh !important;
+    }
+    .content__title, .p2p_wonderland .content__title  {
+    	margin-bottom: 1vh !important;
+    }
+    .content__meta {
+    	width: 100% !important;
+    	font-size: 3.0vw !important;
+    }
+    p.sub_heading {
+	    margin-top: -1vw !important;
+	    font-size: 4vw !important;
+	    line-height: 40px !important;
+	}
+}
+
+
+
+
+

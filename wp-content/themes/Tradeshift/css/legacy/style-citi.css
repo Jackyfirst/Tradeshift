@@ -1,0 +1,672 @@
+/*
+@citidarkblue: rgb(0, 75, 140);
+@stepblue: rgb(2, 52, 141);
+@navlinkinactive: rgb(130,130,130);
+@navlinkactive: rgb(166, 166, 166);
+*/
+
+/* Don't display the standard WP form ****************************************/
+.wpcf7 {
+	display: none;
+}
+
+/* Defaults ******************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.webkit *:not(input):not(textarea) {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: inherit;
+}
+*:focus {
+	outline: none;
+}
+*::-moz-focus-inner {
+	border: none;
+}
+*::-moz-focusring {
+	outline: none;
+}
+::-moz-selection,
+::-webkit-selection,
+::selection {
+	background: #20a0e9;
+	color: #ffffff;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: scroll;
+}
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+	cursor: default;
+	background-color: rgb(230, 230, 230); /* @xxlight; */
+	background-image: url('../../img/citisetupmeeting/watermark-bg.gif');
+	background-repeat: repeat;
+}
+body,
+input,
+button,
+select,
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Open Sans", "Helvetica Neue", "Lucida Grande", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif;
+	font-weight: 300;
+	color: #1e1e1e;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* Container *****************************************************************/
+.earlypayments {
+	color: rgb(50, 50, 50); /* @xxdark */
+	margin-bottom: 44px;
+}
+.earlypayments .container {
+	background: rgb(255, 255, 255); /* @white */
+	margin: 22px auto;
+	padding: 22px;
+	position: relative;
+	width: 550px;
+}
+.earlypayments .container.wide {
+	width: 660px;
+}
+.earlypayments p + .earlypayments .container {
+	padding-bottom: 0;
+}
+.success {
+	margin-top: 132px;
+}
+.success:before {
+	color: #7bc14d;
+	content: '2';
+	font-family: 'TradeshiftIcons';
+	font-size: 132px;
+	left: 217px;
+	position: absolute;
+	top: 68px;
+}
+
+/* Header ********************************************************************/
+header {
+	background-image: url('../../img/citisetupmeeting/citi_background.png');
+	height: 66px;
+	position: relative;
+}
+header:after {
+	content: url('../../img/citisetupmeeting/citi_logo-smaller.png');
+	height: 30px;
+	left: 22px;
+	position: absolute;
+	top: 12px;
+	width: 55px;
+}
+header h2 {
+	color: rgb(255, 255, 255); /* @white */
+	float: left;
+	line-height: 66px;
+	margin: 0 0 0 88px;
+}
+
+/* Forms ........................................................................... */
+::-webkit-input-placeholder {
+	color: #7f7f7f;
+	font-style: italic;
+}
+input:-moz-placeholder {
+	color: #7f7f7f;
+	font-style: italic;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input:invalid {
+	box-shadow: none;
+}
+input._textual,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	cursor: text;
+	background-color: #ffffff;
+	font-size: 14px;
+	text-indent: 7px;
+	height: 44px;
+	width: 100%;
+	border: 1px solid #dcdcdc;
+	text-overflow: ellipsis;
+	border-radius: 0;
+}
+input._textual[disabled],
+textarea[disabled],
+input._textual[readonly],
+textarea[readonly] {
+	cursor: default;
+	color: #1e1e1e;
+}
+textarea {
+	text-indent: 0;
+	padding: 5px 0 0 6px;
+	display: block;
+	resize: none;
+}
+label {
+	display: block;
+	margin-bottom: 22px;
+	position: relative;
+}
+label > span {
+	position: relative;
+}
+label > span:first-child {
+	vertical-align: bottom;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #20a0e9;
+}
+label._focus input,
+label._focus textarea {
+	background-color: #fdfdcb;
+	color: #333333;
+}
+label._hover input,
+label._focus input,
+label._hover textarea,
+label._focus textarea {
+	border-color: #353535;
+}
+
+/* Fieldsets ........................................................................ */
+fieldset.uniform {
+	margin-left: -11px;
+	margin-right: -11px;
+	margin-bottom: 22px;
+}
+fieldset.uniform + .uniform {
+	// margin-top: -22px;
+}
+fieldset.uniform legend,
+fieldset.uniform label {
+	padding-left: 11px;
+	padding-right: 11px;
+}
+fieldset.uniform p > span {
+	vertical-align: bottom;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #20a0e9;
+	padding-left: 11px;
+}
+fieldset.uniform legend {
+	display: block;
+	font-size: 18px;
+	line-height: 44px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 11px;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 100%;
+}
+fieldset.uniform label {
+	border-radius: 2px;
+	padding-top: 5.5px;
+	padding-bottom: 11px;
+	margin-bottom: 0;
+	cursor: text;
+}
+fieldset.uniform label._textual * {
+	cursor: text;
+}
+fieldset.uniform label._textual:after {
+	content: "";
+	position: absolute;
+	bottom: 11px;
+	right: 11px;
+	left: 11px;
+	border-bottom: 1px dashed #cdcdcd;
+}
+fieldset.uniform label input._textual,
+fieldset.uniform label textarea {
+	background-color: transparent;
+	border: none;
+	text-indent: 0;
+	height: 33px;
+}
+fieldset.uniform label textarea {
+	padding-left: 0;
+}
+fieldset.uniform label._focus {
+	background-color: #fdfdcb;
+}
+fieldset.uniform label._focus.error {
+	background-color: #f9e8e5;
+}
+fieldset.uniform label._focus.error._textual:after {
+	border-bottom: 1px solid #dc0000;
+}
+fieldset.uniform label._focus > span {
+	color: #333333;
+}
+fieldset.uniform label._focus:after {
+	border-bottom: 3px double #323232;
+	bottom: 10px;
+}
+fieldset.uniform label.error:after {
+	bottom: 11px;
+}
+fieldset.uniform label.error._textual:after {
+	border-bottom-color: #dc0000;
+}
+fieldset.uniform label.error > span {
+	padding-left: 17px;
+	color: #dc0000;
+}
+fieldset.uniform label.error > span:before {
+	content: "!";
+	font-family: "Tradeshifticons", "Pictos", fantasy;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 15px;
+	position: absolute;
+	top: -2px;
+	left: 0;
+}
+fieldset.uniform label.error p,
+fieldset.uniform label.error ._textual {
+	color: #dc0000;
+}
+fieldset.uniform label._locked._textual:after {
+	border-bottom-color: #939393;
+}
+fieldset.uniform label._locked > span {
+	padding-left: 17px;
+	color: #939393;
+}
+fieldset.uniform label._locked > span:before {
+	content: "(";
+	font-family: "Tradeshifticons", "Pictos", fantasy;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 15px;
+	position: absolute;
+	top: -2px;
+	left: 0;
+}
+fieldset.uniform label._locked p,
+fieldset.uniform label._locked ._textual {
+	color: #939393;
+}
+fieldset.uniform label._empty:not(._focus)._textual:after {
+	border-bottom-style: dashed;
+}
+fieldset.uniform label._option {
+	cursor: default;
+	margin: 0;
+	padding-top: 5.5px;
+	padding-bottom: 5.5px;
+}
+fieldset.uniform label._option:first-of-type {
+	margin-top: 5.5px;
+}
+fieldset.uniform label._option input {
+	opacity: 0;
+	position: absolute;
+}
+fieldset.uniform label._option input + span {
+	padding-left: 30px;
+	position: relative;
+}
+fieldset.uniform label._option input + span:before,
+fieldset.uniform label._option input + span:after {
+	content: "";
+	position: absolute;
+}
+fieldset.uniform label._option input + span:before {
+	width: 19px;
+	height: 19px;
+	border: 1px solid #353535;
+	background-color: #ffffff;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+	left: 0;
+	top: 0;
+}
+fieldset.uniform label._option input[type="radio"] + span:before {
+	border-radius: 100%;
+}
+fieldset.uniform label._option input[type="radio"] + span:after {
+	width: 9px;
+	height: 9px;
+	border-radius: 100%;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background-color: transparent;
+}
+fieldset.uniform label._option input[type="radio"]:checked + span:after {
+	background-color: #1e1e1e;
+}
+fieldset.uniform label._option input[type="checkbox"] + span:after {
+	content: "3";
+	font-family: "Tradeshifticons", "Pictos", fantasy;
+	font-size: 16px;
+	left: 3px;
+	top: 10px;
+	line-height: 0;
+	color: transparent;
+}
+fieldset.uniform label._option input[type="checkbox"]:checked + span:after {
+	color: #1e1e1e;
+}
+fieldset.uniform.inline span {
+	display: block;
+}
+fieldset.uniform.inline label {
+	display: inline-block;
+}
+
+/* Typo ............................................................................. */
+em {
+	font-style: normal;
+}
+p,
+ul,
+ol,
+hr,
+nav,
+menu,
+code,
+table,
+figure {
+	margin: 0 0 22px 0;
+}
+h1,
+h2,
+h3 {
+	font-weight: normal;
+	margin-top: 22px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child {
+	margin-top: 0;
+}
+h4,
+h5,
+h6 {
+	color: #ff0000;
+	font-weight: bold;
+}
+h4:before,
+h5:before,
+h6:before {
+	content: "[DON'T USE]";
+}
+h1 {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 44px;
+	margin-bottom: 33px;
+	margin-top: 0;
+}
+h1 + h2,
+h1 + h3 {
+	margin-top: 0;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+p {
+	font-size: 18px;
+	line-height: 22px;
+}
+p span {
+	font-size: 14px;
+}
+
+/* Buttons ............................................................................ */
+button,
+a {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer !important;
+	background-color: transparent;
+	color: #20a0e9;
+	text-align: left;
+	position: relative;
+}
+button > span,
+a > span,
+button > i,
+a > i {
+	cursor: pointer;
+	position: relative;
+}
+button.selected,
+a.selected {
+	cursor: default;
+	text-decoration: none;
+}
+button.selected span,
+a.selected span {
+	text-decoration: none;
+}
+button:not([disabled]):focus > span,
+a:not([disabled]):focus > span,
+button:not([disabled]):hover > span,
+a:not([disabled]):hover > span {
+	text-decoration: underline;
+}
+button:not([disabled]):active > span,
+a:not([disabled]):active > span,
+button:not([disabled]):active > i,
+a:not([disabled]):active > i {
+	top: 1px;
+}
+button.boxed,
+a.boxed {
+	padding: 10px 11px;
+	border: 1px solid #e1e1e1;
+	background-color: #f5f5f5;
+	display: block;
+	width: 100%;
+}
+button.boxed *,
+a.boxed * {
+	cursor: pointer;
+}
+button.boxed > span,
+a.boxed > span {
+	vertical-align: bottom;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #20a0e9;
+}
+button.boxed:hover,
+a.boxed:hover,
+button.boxed:focus,
+a.boxed:focus,
+button.boxed:active,
+a.boxed:active {
+	border: 1px solid #d2e7f5;
+	background-color: #e6f5ff;
+}
+button.aside,
+a.aside {
+	background-image: url("data:image/png;base64,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");
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-size: 22px 22px;
+	background-position: right 10px top 50%;
+	padding-right: 22px;
+}
+button.inline,
+a.inline {
+	display: inline-block;
+	width: auto;
+}
+button[ui-icon$="end"],
+a[ui-icon$="end"] {
+	border: none;
+	width: 320px;
+	padding: 11px;
+}
+button[ui-icon$="end"] span,
+a[ui-icon$="end"] span,
+button[ui-icon$="end"] i,
+a[ui-icon$="end"] i {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	width: 100%;
+}
+button[ui-icon$="end"]:active span,
+a[ui-icon$="end"]:active span,
+button[ui-icon$="end"]:active i,
+a[ui-icon$="end"]:active i {
+	top: 1px;
+}
+button[ui-icon$="end"] i,
+a[ui-icon$="end"] i {
+	text-align: right;
+}
+button {
+	position: relative;
+}
+button > span {
+	text-transform: capitalize;
+}
+button.aside span:after {
+	content: "\2026";
+}
+button[disabled] {
+	cursor: not-allowed !important;
+}
+button[disabled] span {
+	text-decoration: none !important;
+	color: #8a8a8a;
+	opacity: 0.5;
+	cursor: default;
+}
+menu[type="list"] button.aside span:after {
+	display: none;
+}
+.nocapitalize button > span,
+button.nocapitalize > span {
+	text-transform: none;
+}
+/* Action buttons ..................................................................... */
+button.action,
+a.action,
+button.active,
+a.active,
+button.danger,
+button.padded,
+button.buffed {
+	border-radius: 2px;
+	width: 100%;
+	border: none;
+	padding: 11px;
+}
+button.action,
+a.action,
+button.active,
+a.active,
+button.danger {
+	color: #ffffff;
+}
+button.action span,
+button.active span,
+button.danger span {
+	text-decoration: none !important;
+}
+button.action,
+a.action {
+	background-color: #7bc14d;
+}
+button.active,
+a.active {
+	background-color: #17a0e9;
+}
+button.danger {
+	background-color: #dc0000;
+}
+button.action[disabled],
+button.active[disabled],
+button.danger[disabled] {
+	background-color: #e6e6e6;
+	-webkit-text-fill-color: #1e1e1e;
+	color: #1e1e1e;
+}
+button:not([disabled]).action:focus,
+a:not([disabled]).action:focus,
+button:not([disabled]).action:active,
+a:not([disabled]).action:active {
+	background-color: #67ad39;
+}
+button:not([disabled]).active:focus,
+a:not([disabled]).active:focus,
+button:not([disabled]).active:active,
+a:not([disabled]).active:active {
+	background-color: #038cd5;
+}
+button:not([disabled]).danger:focus,
+a:not([disabled]).danger:focus,
+button:not([disabled]).danger:active,
+a:not([disabled]).danger:active {
+	background-color: #c80000;
+}
+button + button,
+label + button {
+	margin-top: 11px;
+}
+a.button {
+	display: inline-block;
+	margin: 22px 11px 0 0;
+	text-decoration: none;
+	width: 300px;
+}
+a.button:nth-of-type(2) {
+	margin-right: 0;
+}

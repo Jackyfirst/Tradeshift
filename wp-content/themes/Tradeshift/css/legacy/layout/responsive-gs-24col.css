@@ -1,0 +1,128 @@
+/* 
+	24 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+*/
+
+
+
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+
+/* MAIN CONTAINER */
+.container { 
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+
+
+
+							  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float:left;
+	width: 100%;
+}
+@media ( max-width : 960px ) {
+	.container { 
+		width: 100% !important;
+		position: relative;
+		margin: 0 auto;
+		overflow: hidden;
+	 }
+}
+@media ( min-width : 960px ) {
+	.press_awards.wrapper{ 
+		max-width:100%;
+	 } 
+}
+@media ( min-width : 1280px ) {
+	.ap_header .wrapper, .ap_get_it .wrapper, .products_ap .wrapper, .role_res_center .wrapper, .p2p_header .wrapper, .p2p_get_it .wrapper, .products_p2p .wrapper, .finance_header .wrapper, .products_finance .wrapper, .it_header .wrapper, .front_roles_header .wrapper,  .product_cloudscan_info .wrapper, .cloudscan_why .wrapper, .smb_header .wrapper, .smb_get_it .wrapper, .role_SMB_info .wrapper, .smb_benefits .wrapper, .smb_benefits .wrapper, .supplier_mananagement_why .wrapper, .product_res .wrapper{ 
+		max-width: 1120px !important;
+	 }
+	 .press_awards.wrapper{ 
+		max-width:100%;
+	 }
+
+}
+@media ( min-width : 1441px ) {
+	.product_cloudscan .wrapper, .product_invoicing .wrapper, .product_workflow .wrapper, .product_edoc .wrapper, .ldn_speakers .wrapper{ 
+		max-width: 1120px !important;
+	 }
+}
+
+/* RESET MARGINS */
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+@media ( min-width : 769px ) {
+	.span_1 { width: 4.166%; }
+	.span_2 { width: 8.3%; }
+	.span_3 { width: 12.5%; }
+	.span_4 { width: 16.66%; }
+	.span_5 { width: 20.83%; }
+	.span_6 { width: 25%; }
+	.span_7 { width: 29.16%; }
+	.span_8 { width: 33.3%; }
+	.span_9 { width: 37.5%; }
+	.span_10 { width: 41.6%; }
+	.span_11 { width: 45.83%; }
+	.span_12 { width: 50.0%; }
+	.span_13 { width: 51.16%; }
+	.span_14 { width: 58.3%; }
+	.span_15 { width: 62.5%; }
+	.span_16 { width: 66.7%; }
+	.span_17 { width: 70.84%; }
+	.span_18 { width: 75%; }
+	.span_19 { width: 79.17%; }
+	.span_20 { width: 83.3%; }
+	.span_21 { width: 87.5%; }
+	.span_22 { width: 91.7%; }
+	.span_23 { width: 95.83%; }
+	.span_24 { width: 100%; }
+	.span_80 { width: 18.70%;}
+}
+
+	.ie8 .span_1 { width: 4.166%; }
+   	.ie8 .span_2 { width: 8.3%; }
+  	.ie8 .span_3 { width: 12.5%; }
+   	.ie8 .span_4 { width: 16.66%; }
+	.ie8 .span_5 { width: 20.83%; }
+	.ie8 .span_6 { width: 25%; }
+	.ie8 .span_7 { width: 29.16%; }
+	.ie8 .span_8 { width: 33.3%; }
+	.ie8 .span_9 { width: 37.5%; }
+	.ie8 .span_10 { width: 41.6%; }
+	.ie8 .span_12 { width: 50.0%; }
+	.ie8 .span_11 { width: 45.83%; }
+	.ie8 .span_13 { width: 51.16%; }
+	.ie8 .span_14 { width: 58.3%; }
+	.ie8 .span_15 { width: 62.5%; }
+	.ie8 .span_16 { width: 66.7%; }
+	.ie8 .span_17 { width: 70.84%; }
+	.ie8 .span_18 { width: 75%; }
+	.ie8 .span_19 { width: 79.17%; }
+	.ie8 .span_20 { width: 83.3%; }
+	.ie8 .span_21 { width: 87.5%; }
+	.ie8 .span_22 { width: 91.7%; }
+	.ie8 .span_23 { width: 95.83%; }
+	.ie8 .span_24 { width: 100%; }
+
+

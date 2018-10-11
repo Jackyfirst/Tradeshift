@@ -1,0 +1,177 @@
+.wp-list-table.posts .column-title p
+{ 
+    display: none; 
+}
+
+#poststuff{
+  padding-top: 0;
+}
+#post-body.columns-2 #side-sortables{
+  min-height: inherit;
+}
+#wpcontent{
+  background: #f1f1f1;
+}
+
+#adminmenuwrap{
+  height: 100%;
+}
+.postbox-container,  #screen-options-link-wrap{ 
+  display: none !important; 
+}
+
+#poststuff #post-body.columns-2{ 
+  width: 100%;
+  margin-right: 0
+}
+
+.nav-menus-php #post-body
+{
+  padding: 0 10px 10px !important;
+}
+
+.builder-gui{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.builder-gui #post-body-content h3{
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0
+}
+
+.builder-gui .drag-drop .drag-drop-inside{
+  margin: 10px;
+}
+
+.field-actions .btn{
+  background: none;
+}
+
+.builder-gui .tab-pane{
+  padding-top: 10px;
+}
+
+.builder-gui #menu-settings-column button{
+	width: 47%;
+	margin-right: 2%;
+}
+
+.builder-gui section.builder-field{
+  margin-bottom: 5px;
+  border: 1px solid #efefef;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.builder-field hr{
+  margin: 10px 0;
+}
+
+.builder-gui .field-view, .builder-gui .field-edit{
+   padding: 5px 15px 5px 15px;
+}
+
+.builder-field.true .item-edit:before{
+  content: '\f142';
+}
+
+#menu-to-edit{
+  width: 512px;
+}
+
+.menu-item-bar .menu-item-handle{
+  width: 482px;
+}
+.description{
+  float: left;
+  margin-right: 10px;
+}
+.description label, 
+.description .form-control{
+  width: 100%;
+}
+
+.description label{
+  text-transform: capitalize;
+}
+.description-thin{
+  width: 240px;
+}
+
+.description-xs{
+  width: 145px;
+  margin-right: 10px;
+}
+
+.description-wide{
+  width: 480px;
+}
+
+.menu-item-settings{
+  width: 502px;
+}
+
+.builder-gui td .button
+{
+  visibility: hidden;
+}
+
+.builder-gui tr:hover .button
+{
+  visibility: visible;
+}
+
+.builder-gui .ui-state-highlight{
+  width: 512px;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px dashed #ccc;
+}
+
+.builder-gui label, .builder-gui dt{ 
+  font-weight: normal; 
+}
+.field-edit-content .show-advanced,
+.field-edit-content .hide-advanced{
+  width: 100%;
+  float: left;
+  display: block;
+  margin-top: 10px;
+}
+.field-edit-content section{
+  width: 100%;
+  max-width: 492px;
+  padding: 0 10px 10px 0;
+  float: left;
+  border-bottom: 1px solid #ddd;
+}
+.field-edit-content h4{
+  margin: 0;
+}
+.field-edit-content label{
+  font-style: italic;
+}
+
+.submitduplicate{
+  float: right;
+  margin-top: 6px;
+}
+
+ul.builder-grid 
+{
+  display: block;
+  margin: 0;
+  list-style: none;
+}
+
+.builder-col
+{
+  width: 160px;
+  float: left;
+  display: inline-block;
+}
+
+.builder-col:nth-of-type(4n+1)
+{
+  clear: both;
+}

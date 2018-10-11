@@ -1,0 +1,2129 @@
+/* This is the utility to sniff out sitewide navigation media query */
+/* We use mobile nav for device width up to 991px */
+/* We then have the desktop nav view for device width over 992px */
+/* Bootstrappy Mixins for Responsive Layout */
+/* Font Smoothing */
+/* Background Treatment (Pertains to opacity overlays over background-images) */
+/* Reset Utilities */
+/* IE 10 in Windows 8 Viewport Patch */
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+/* Typed.js styling */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 2s infinite;
+  -moz-animation: blink 2s infinite;
+  animation: blink 2s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 0.8; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.8; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 0.8; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../vendor/font-awesome-4.3.0/fonts/fontawesome-webfont.eot");
+  src: url("../vendor/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2") format("woff2");
+  src: url("../vendor/font-awesome-4.3.0/fonts/fontawesome-webfont.woff") format("woff");
+  src: url("../vendor/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf") format("truetype");
+  src: url("../vendor/font-awesome-4.3.0/fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #1E1E1E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  h1.on-dark,
+  h2.on-dark,
+  h3.on-dark,
+  h4.on-dark,
+  h5.on-dark,
+  h6.on-dark {
+    color: #FFFFFF; }
+  h1.centered,
+  h2.centered,
+  h3.centered,
+  h4.centered,
+  h5.centered,
+  h6.centered {
+    text-align: center; }
+
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 48px;
+      line-height: 55px; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 48px;
+      line-height: 55px; } }
+
+h2 {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  color: #20A0E9; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 34px;
+      line-height: 44px; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 34px;
+      line-height: 44px; } }
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 26px;
+      line-height: 33px; } }
+  @media (min-width: 992px) {
+    h3 {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 33px; } }
+
+h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px; }
+
+h5 {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px; }
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  p.on-dark {
+    color: #FFFFFF; }
+  p.centered {
+    text-align: center; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 33px; } }
+
+p.lead {
+  font-size: 18px; }
+
+p.sub {
+  font-size: 12px; }
+
+.btn {
+  display: inline-block;
+  padding: 6px 0px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px; }
+  .btn:focus {
+    outline: none; }
+
+.btn-request-demo {
+  padding: 0px 11px;
+  height: 22px;
+  border-radius: 11px;
+  background: #FFFFFF;
+  color: #20A0E9;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: center;
+  margin-top: -4px; }
+
+.btn-request-demo-lg {
+  padding: 0px 5px;
+  width: 160px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #FFFFFF;
+  color: #20A0E9;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0px; }
+
+.btn-primary-cta, .modal .mktoForm .mktoButton,
+.btn-primary-cta-on-blue,
+.btn-secondary-cta {
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  text-align: left !important;
+  height: 44px !important;
+  border-radius: 22px !important;
+  border: none !important;
+  padding: 9px 22px !important; }
+
+.btn-primary-cta, .modal .mktoForm .mktoButton {
+  color: #FFFFFF !important;
+  background-color: #F05522 !important;
+  background-image: initial !important; }
+  .btn-primary-cta:active, .modal .mktoForm .mktoButton:active {
+    color: #FFFFFF !important;
+    background-color: #90181C !important; }
+  .btn-primary-cta:hover, .modal .mktoForm .mktoButton:hover {
+    color: #FFFFFF !important;
+    background-color: #DB3A14 !important; }
+  .btn-primary-cta:focus, .modal .mktoForm .mktoButton:focus {
+    color: #FFFFFF !important;
+    background-color: #F05522 !important; }
+
+.btn-primary-cta-on-blue {
+  color: #20A0E9;
+  background-color: #FFFFFF; }
+  .btn-primary-cta-on-blue:active, .btn-primary-cta-on-blue:focus {
+    color: #FFFFFF;
+    background-color: #1E3D55; }
+  .btn-primary-cta-on-blue:hover {
+    color: #FFFFFF;
+    background-color: #C5E1F7; }
+
+.btn-secondary-cta {
+  color: #FFFFFF;
+  background-color: #F4AD1B; }
+  .btn-secondary-cta:active {
+    color: #FFFFFF;
+    background-color: #EA9103; }
+  .btn-secondary-cta:hover, .btn-secondary-cta:visited {
+    color: #FFFFFF;
+    background-color: #F5B633; }
+
+.btn-play {
+  background: url("../img/roles/finance/btn-play.png") no-repeat top center;
+  width: 83px;
+  height: 83px; }
+
+.btn-play-home {
+  background: url("../img/home/btn-play-home.png") no-repeat top center;
+  width: 110px;
+  height: 90px;
+  color: #FFFFFF;
+  padding-top: 66px; }
+
+.label-default, .roles .fill-out-form .roles-pages label, .roles .fill-out-form .modal .mktoForm label, .modal .roles .fill-out-form .mktoForm label,
+.home .fill-out-form .roles-pages label,
+.home .fill-out-form .modal .mktoForm label,
+.modal .home .fill-out-form .mktoForm label,
+.home-active .fill-out-form .roles-pages label,
+.home-active .fill-out-form .modal .mktoForm label,
+.modal .home-active .fill-out-form .mktoForm label,
+.vision-page .fill-out-form .roles-pages label,
+.vision-page .fill-out-form .modal .mktoForm label,
+.modal .vision-page .fill-out-form .mktoForm label, .landing-pages .fill-out-form .lp label, .modal .mktoForm .mktoLabel {
+  font-weight: 300 !important;
+  font-size: 11px !important;
+  text-align: left !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  background-color: transparent !important;
+  color: #20A0E9 !important;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  margin-bottom: 8px !important; }
+
+.input-fields-default, .roles .fill-out-form .roles-pages input, .roles .fill-out-form .modal .mktoForm input, .modal .roles .fill-out-form .mktoForm input,
+.roles .fill-out-form .roles-pages textarea,
+.roles .fill-out-form .modal .mktoForm textarea,
+.modal .roles .fill-out-form .mktoForm textarea,
+.home .fill-out-form .roles-pages input,
+.home .fill-out-form .modal .mktoForm input,
+.modal .home .fill-out-form .mktoForm input,
+.home .fill-out-form .roles-pages textarea,
+.home .fill-out-form .modal .mktoForm textarea,
+.modal .home .fill-out-form .mktoForm textarea,
+.home-active .fill-out-form .roles-pages input,
+.home-active .fill-out-form .modal .mktoForm input,
+.modal .home-active .fill-out-form .mktoForm input,
+.home-active .fill-out-form .roles-pages textarea,
+.home-active .fill-out-form .modal .mktoForm textarea,
+.modal .home-active .fill-out-form .mktoForm textarea,
+.vision-page .fill-out-form .roles-pages input,
+.vision-page .fill-out-form .modal .mktoForm input,
+.modal .vision-page .fill-out-form .mktoForm input,
+.vision-page .fill-out-form .roles-pages textarea,
+.vision-page .fill-out-form .modal .mktoForm textarea,
+.modal .vision-page .fill-out-form .mktoForm textarea, .landing-pages .fill-out-form .lp input,
+.landing-pages .fill-out-form .lp textarea, .modal .mktoForm input[type=text],
+.modal .mktoForm input[type=url],
+.modal .mktoForm input[type=email],
+.modal .mktoForm input[type=tel],
+.modal .mktoForm input[type=number],
+.modal .mktoForm input[type=date],
+.modal .mktoForm select.mktoField,
+.modal .mktoForm textarea.mktoField {
+  background-color: #E6E7E8 !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  text-align: left !important;
+  letter-spacing: 0.8px !important;
+  color: #646464 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 44px !important;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  padding: 6px 12px !important;
+  line-height: initial !important; }
+
+.form-control::-webkit-input-placeholder, .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+.modal .mktoForm input[type=url]::-webkit-input-placeholder,
+.modal .mktoForm input[type=email]::-webkit-input-placeholder,
+.modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+.modal .mktoForm input[type=number]::-webkit-input-placeholder,
+.modal .mktoForm input[type=date]::-webkit-input-placeholder,
+.modal .mktoForm select.mktoField::-webkit-input-placeholder,
+.modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+.input-fields-default::-webkit-input-placeholder,
+.roles .fill-out-form .roles-pages input::-webkit-input-placeholder,
+.roles .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+.modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+.roles .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+.roles .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+.modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+.home .fill-out-form .roles-pages input::-webkit-input-placeholder,
+.home .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+.modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+.home .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+.home .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+.modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+.home-active .fill-out-form .roles-pages input::-webkit-input-placeholder,
+.home-active .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+.modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+.home-active .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+.home-active .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+.modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+.vision-page .fill-out-form .roles-pages input::-webkit-input-placeholder,
+.vision-page .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+.modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+.vision-page .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+.vision-page .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+.modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+.landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+.landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+.modal .mktoForm input[type=text]::-webkit-input-placeholder,
+.modal .mktoForm input[type=url]::-webkit-input-placeholder,
+.modal .mktoForm input[type=email]::-webkit-input-placeholder,
+.modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+.modal .mktoForm input[type=number]::-webkit-input-placeholder,
+.modal .mktoForm input[type=date]::-webkit-input-placeholder,
+.modal .mktoForm select.mktoField::-webkit-input-placeholder,
+.modal .mktoForm textarea.mktoField::-webkit-input-placeholder {
+  font-weight: 18px !important;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  margin-top: 5px !important;
+  border-radius: 0 !important; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none; }
+
+.main-content {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+  @media (min-width: 768px) {
+    .main-content {
+      padding-top: 0px; } }
+  .main-content.nav-is-visible {
+    -webkit-transform: translateX(260px);
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    transform: translateX(260px);
+    overflow-x: hidden; }
+
+.roles,
+.general,
+.home-active,
+.landing-pages,
+.vision-page {
+  margin-top: 55px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.case-studies-container {
+  position: relative;
+  z-index: 50; }
+  .case-studies-container .customer-case-studies li {
+    display: inline-block;
+    text-align: center; }
+    .case-studies-container .customer-case-studies li:first-child {
+      text-align: left; }
+    .case-studies-container .customer-case-studies li:last-child {
+      text-align: right; }
+  .case-studies-container .customer-case-studies .airfrance > img {
+    margin-top: 10px; }
+  .case-studies-container .customer-case-studies .dhl > a > img {
+    margin-top: 4px; }
+  .case-studies-container .customer-case-studies .linked-in > a > img {
+    margin-top: 2px; }
+  .case-studies-container .customer-case-studies .cbre > a > img {
+    margin-top: 2px; }
+  .case-studies-container .customer-case-studies .adm > a > img {
+    margin-top: 0px; }
+  .case-studies-container .customer-case-studies .vestas > a > img {
+    margin-top: 2px; }
+  .case-studies-container .customer-case-studies .nhs > a > img {
+    margin-top: -2px; }
+
+.customer-logos-container {
+  position: relative;
+  z-index: 50; }
+  .customer-logos-container .customer-logos li {
+    display: inline-block;
+    text-align: center; }
+    .customer-logos-container .customer-logos li:first-child {
+      text-align: left; }
+    .customer-logos-container .customer-logos li:last-child {
+      text-align: right; }
+  .customer-logos-container .customer-logos .airfrance > img {
+    margin-top: 10px; }
+  .customer-logos-container .customer-logos .dhl > a > img {
+    margin-top: 4px; }
+  .customer-logos-container .customer-logos .linked-in > a > img {
+    margin-top: 2px; }
+  .customer-logos-container .customer-logos .cbre > a > img {
+    margin-top: 2px; }
+  .customer-logos-container .customer-logos .adm > a > img {
+    margin-top: 0px; }
+  .customer-logos-container .customer-logos .vestas > a > img {
+    margin-top: 2px; }
+  .customer-logos-container .customer-logos .nhs > a > img {
+    margin-top: -2px; }
+
+.roles .fill-out-form,
+.home .fill-out-form,
+.home-active .fill-out-form,
+.vision-page .fill-out-form {
+  padding: 30px 0;
+  background: #c5e1f7; }
+  .roles .fill-out-form h2,
+  .home .fill-out-form h2,
+  .home-active .fill-out-form h2,
+  .vision-page .fill-out-form h2 {
+    margin: 0 auto;
+    color: #20A0E9;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    text-align: center; }
+  .roles .fill-out-form .roles-pages label, .roles .fill-out-form .modal .mktoForm label, .modal .roles .fill-out-form .mktoForm label,
+  .home .fill-out-form .roles-pages label,
+  .home .fill-out-form .modal .mktoForm label,
+  .modal .home .fill-out-form .mktoForm label,
+  .home-active .fill-out-form .roles-pages label,
+  .home-active .fill-out-form .modal .mktoForm label,
+  .modal .home-active .fill-out-form .mktoForm label,
+  .vision-page .fill-out-form .roles-pages label,
+  .vision-page .fill-out-form .modal .mktoForm label,
+  .modal .vision-page .fill-out-form .mktoForm label {
+    width: 100% !important; }
+  .roles .fill-out-form .roles-pages input, .roles .fill-out-form .modal .mktoForm input, .modal .roles .fill-out-form .mktoForm input,
+  .roles .fill-out-form .roles-pages textarea,
+  .roles .fill-out-form .modal .mktoForm textarea,
+  .modal .roles .fill-out-form .mktoForm textarea,
+  .home .fill-out-form .roles-pages input,
+  .home .fill-out-form .modal .mktoForm input,
+  .modal .home .fill-out-form .mktoForm input,
+  .home .fill-out-form .roles-pages textarea,
+  .home .fill-out-form .modal .mktoForm textarea,
+  .modal .home .fill-out-form .mktoForm textarea,
+  .home-active .fill-out-form .roles-pages input,
+  .home-active .fill-out-form .modal .mktoForm input,
+  .modal .home-active .fill-out-form .mktoForm input,
+  .home-active .fill-out-form .roles-pages textarea,
+  .home-active .fill-out-form .modal .mktoForm textarea,
+  .modal .home-active .fill-out-form .mktoForm textarea,
+  .vision-page .fill-out-form .roles-pages input,
+  .vision-page .fill-out-form .modal .mktoForm input,
+  .modal .vision-page .fill-out-form .mktoForm input,
+  .vision-page .fill-out-form .roles-pages textarea,
+  .vision-page .fill-out-form .modal .mktoForm textarea,
+  .modal .vision-page .fill-out-form .mktoForm textarea {
+    background: #FFFFFF !important;
+    color: #20A0E9 !important; }
+  .roles .fill-out-form .form,
+  .home .fill-out-form .form,
+  .home-active .fill-out-form .form,
+  .vision-page .fill-out-form .form {
+    margin: 0 auto;
+    text-align: center; }
+  .roles .fill-out-form .form-group, .roles .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .roles .fill-out-form .mktoFieldWrap,
+  .home .fill-out-form .form-group,
+  .home .fill-out-form .modal .mktoForm .mktoFieldWrap,
+  .modal .mktoForm .home .fill-out-form .mktoFieldWrap,
+  .home-active .fill-out-form .form-group,
+  .home-active .fill-out-form .modal .mktoForm .mktoFieldWrap,
+  .modal .mktoForm .home-active .fill-out-form .mktoFieldWrap,
+  .vision-page .fill-out-form .form-group,
+  .vision-page .fill-out-form .modal .mktoForm .mktoFieldWrap,
+  .modal .mktoForm .vision-page .fill-out-form .mktoFieldWrap {
+    margin-bottom: 20px; }
+  .roles .fill-out-form .form-group:last-child, .roles .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .roles .fill-out-form .mktoFieldWrap:last-child,
+  .home .fill-out-form .form-group:last-child,
+  .home .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+  .modal .mktoForm .home .fill-out-form .mktoFieldWrap:last-child,
+  .home-active .fill-out-form .form-group:last-child,
+  .home-active .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+  .modal .mktoForm .home-active .fill-out-form .mktoFieldWrap:last-child,
+  .vision-page .fill-out-form .form-group:last-child,
+  .vision-page .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+  .modal .mktoForm .vision-page .fill-out-form .mktoFieldWrap:last-child {
+    margin-bottom: 20px;
+    text-align: center; }
+  .roles .fill-out-form .form-control::-webkit-input-placeholder, .roles .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .roles .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .roles .fill-out-form .input-fields-default::-webkit-input-placeholder,
+  .roles .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .roles .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .roles .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .roles .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .roles .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .roles .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .roles .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .roles .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .lp input::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .roles .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .roles .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .home .fill-out-form .form-control::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .home .fill-out-form .input-fields-default::-webkit-input-placeholder,
+  .home .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .lp input::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .home .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .home-active .fill-out-form .form-control::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .home-active .fill-out-form .input-fields-default::-webkit-input-placeholder,
+  .home-active .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home-active .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home-active .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home-active .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home-active .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home-active .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home-active .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .home-active .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .lp input::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .home-active .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .home-active .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .vision-page .fill-out-form .form-control::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .vision-page .fill-out-form .input-fields-default::-webkit-input-placeholder,
+  .vision-page .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .vision-page .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .vision-page .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .vision-page .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .vision-page .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .vision-page .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .vision-page .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .vision-page .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .lp input::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .vision-page .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .vision-page .fill-out-form textarea.mktoField::-webkit-input-placeholder {
+    color: #20A0E9 !important; }
+  .roles .fill-out-form .sub,
+  .home .fill-out-form .sub,
+  .home-active .fill-out-form .sub,
+  .vision-page .fill-out-form .sub {
+    color: #1F3D55;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .roles .fill-out-form .form-group, .roles .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .roles .fill-out-form .mktoFieldWrap,
+    .home .fill-out-form .form-group,
+    .home .fill-out-form .modal .mktoForm .mktoFieldWrap,
+    .modal .mktoForm .home .fill-out-form .mktoFieldWrap,
+    .home-active .fill-out-form .form-group,
+    .home-active .fill-out-form .modal .mktoForm .mktoFieldWrap,
+    .modal .mktoForm .home-active .fill-out-form .mktoFieldWrap,
+    .vision-page .fill-out-form .form-group,
+    .vision-page .fill-out-form .modal .mktoForm .mktoFieldWrap,
+    .modal .mktoForm .vision-page .fill-out-form .mktoFieldWrap {
+      text-align: initial; }
+    .roles .fill-out-form .form-group:last-child, .roles .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .roles .fill-out-form .mktoFieldWrap:last-child,
+    .home .fill-out-form .form-group:last-child,
+    .home .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+    .modal .mktoForm .home .fill-out-form .mktoFieldWrap:last-child,
+    .home-active .fill-out-form .form-group:last-child,
+    .home-active .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+    .modal .mktoForm .home-active .fill-out-form .mktoFieldWrap:last-child,
+    .vision-page .fill-out-form .form-group:last-child,
+    .vision-page .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child,
+    .modal .mktoForm .vision-page .fill-out-form .mktoFieldWrap:last-child {
+      text-align: left; } }
+
+.landing-pages .fill-out-form {
+  padding: 30px 0;
+  background: #FFFFFF; }
+  .landing-pages .fill-out-form h2 {
+    margin: 0 auto;
+    color: #20A0E9;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    text-align: center; }
+  .landing-pages .fill-out-form .lp label {
+    width: 100% !important; }
+  .landing-pages .fill-out-form .lp input,
+  .landing-pages .fill-out-form .lp textarea {
+    background: #D2D2D2;
+    color: #1E1E1E !important; }
+  .landing-pages .fill-out-form .form {
+    margin: 0 auto;
+    text-align: center; }
+  .landing-pages .fill-out-form .form-group, .landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .landing-pages .fill-out-form .mktoFieldWrap {
+    margin-bottom: 20px;
+    text-align: left; }
+  .landing-pages .fill-out-form .form-group:last-child, .landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .landing-pages .fill-out-form .mktoFieldWrap:last-child {
+    margin-bottom: 20px;
+    text-align: center; }
+  .landing-pages .fill-out-form .form-control::-webkit-input-placeholder, .landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .input-fields-default::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .modal .roles .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .landing-pages .roles .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .roles .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .modal .roles .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .modal .home .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .landing-pages .home .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .home .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .modal .home .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .modal .home-active .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .landing-pages .home-active .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .home-active .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .modal .home-active .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .modal .vision-page .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+  .landing-pages .vision-page .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .vision-page .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .modal .vision-page .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder,
+  .landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+  .modal .mktoForm .landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder {
+    color: #1E1E1E;
+    text-align: center; }
+  .landing-pages .fill-out-form .sub {
+    color: #646464;
+    line-height: 1.3;
+    text-align: center;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    letter-spacing: -0.1px; }
+  @media (min-width: 768px) {
+    .landing-pages .fill-out-form .form-group, .landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap, .modal .mktoForm .landing-pages .fill-out-form .mktoFieldWrap {
+      text-align: left; }
+    .landing-pages .fill-out-form .form-group:last-child, .landing-pages .fill-out-form .modal .mktoForm .mktoFieldWrap:last-child, .modal .mktoForm .landing-pages .fill-out-form .mktoFieldWrap:last-child {
+      text-align: left; }
+    .landing-pages .fill-out-form .form-control::-webkit-input-placeholder, .landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder, .modal .mktoForm .landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .input-fields-default::-webkit-input-placeholder,
+    .landing-pages .roles .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .roles .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .landing-pages .roles .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .roles .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .modal .roles .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .modal .roles .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .roles .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .roles .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .landing-pages .roles .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .roles .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .modal .roles .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .modal .roles .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .home .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .home .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .landing-pages .home .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .home .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .modal .home .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .modal .home .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .home .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .home .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .landing-pages .home .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .home .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .modal .home .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .modal .home .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .home-active .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .home-active .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .landing-pages .home-active .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .home-active .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .modal .home-active .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .modal .home-active .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .home-active .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .home-active .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .landing-pages .home-active .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .home-active .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .modal .home-active .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .modal .home-active .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .vision-page .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .vision-page .landing-pages .fill-out-form .roles-pages input::-webkit-input-placeholder,
+    .landing-pages .vision-page .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .vision-page .landing-pages .fill-out-form .modal .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .modal .vision-page .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .modal .vision-page .landing-pages .fill-out-form .mktoForm input::-webkit-input-placeholder,
+    .landing-pages .vision-page .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .vision-page .landing-pages .fill-out-form .roles-pages textarea::-webkit-input-placeholder,
+    .landing-pages .vision-page .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .vision-page .landing-pages .fill-out-form .modal .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .modal .vision-page .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .modal .vision-page .landing-pages .fill-out-form .mktoForm textarea::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .lp input::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .lp textarea::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=text]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=text]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=url]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=url]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=email]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=email]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=tel]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=tel]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=number]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=number]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm input[type=date]::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form input[type=date]::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm select.mktoField::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form select.mktoField::-webkit-input-placeholder,
+    .landing-pages .fill-out-form .modal .mktoForm textarea.mktoField::-webkit-input-placeholder,
+    .modal .mktoForm .landing-pages .fill-out-form textarea.mktoField::-webkit-input-placeholder {
+      text-align: left; }
+    .landing-pages .fill-out-form .sub {
+      text-align: left; } }
+
+/* Let's beautify the simple Marketo form style with Tradeshift style guide */
+.modal .modal-content {
+  border-radius: 0px !important; }
+.modal .modal-header {
+  background: #c5e1f7;
+  padding: 30px; }
+  .modal .modal-header h3 {
+    color: #20A0E9; }
+  .modal .modal-header p.lead {
+    font-size: 18px;
+    padding: 0;
+    margin: 0; }
+.modal .modal-body {
+  padding: 30px; }
+.modal .modal-footer {
+  padding: 30px; }
+.modal .mktoForm {
+  width: 100% !important; }
+  .modal .mktoForm .mktoOffset,
+  .modal .mktoForm .mktoGutter,
+  .modal .mktoForm .mktoAsterix {
+    display: none !important; }
+  .modal .mktoForm .mktoFieldWrap {
+    float: none; }
+  .modal .mktoForm .mktoFormCol {
+    float: none; }
+  .modal .mktoForm input[type=text],
+  .modal .mktoForm input[type=url],
+  .modal .mktoForm input[type=email],
+  .modal .mktoForm input[type=tel],
+  .modal .mktoForm input[type=number],
+  .modal .mktoForm input[type=date],
+  .modal .mktoForm select.mktoField,
+  .modal .mktoForm textarea.mktoField {
+    width: 100% !important; }
+  .modal .mktoForm .mktoLabel {
+    width: 90% !important; }
+  .modal .mktoForm .mktoError {
+    left: 0 !important;
+    right: initial !important; }
+  .modal .mktoForm .mktoButtonWrap {
+    margin: 20px 0 0 0 !important; }
+  .modal .mktoForm .mktoButton {
+    padding: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important; }
+  .modal .mktoForm .mktoHtmlText {
+    width: 90% !important; }
+    .modal .mktoForm .mktoHtmlText p.privacy {
+      font-size: 12px !important;
+      line-height: 18px !important; }
+
+.lpv2 .hero {
+  background: #20A0E9 url("../img/start/fpo-hero-bg.jpg") no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF; }
+  .lpv2 .hero .customer-logos-container {
+    margin-bottom: 22px; }
+  .lpv2 .hero h1 {
+    width: 270px;
+    margin: 33px auto 11px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
+  .lpv2 .hero h3 {
+    width: 270px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px; }
+    .lpv2 .hero h3 span {
+      font-weight: 700; }
+  .lpv2 .hero .btn-video {
+    margin-bottom: 11px; }
+  .lpv2 .hero .customer-logos-container {
+    background: url("../img/home/customer-logos-800.png") no-repeat center bottom;
+    background-size: 90%;
+    height: 54px;
+    z-index: 50; }
+  @media (min-width: 768px) {
+    .lpv2 .hero {
+      height: 530px; }
+      .lpv2 .hero .contents {
+        padding-left: 33px; }
+      .lpv2 .hero .cta {
+        height: 430px; }
+      .lpv2 .hero h1 {
+        font-size: 38px;
+        line-height: 44px;
+        width: 620px;
+        margin: 66px auto 22px;
+        padding: 0; }
+      .lpv2 .hero h3 {
+        width: 620px;
+        margin: 0 auto;
+        padding-bottom: 44px;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 33px; }
+        .lpv2 .hero h3 span {
+          font-weight: 700; }
+      .lpv2 .hero .btn-video {
+        margin-bottom: 0; }
+      .lpv2 .hero .btn-secondary-cta {
+        margin-right: 22px; }
+      .lpv2 .hero .customer-logos-container {
+        background: none;
+        height: 100px;
+        z-index: 50; }
+        .lpv2 .hero .customer-logos-container .customer-logos {
+          margin-top: 0; }
+          .lpv2 .hero .customer-logos-container .customer-logos .airfrance {
+            width: 30%; }
+          .lpv2 .hero .customer-logos-container .customer-logos .linked-in {
+            width: 10.7%; }
+          .lpv2 .hero .customer-logos-container .customer-logos .dhl {
+            width: 23.8%; }
+          .lpv2 .hero .customer-logos-container .customer-logos .cbre {
+            width: 18%; }
+          .lpv2 .hero .customer-logos-container .customer-logos .nhs {
+            width: 13%; } }
+  @media (min-width: 992px) {
+    .lpv2 .hero {
+      height: 530px; }
+      .lpv2 .hero .container {
+        height: 558px; }
+      .lpv2 .hero h1 {
+        font-size: 48px;
+        line-height: 55px;
+        margin-top: 55px;
+        padding: 0; }
+      .lpv2 .hero .contents {
+        padding-left: 0px; }
+      .lpv2 .hero .customer-logos-container .customer-logos {
+        margin-top: 33px; }
+        .lpv2 .hero .customer-logos-container .customer-logos .airfrance {
+          width: 21%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .linked-in {
+          width: 8%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .dhl {
+          width: 17%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .cbre {
+          width: 12%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .adm {
+          width: 12%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .vestas {
+          width: 16%; }
+        .lpv2 .hero .customer-logos-container .customer-logos .nhs {
+          width: 10%; } }
+  @media (min-width: 1200px) {
+    .lpv2 .hero {
+      background-size: cover; } }
+.lpv2 .value-proposition {
+  padding: 22px 0; }
+  .lpv2 .value-proposition h3 {
+    color: #20A0E9; }
+  .lpv2 .value-proposition h3.check::before {
+    font-family: "FontAwesome";
+    content: "";
+    margin-right: 11px; }
+  .lpv2 .value-proposition h4 {
+    padding: 0 11px; }
+  @media (min-width: 768px) {
+    .lpv2 .value-proposition {
+      padding: 33px 0 55px; }
+      .lpv2 .value-proposition h3 {
+        margin-bottom: 0; }
+      .lpv2 .value-proposition p {
+        margin-top: 11px;
+        padding-right: 22px; } }
+.lpv2 hr.dash {
+  width: 88%;
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .lpv2 hr.dash {
+      width: 700px; } }
+.lpv2 .testimonials {
+  padding: 22px 0 33px;
+  background: #FFFFFF;
+  color: #1E1E1E;
+  text-align: center; }
+  .lpv2 .testimonials blockquote {
+    border-left: none;
+    margin: 0; }
+  .lpv2 .testimonials .quotation > p {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 11px; }
+  .lpv2 .testimonials .quoted-person {
+    color: #282828; }
+  @media (min-width: 768px) {
+    .lpv2 .testimonials .quotation > p {
+      margin-top: 0;
+      font-size: 26px;
+      line-height: 33px;
+      text-align: center;
+      margin-bottom: 22px; }
+    .lpv2 .testimonials .quoted-person {
+      text-align: center; } }
+  @media (min-width: 992px) {
+    .lpv2 .testimonials .quotation {
+      padding: 0 22px; } }
+.lpv2 .fill-out-form .form-group input.ie9-placeholder, .lpv2 .fill-out-form .modal .mktoForm .mktoFieldWrap input.ie9-placeholder, .modal .mktoForm .lpv2 .fill-out-form .mktoFieldWrap input.ie9-placeholder {
+  color: #1E1E1E; }
+
+.xs-cta-container {
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 11px;
+  opacity: 0;
+  -webkit-transition: all, 0.6s;
+  -moz-transition: all, 0.6s;
+  transition: all, 0.6s; }
+  .xs-cta-container:hover {
+    background: black; }
+  .xs-cta-container .xs-cta {
+    text-align: center;
+    font-size: 18px;
+    color: #20A0E9;
+    display: block;
+    outline: none; }
+    .xs-cta-container .xs-cta:focus {
+      outline: none; }
+  .xs-cta-container.is-active {
+    opacity: 1;
+    -webkit-transition: all, 0.6s;
+    -moz-transition: all, 0.6s;
+    transition: all, 0.6s; }
+
+/* Looking for the Marketo Form: go to _layout.sass | Code below overrides that style */
+.modal.lp-marketo-form h3 {
+  text-transform: capitalize; }
+@media (min-width: 768px) {
+  .modal.lp-marketo-form .modal-dialog {
+    margin: 77px auto; } }
+.modal.lp-marketo-form .modal-header {
+  background: #20A0E9;
+  border-bottom: none; }
+  .modal.lp-marketo-form .modal-header h3,
+  .modal.lp-marketo-form .modal-header .lead,
+  .modal.lp-marketo-form .modal-header .close {
+    color: #FFFFFF;
+    opacity: 1; }
+  .modal.lp-marketo-form .modal-header .lead {
+    font-size: 14px; }
+  .modal.lp-marketo-form .modal-header .close {
+    font-weight: normal; }
+.modal.lp-marketo-form .modal-body {
+  padding: 11px 11px 0 11px; }
+  .modal.lp-marketo-form .modal-body .mktoTemplateBox h4 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 11px; }
+  .modal.lp-marketo-form .modal-body .mktoTemplateBox p {
+    margin-bottom: 11px; }
+  .modal.lp-marketo-form .modal-body .mktoTemplateBox .mktoButtonWrap button {
+    padding: 0 22px !important; }
+  .modal.lp-marketo-form .modal-body .mktoTemplateBox a.mktoNotYou {
+    font-size: 12px; }
+  @media (min-width: 768px) {
+    .modal.lp-marketo-form .modal-body {
+      padding: 22px 33px 0 33px; } }
+  .modal.lp-marketo-form .modal-body .mktoError {
+    left: 4% !important; }
+  .modal.lp-marketo-form .modal-body .mktoForm div.placeholder {
+    display: none; }
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) {
+    background: #E6E7E8; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) select.mktoField {
+      width: 92% !important;
+      margin-left: 4% !important; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) label.mktoLabel,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) label.mktoLabel {
+      margin-top: 11px !important; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(13) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(14) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(18) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) select.mktoField {
+      background-color: #FFFFFF !important; }
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(11) {
+    margin-bottom: 11px; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(11) .mktoHtmlText p {
+      color: #1E3D55;
+      display: inline;
+      padding-left: 6px;
+      font-size: 18px; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(11) .mktoHtmlText::before {
+      content: "1.";
+      font-weight: 600;
+      font-size: 18px; }
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(12),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(17) {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15),
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(15) select.mktoField,
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=email],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=tel],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) input[type=text],
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(19) select.mktoField {
+      margin-bottom: 22px; }
+  .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(16) {
+    margin-top: 22px;
+    margin-bottom: 11px; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(16) .mktoHtmlText p {
+      color: #1E3D55;
+      display: inline;
+      padding-left: 6px;
+      font-size: 18px; }
+    .modal.lp-marketo-form .modal-body .mktoFormRow:nth-child(16) .mktoHtmlText::before {
+      content: "2.";
+      font-weight: 600;
+      font-size: 18px; }
+  .modal.lp-marketo-form .modal-body .mktoFormCol {
+    margin-bottom: 0 !important; }
+  .modal.lp-marketo-form .modal-body .mktoFieldWrap {
+    margin-bottom: 0 !important; }
+  .modal.lp-marketo-form .modal-body .mktoButtonRow {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 22px; }
+.modal.lp-marketo-form .modal-footer {
+  padding: 11px 22px;
+  text-align: left;
+  border-top: none; }
+  .modal.lp-marketo-form .modal-footer p.sub {
+    line-height: 12px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 768px) {
+    .modal.lp-marketo-form .modal-footer {
+      padding: 11px 66px; } }
+.modal.lp-marketo-form img {
+  width: 100%; }
+
+.modal.lp-video .modal-body {
+  padding: 5px; }
+
+.sitewide-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  height: 55px;
+  background: #20A0E9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* border-bottom: 1px solid $brand-blue-opaque */
+  -webkit-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+  .sitewide-nav.nav-is-visible {
+    -webkit-transform: translateX(260px);
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    transform: translateX(260px); }
+  .sitewide-nav::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    display: none;
+    content: "mobile"; }
+  @media only screen and (min-width: 992px) {
+    .sitewide-nav {
+      height: 55px; }
+      .sitewide-nav.nav-is-visible {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0); }
+      .sitewide-nav::before {
+        content: "desktop"; } }
+  .sitewide-nav .site-navbar {
+    /* @extend .col-sm-12 */ }
+  .sitewide-nav .navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border: 0; }
+    .sitewide-nav .navbar > li > ul {
+      width: 100%;
+      border-radius: 0px;
+      border: 0;
+      background: #18648f; }
+  .sitewide-nav .navbar {
+    float: none; }
+  .sitewide-nav .navbar-top {
+    background: #20A0E9; }
+  .sitewide-nav .navbar-brand {
+    margin: 18px 0 0 50px;
+    padding: 0;
+    /* remove jump on iOS devices - when we fire the navigation */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    .sitewide-nav .navbar-brand img {
+      width: 145px; }
+    @media (min-width: 992px) {
+      .sitewide-nav .navbar-brand {
+        margin: 18px 0 0 0;
+        float: left; } }
+  .sitewide-nav .nav li {
+    float: left; }
+  .sitewide-nav .nav .open > a {
+    color: #18648F;
+    background-color: transparent;
+    height: auto;
+    letter-spacing: 0.05em; }
+    .sitewide-nav .nav .open > a:hover, .sitewide-nav .nav .open > a:focus, .sitewide-nav .nav .open > a:active {
+      background-color: transparent;
+      border-color: inherit; }
+  .sitewide-nav .nav > li > a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 19px 8px;
+    font-size: 12px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer; }
+    .sitewide-nav .nav > li > a:hover, .sitewide-nav .nav > li > a:focus, .sitewide-nav .nav > li > a:active {
+      text-decoration: none;
+      background-color: inherit;
+      color: #282828; }
+    .sitewide-nav .nav > li > a:hover .btn {
+      color: #282828;
+      font-weight: inherit;
+      transition: color 0.3s ease-in-out; }
+  .sitewide-nav .dropdown {
+    float: left; }
+    .sitewide-nav .dropdown:hover > ul.dropdown-menu {
+      display: inline-block; }
+  .sitewide-nav .dropdown-menu {
+    height: auto;
+    border-radius: 0px;
+    border: 0;
+    background: #18648f;
+    margin: 0;
+    padding-left: 3000px;
+    margin-left: -3000px;
+    padding-right: 3000px;
+    margin-right: -3000px;
+    width: 100%;
+    box-shadow: none;
+    transition: height 1s ease; }
+    .sitewide-nav .dropdown-menu > .active > a,
+    .sitewide-nav .dropdown-menu > .active > a:hover,
+    .sitewide-nav .dropdown-menu > .active > a:focus {
+      color: #20A0E9;
+      text-decoration: none;
+      outline: 0;
+      background-color: initial; }
+    .sitewide-nav .dropdown-menu li {
+      line-height: 0.3;
+      width: 150px; }
+    .sitewide-nav .dropdown-menu li a {
+      display: block;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-transform: capitalize;
+      padding: 8px 0 8px 8px;
+      line-height: 1;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+      .sitewide-nav .dropdown-menu li a:hover, .sitewide-nav .dropdown-menu li a:active, .sitewide-nav .dropdown-menu li a:focus {
+        text-decoration: none;
+        background: initial;
+        color: #20A0E9; }
+  .sitewide-nav .sign-up-login {
+    margin: 0; }
+    .sitewide-nav .sign-up-login li a {
+      color: #FFFFFF; }
+  @media (min-width: 768px) {
+    .sitewide-nav {
+      /* border-bottom: 1px solid $brand-blue-opaque */
+      -webkit-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15); } }
+  @media (min-width: 992px) {
+    .sitewide-nav .main-nav-wrapper {
+      float: left;
+      margin: 0 0 0 10px; }
+    .sitewide-nav a[title="IT"] {
+      border-bottom: 1px solid #FFFFFF;
+      padding: 0 0 15px 0 !important;
+      margin: 8px; } }
+
+.header-sitewide-lp {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  height: 55px;
+  background: #20A0E9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .header-sitewide-lp .brand {
+    margin-top: 16px;
+    margin-left: 15px; }
+
+.main-nav-trigger {
+  position: absolute;
+  display: block;
+  height: 55px;
+  width: 50px;
+  /* hide text */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent; }
+  .main-nav-trigger span {
+    /* hamburger icon created in CSS */
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #FFFFFF;
+    -webkit-transition: background-color 0.3s 0.3s;
+    -moz-transition: background-color 0.3s 0.3s;
+    transition: background-color 0.3s 0.3s;
+    background-color: #FFFFFF; }
+    .main-nav-trigger span::before, .main-nav-trigger span::after {
+      /* upper and lower lines of the menu icon */
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF;
+      /* Force Hardware Acceleration */
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 0.3s 0.3s;
+      -moz-transition: -moz-transform 0.3s 0.3s;
+      transition: transform 0.3s 0.3s; }
+    .main-nav-trigger span::before {
+      -webkit-transform: translateY(-6px);
+      -moz-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+      -o-transform: translateY(-6px);
+      transform: translateY(-6px); }
+    .main-nav-trigger span::after {
+      -webkit-transform: translateY(6px);
+      -moz-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      -o-transform: translateY(6px);
+      transform: translateY(6px); }
+  .nav-is-visible .main-nav-trigger span {
+    background-color: rgba(255, 255, 255, 0); }
+    .nav-is-visible .main-nav-trigger span::before {
+      -webkit-transform: translateY(0) rotate(-45deg);
+      -moz-transform: translateY(0) rotate(-45deg);
+      -ms-transform: translateY(0) rotate(-45deg);
+      -o-transform: translateY(0) rotate(-45deg);
+      transform: translateY(0) rotate(-45deg); }
+    .nav-is-visible .main-nav-trigger span::after {
+      -webkit-transform: translateY(0) rotate(45deg);
+      -moz-transform: translateY(0) rotate(45deg);
+      -ms-transform: translateY(0) rotate(45deg);
+      -o-transform: translateY(0) rotate(45deg);
+      transform: translateY(0) rotate(45deg); }
+  @media (min-width: 992px) {
+    .main-nav-trigger {
+      display: none; } }
+
+.main-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  overflow-x: hidden;
+  visibility: hidden;
+  background: #20A0E9;
+  /* Take out any background remnants from main mobile nav */ }
+  .main-nav a {
+    display: block;
+    margin: 0;
+    padding: 18px 18px 17px;
+    z-index: 15;
+    text-transform: uppercase;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s; }
+    .main-nav a:hover {
+      text-decoration: none;
+      color: #FFFFFF;
+      background: rgba(24, 100, 143, 0.5); }
+  .main-nav li ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0s;
+    -moz-transition: -moz-transform 0s;
+    transition: transform 0s;
+    -webkit-transform: translateX(260px);
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    transform: translateX(260px);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .main-nav.nav-is-visible {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    -moz-transition: visibility 0s 0s;
+    transition: visibility 0s 0s; }
+  .main-nav.moves-out > li > a {
+    /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+    /* Reveal secondary nav */ }
+  .main-nav.moves-out > li > ul {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+  .main-nav.moves-out > li.register,
+  .main-nav.moves-out > li.log-in {
+    background: #20A0E9; }
+
+.subnav-trigger {
+  position: relative; }
+  .subnav-trigger::before, .subnav-trigger::after {
+    /* arrow icon in CSS */
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    background: #FFFFFF;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .subnav-trigger::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .subnav-trigger::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+.subnav-trigger::before,
+.subnav-trigger::after {
+  /* arrow goes on the right side - children navigation */
+  right: 15px;
+  -webkit-transform-origin: 9px 50%;
+  -moz-transform-origin: 9px 50%;
+  -ms-transform-origin: 9px 50%;
+  -o-transform-origin: 9px 50%;
+  transform-origin: 9px 50%; }
+
+.go-back a {
+  position: relative;
+  padding: 16px 16px 17px;
+  line-height: 1; }
+  .go-back a::before {
+    content: "«";
+    font-size: 22px; }
+
+.go-back a {
+  padding-left: 15px; }
+  .go-back a::before, .go-back a::after {
+    /* arrow goes on the left side - go back button if needed */
+    left: 20px;
+    -webkit-transform-origin: 1px 50%;
+    -moz-transform-origin: 1px 50%;
+    -ms-transform-origin: 1px 50%;
+    -o-transform-origin: 1px 50%;
+    transform-origin: 1px 50%; }
+
+.demo {
+  margin: 5px 0 0 35px; }
+  .demo a {
+    border-bottom: none; }
+    .demo a .btn:hover {
+      background-color: #18648f;
+      transition: all 0.3s ease-in-out;
+      color: #FFFFFF; }
+    .demo a:hover {
+      background: initial; }
+
+.register,
+.log-in {
+  background: #34AEF4; }
+
+.what-is-tradeshift-subnav,
+.solutions-subnav,
+.roles-subnav,
+.learn-subnav,
+.nav-is-hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+.what-is-tradeshift-subnav,
+.solutions-subnav,
+.roles-subnav,
+.learn-subnav {
+  margin-top: 55px; }
+  .what-is-tradeshift-subnav.nav-is-visible,
+  .solutions-subnav.nav-is-visible,
+  .roles-subnav.nav-is-visible,
+  .learn-subnav.nav-is-visible {
+    visibility: visible;
+    trasition: visibility 0.3s ease-in-out;
+    opacity: 1; }
+
+.no-subnav {
+  position: relative; }
+
+#smt-lang-selector {
+  float: right;
+  width: auto;
+  margin: 19px 0 0 0; }
+  #smt-lang-selector .smt-menu {
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: auto !important;
+    background: transparent;
+    color: #1E1E1E !important; }
+    #smt-lang-selector .smt-menu ul {
+      background-color: transparent;
+      padding-top: 5px !important; }
+      #smt-lang-selector .smt-menu ul:before, #smt-lang-selector .smt-menu ul:after {
+        position: initial; }
+    #smt-lang-selector .smt-menu .smt-trigger:hover .smt-trigger-link {
+      background-image: url("../img/icons/icon-carat.png") !important; }
+      #smt-lang-selector .smt-menu .smt-trigger:hover .smt-trigger-link .smt-lang {
+        color: #1E1E1E; }
+    #smt-lang-selector .smt-menu .smt-trigger > ul {
+      border: none;
+      background: #20A0E9; }
+      #smt-lang-selector .smt-menu .smt-trigger > ul::before {
+        width: 100% !important; }
+    #smt-lang-selector .smt-menu .smt-trigger .smt-trigger-link {
+      padding: 0 30px 0 10px !important;
+      font-weight: normal;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      background-position: 85% 50%;
+      background-image: url("../img/icons/icon-carat-white.png") !important;
+      min-width: initial !important;
+      background-color: inherit;
+      letter-spacing: 0.05em;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    #smt-lang-selector .smt-menu .smt-trigger .smt-lang,
+    #smt-lang-selector .smt-menu .smt-trigger .smt-link {
+      font-weight: 500;
+      font-size: 12px !important;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    #smt-lang-selector .smt-menu .smt-trigger .smt-link {
+      padding: 5px 0 5px 10px;
+      text-align: left !important; }
+    #smt-lang-selector .smt-menu .smt-item {
+      float: none; }
+      #smt-lang-selector .smt-menu .smt-item:first-child {
+        padding-top: 8px; }
+      #smt-lang-selector .smt-menu .smt-item:last-child {
+        padding-bottom: 8px; }
+      #smt-lang-selector .smt-menu .smt-item a:hover {
+        background: inherit;
+        color: #1E1E1E !important; }
+
+footer {
+  background: #282828;
+  padding: 33px 0 44px 0;
+  color: #D2D2D2;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* This slides the footer to the right on mobile nav */ }
+  footer h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 12px; }
+  footer p {
+    color: #D2D2D2;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+  footer ul li {
+    list-style: none;
+    padding: 0 0 6px 0;
+    margin: 0; }
+  footer a {
+    color: #D2D2D2;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+    footer a:hover {
+      color: #20A0E9;
+      text-decoration: none; }
+  footer.nav-is-visible {
+    -webkit-transform: translateX(260px);
+    -moz-transform: translateX(260px);
+    -ms-transform: translateX(260px);
+    -o-transform: translateX(260px);
+    transform: translateX(260px); }
+  @media (min-width: 768px) {
+    footer {
+      padding-top: 33px;
+      text-align: left; }
+      footer h5 {
+        margin-top: 0; }
+      footer .give-us-a-call .sales-phone {
+        display: inline-block; } }
+  footer .brand {
+    margin-bottom: 20px; }
+    footer .brand img {
+      width: 59px; }
+    @media (min-width: 768px) {
+      footer .brand img {
+        width: 50px; } }
+    @media (min-width: 992px) {
+      footer .brand {
+        padding-left: 0; }
+        footer .brand img {
+          width: 59px; } }
+  footer .give-us-a-call {
+    margin: 0 0 33px 0;
+    padding: 0; }
+    footer .give-us-a-call p {
+      line-height: 1.6; }
+    footer .give-us-a-call .sales-phone {
+      white-space: nowrap;
+      color: #FF5200;
+      font-weight: 700; }
+      footer .give-us-a-call .sales-phone .active {
+        display: inline; }
+      footer .give-us-a-call .sales-phone .non-active {
+        display: none; }
+    @media (min-width: 992px) {
+      footer .give-us-a-call {
+        float: right; }
+        footer .give-us-a-call h5 {
+          width: 200px; }
+        footer .give-us-a-call p {
+          width: 200px; } }
+  footer .sitewide-footer-menu {
+    padding: 0; }
+  footer .company,
+  footer .media,
+  footer .connect,
+  footer .support {
+    margin: 0 0 22px 0;
+    padding: 0; }
+  footer .privacy-terms {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 12px;
+    border-top: 1px solid #646464;
+    border-bottom: none; }
+    footer .privacy-terms ul {
+      padding: 0; }
+    footer .privacy-terms ul li {
+      list-style: none;
+      float: left;
+      width: 50%; }
+    @media (min-width: 768px) {
+      footer .privacy-terms {
+        border-bottom: none; }
+        footer .privacy-terms ul li {
+          width: initial;
+          padding-right: 20px; } }
+    @media (min-width: 992px) {
+      footer .privacy-terms {
+        border-top: none;
+        padding-left: 0; } }
+  footer .social {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center; }
+    footer .social a {
+      color: #282828;
+      margin-right: 15px; }
+      footer .social a:last-child {
+        margin-right: 0px; }
+      @media (min-width: 768px) {
+        footer .social a {
+          margin-right: 5px; } }
+      @media (min-width: 992px) {
+        footer .social a {
+          margin-right: 10px; } }
+    @media (min-width: 768px) {
+      footer .social {
+        padding-top: 11px;
+        border-top: 1px solid #646464;
+        text-align: right; } }
+    @media (min-width: 992px) {
+      footer .social {
+        float: right;
+        padding-right: 0;
+        border-top: none;
+        border-bottom: none; }
+        footer .social .social-icons {
+          float: right; } }
+  footer .copyright {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 22px 0 0; }
+    @media (min-width: 768px) {
+      footer .copyright {
+        margin: 0;
+        padding-left: 15px;
+        text-align: left;
+        color: #FFFFFF; } }
+    @media (min-width: 992px) {
+      footer .copyright {
+        padding-left: 0; } }
+  @media (min-width: 768px) {
+    footer .copyright-tablet {
+      display: inline-block; } }
+  @media (min-width: 992px) {
+    footer .copyright-tablet {
+      display: inline; } }
+  @media (min-width: 992px) {
+    footer .privacy-terms-copyright-social {
+      border-top: 1px solid #646464; } }
+
+.brand-copyright {
+  background: #282828;
+  padding: 33px 11px;
+  color: #D2D2D2;
+  font-size: 12px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .brand-copyright .lp-brand {
+    margin-bottom: 11px; }
+  .brand-copyright p {
+    color: #D2D2D2;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0; }
+  .brand-copyright .sales-phone {
+    white-space: nowrap;
+    color: #FF5200;
+    font-weight: 700; }
+    .brand-copyright .sales-phone .active {
+      display: inline; }
+    .brand-copyright .sales-phone .non-active {
+      display: none; }
+
+.menu-social-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.menu-social-container li {
+  display: inline-block; }
+  .menu-social-container li a:before {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 32px;
+    width: 35px;
+    content: " "; }
+  .menu-social-container li a[href*="facebook.com"]::before {
+    background: url(../img/icons/fb.png) no-repeat center center; }
+  .menu-social-container li a[href*="twitter.com"]::before {
+    background: url(../img/icons/tw.png) no-repeat center center; }
+  .menu-social-container li a[href*="linkedin.com"]::before {
+    background: url(../img/icons/in.png) no-repeat center center; }
+  .menu-social-container li a[href*="google.com"]::before {
+    background: url(../img/icons/gplus.png) no-repeat center center; }
+
+/* Internationalization styling overrides below */
+.smartling-de .sitewide-nav .nav > li > a {
+  padding: 19px 5px; }
+
+.icons {
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  padding-top: 7px; }
+
+.icons-footer {
+  background: #646464;
+  color: #FFFFFF; }
+  .icons-footer .fa {
+    font-size: 20px; }
+  .icons-footer:hover {
+    color: inherit;
+    text-decoration: none; }
+
+.icons-colored {
+  color: #FFFFFF;
+  margin-right: 10px; }
+  .icons-colored .fa {
+    font-size: 20px; }
+  .icons-colored:hover {
+    text-decoration: none;
+    color: #D2D2D2; }
+
+.facebook {
+  background: #3b5998; }
+
+.twitter {
+  background: #00aced; }
+
+.linkedin {
+  background: #007bb6; }
+
+.google-plus {
+  background: #d34836; }
+
+hr.dash {
+  background: url("../img/hr-dash.png") repeat-x;
+  height: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: none; }
+
+.gradient-white100-white55 {
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0.55)));
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%);
+  background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%);
+  background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.55) 100%);
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.55) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8cffffff',GradientType=0 ); }
+
+.gradient-black70-white10 {
+  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(229, 229, 229, 0.1)));
+  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(229, 229, 229, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#1ae5e5e5',GradientType=1 ); }
+
+.gradient-customer-logos {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', endColorstr='#80000000',GradientType=0 ); }

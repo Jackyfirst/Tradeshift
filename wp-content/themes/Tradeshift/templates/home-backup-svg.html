@@ -1,0 +1,108 @@
+<?php
+/**
+ * This component is a template part used on the Home Page: powered by D3.js visualization
+ *
+ * @package wpbc_s
+ */
+?>
+<div id="ts-networked-platform" class="networked-graph" style="width:100%; height: 880px"> </div>
+<script>
+
+var w = 960,
+	h = 880;
+
+// var color = d3.scale.category20();
+
+/* Establish the dynamic force behavor of the nodes */
+var force = d3.layout.force()
+    .size([w,h])
+    .linkDistance([30])
+    .charge((function(d){
+        var charge = -180;
+        if (d.index === 0) charge = 160 * charge;
+        return charge;
+    	}))
+    .gravity(-0.05);
+
+var svg = d3.select(".networked-graph")
+	.append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+/* Add the tooltip on mouseover */
+var tip = d3.tip(".networked-graph")
+    .attr('class', 'd3-tip')
+    .style("width", "330px")
+    .direction(function(d) {
+    	return d.tipdirection;
+    })
+    .html(function(d) {
+    	return "<div class='node" + d.index + "'>" + d.tip + "</div>";
+    })
+
+svg.call(tip);
+
+// queue()
+//     .defer(d3.json, "/wp-content/themes/Tradeshift/json/home-nodes.json")
+//     .defer(d3.json, "/wp-content/themes/Tradeshift/json/home-links.json")
+//     .await(makeDiag);
+d3.json("/wp-content/themes/Tradeshift/json/home-nodes.json", function(error, graph) {
+	if (error) throw error;
+	force
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+	
+    var link = svg.selectAll(".link")
+		.data(graph.links)
+		.enter()
+		.append("line")
+		.attr("class", "link")
+		.style("stroke", function(d) { return d.color; })
+		.style("stroke-width", "2");
+
+    /* Draw the nodes themselves */
+    var node = svg.selectAll(".node")
+        .data(graph.nodes)
+        .enter()
+        .append("circle")
+        .attr("r", function(d) { return d.size; })
+        .style("fill", function(d) { return d.color; })
+        .style("cursor", "pointer")
+        .call(force.drag)
+        .on('mouseover', tip.show)
+ 		.on('mouseout', tip.hide);
+
+    /* Draw the text label */
+	var text = svg.selectAll("text")
+        .data(graph.nodes)
+        .enter()
+        .append("text")
+        .attr("class", "circleWrap")
+        .attr("fill", "#FFFFFF")
+        .style("text-transform", "uppercase")
+        .style("pointer-events", "none")
+        .attr("font-family", "Open Sans")
+        .attr("font-size", "22px")
+        .text(function(d) { return d.name; });
+
+    /* Run the Force effect */
+    force.on("tick", function() {
+       link.attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+       node.attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+       text.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+            });
+       }); // End tick func
+   	d3plus.textwrap()
+		.container(d3.select("text"))
+		.draw();
+
+});
+
+</script>
+
