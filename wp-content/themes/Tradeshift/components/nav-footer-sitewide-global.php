@@ -45,7 +45,7 @@
 				<p>
         <span class="sales-phone">
             <i class="fa fa-phone"> </i> 
-            <span class="phone_default">+1-800-381-3585</span>
+            <span class="phone_default">4000-889-806</span>
             <span class="phone_us non-active">+1-800-381-3585</span>
             <span class="phone_uk non-active">+44-(0)20-3751-0410</span>
             <span class="phone_germany non-active">+49-0-89-97007-255</span>
@@ -117,7 +117,7 @@
 								<p>
             <span class="sales-phone">
                 <i class="fa fa-phone"> </i>
-                <span class="phone_default">+1-800-381-3585</span>
+                <span class="phone_default">4000-889-806</span>
                 <span class="phone_us non-active">+1-800-381-3585</span>
                 <span class="phone_uk non-active">+44-(0)20-3751-0410</span>
                 <span class="phone_germany non-active">+49-0-89-97007-255</span>
