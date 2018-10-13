@@ -206,7 +206,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div id="success-story-carousel" class="container owl-carousel">
+			<div id="success-story-carousel" class="container owl-carousel" style="opacity: 1; display: block;">
 				<div class="item quyntess">
 					<div class="row">
 						<div class="contents">

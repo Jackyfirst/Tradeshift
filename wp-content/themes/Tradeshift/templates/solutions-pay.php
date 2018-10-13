@@ -155,7 +155,7 @@ get_header(); ?>
 							<h2><?php _e("Who said you can’t keep your cash and pay your suppliers too?", 'Tradeshift'); ?></h2>
 							<p class="intro"><?php _e("Pay smart with integrated dynamic discounting and supply chain financing.", 'Tradeshift'); ?></p>
 							<p><?php _e("Manage your working capital on your terms, while paying suppliers on theirs. Tradeshift<sup>&reg;</sup> Pay gives you access to a comprehensive “wallet” of early payment solutions including supply chain finance, <a href=\"/frontiers/cash\" target=\"_blank\">blockchain-based finance</a>, dynamic discounting, flexible finance and virtual credit cards. It works with any bank, unifies all your payment programs into one view, and gives you total command and control over your cash.", 'Tradeshift'); ?></p>
-							<a href="/supplychainfinance-enterprise" class="btn btn-primary-cta" target="_blank"><?php _e("See how", 'Tradeshift'); ?></a>
+							<a href="/supply-chain-finance" class="btn btn-primary-cta" target="_blank"><?php _e("See how", 'Tradeshift'); ?></a>
 						</div>
 					<?php endif; ?>
 				</div>
@@ -230,37 +230,37 @@ get_header(); ?>
 					<h2 class="hidden-xs"><?php _e("Resources for you", 'Tradeshift'); ?></h2>
 					<h2 class="visible-xs"><?php _e("Find out more about our procurement solutions.", 'Tradeshift'); ?></h2>
 					<div class="resource-wrapper">
-						<a class="trigger-res-1" href="/resources/on-demand-webinar-the-5-most-expensive-mistakes-ap-can-make-and-how-to-avoid-them/" target="_blank">
+						<a class="trigger-res-1" href="https://tradeshift.com/resources/on-demand-webinar-the-5-most-expensive-mistakes-ap-can-make-and-how-to-avoid-them/" target="_blank">
 							<img class="img-responsive" src="/wp-content/uploads/2018/08/Expensive-AP-Mistake_resource.jpg..jpg" />
 						</a>
 						<p>
 							<?php _e("[On-Demand Webinar] The 5 Most Expensive Mistakes AP Can Make – And How To Avoid Them", 'Tradeshift'); ?>
 							<br class="visible-sm" />
-							<a class="trigger-res-1" href="/resources/on-demand-webinar-the-5-most-expensive-mistakes-ap-can-make-and-how-to-avoid-them/" target="_blank">
+							<a class="trigger-res-1" href="https://tradeshift.com/resources/on-demand-webinar-the-5-most-expensive-mistakes-ap-can-make-and-how-to-avoid-them/" target="_blank">
 								<?php _e('Learn more &raquo;', 'Tradeshift'); ?>
 							</a>
 						</p>
 					</div>
 					<div class="resource-wrapper">
-						<a class="trigger-res-2" href="/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
+						<a class="trigger-res-2" href="https://tradeshift.com/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
 							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/solutions/pay/resource-automation.jpg" />
 						</a>
 						<p>
 							<?php _e('Outsmarting Automation: A Guide for Accounts Payable', 'Tradeshift'); ?>
 							<br class="visible-sm" />
-							<a class="trigger-res-2" href="/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
+							<a class="trigger-res-2" href="https://tradeshift.com/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
 								<?php _e('Read more &raquo;', 'Tradeshift'); ?>
 							</a>
 						</p>
 					</div>
 					<div class="resource-wrapper">
-						<a class="trigger-res-3" href="/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
+						<a class="trigger-res-3" href="https://tradeshift.com/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-suppliers-make-about-e-invoicing-and-what-to-do-about-them/" target="_blank">
 							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/solutions/pay/resource-flibook.jpg" />
 						</a>
 						<p>
 							<?php _e('[Flipbook] Pro Tips For Accounts Payable: 6 Complaints Suppliers Make About E-invoicing', 'Tradeshift'); ?>
 							<br class="hidden-xs"/>
-							<a class="trigger-res-3" href="/resources/outsmarting-automation-a-guide-for-accounts-payable/" target="_blank">
+							<a class="trigger-res-3" href="https://tradeshift.com/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-suppliers-make-about-e-invoicing-and-what-to-do-about-them/" target="_blank">
 								<?php _e('Read more &raquo;', 'Tradeshift'); ?>
 							</a>
 						</p>

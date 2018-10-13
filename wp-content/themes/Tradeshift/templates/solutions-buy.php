@@ -384,16 +384,16 @@ get_header(); ?>
 						<div class="contents">
 							<h2><?php _e("Find out more about our procurement solutions.", 'Tradeshift'); ?></h2>
 							<div class="resource-wrapper">
-								<a class="trigger-res-1" href="/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><img class="img-responsive" src="/wp-content/uploads/2015/12/Spend-Matters_blog-1.png" /></a>
+								<a class="trigger-res-1" href="https://tradeshift.com/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><img class="img-responsive" src="/wp-content/uploads/2015/12/Spend-Matters_blog-1.png" /></a>
 								<p><?php _e("Rethink eProcurement ", 'Tradeshift'); ?><br class="visible-sm" /><a class="trigger-res-1"  href="/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><?php _e('Download &raquo;', 'Tradeshift'); ?></a></p>
 							</div>
 							<div class="resource-wrapper">
 								<a class="trigger-res-2" href="/resources/tradeshift-buy-video/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/solutions/buy/resources-demo-vid.jpg" /></a>
-								<p><?php _e("Tradeshift Buy Demo", 'Tradeshift'); ?> <br class="visible-sm" /><a class="trigger-res-2" href="/resources/tradeshift-buy-video"><?php _e('Watch video &raquo;', 'Tradeshift'); ?></a></p>
+								<p><?php _e("Tradeshift Buy Demo", 'Tradeshift'); ?> <br class="visible-sm" /><a class="trigger-res-2" href="https://tradeshift.com/resources/tradeshift-buy-video"><?php _e('Watch video &raquo;', 'Tradeshift'); ?></a></p>
 							</div>
 							<div class="resource-wrapper">
 								<a class="trigger-res-3" href="/resources/ts-buy"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/solutions/buy/resources-vision.jpg" /></a>
-								<p><?php _e("Tradeshift Buy Vision", 'Tradeshift'); ?> <br class="visible-sm" /><a class="trigger-res-3" href="http://tradeshift.com/resources/ts-buy"><?php _e('Read paper &raquo;', 'Tradeshift'); ?></a></p>
+								<p><?php _e("Tradeshift Buy Vision", 'Tradeshift'); ?> <br class="visible-sm" /><a class="trigger-res-3" href="https://tradeshift.com/resources/ts-buy/"><?php _e('Read paper &raquo;', 'Tradeshift'); ?></a></p>
 							</div>
 						</div>
 					</div>
@@ -405,7 +405,7 @@ get_header(); ?>
 						<div class="contents">
 							<h4 class="hidden-xs"><?php _e("See how Tradeshift can help<br>your enterprise.", 'Tradeshift'); ?></h4>
 							<h4 class="visible-xs"><?php _e("See how Tradeshift can help you.", 'Tradeshift'); ?></h4>
-							<button type="button" class="btn btn-cta btn-nm" id="initialEmailFormField" onclick="sameEmail();" data-toggle="modal" data-target="#mktoModal"><?php _e("Contact us", 'Tradeshift'); ?></button>
+							<button type="button" class="btn btn-cta btn-nm" id="initialEmailFormField" onclick="sameEmail();" data-toggle="modal" data-target="#mktoModal" style="color: #ff5200 !important;margin-top: 22px !important;"><?php _e("Contact us", 'Tradeshift'); ?></button>
 						</div>
 					</div>
 				</div>

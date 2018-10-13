@@ -32,7 +32,7 @@ get_header('main'); ?>
             <div class="contents wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1.8s" data-wow-center-offset="1" style="visibility: hidden;">
 
                 <div class="item left_tile">
-                    <a href="/events-webinars/live-demo-tradeshift-pay-platform/">
+                    <a href="https://tradeshift.com/events-webinars/live-demo-tradeshift-pay-platform/">
                         <div class="overlay"></div>
                         <div class="wrapper wrapper-left_tile">
                             <div class="wrapper-contents">
@@ -43,7 +43,7 @@ get_header('main'); ?>
     								); ?>
                                 </h3>
                                 <p>
-                                    <?php _e("Join us on September 6, 10am PT", "Tradeshift"
+                                    <?php _e("Join us on October 18, 10am PT", "Tradeshift"
                                     ); ?>
                                 </p>
                                 <span class="read-more"><?php _e('Save your seat &raquo;', 'Tradeshift'); ?></span>
@@ -52,7 +52,7 @@ get_header('main'); ?>
                     </a>
                 </div>
                 <div class="item middle_tile">
-                    <a href="/resources/complimentary-report-gartner-magic-quadrant-for-procure-to-pay-suites/">
+                    <a href="https://tradeshift.com/resources/complimentary-report-gartner-magic-quadrant-for-procure-to-pay-suites/">
                         <div class="overlay"></div>
                         <div class="wrapper wrapper-middle_tile">
                             <div class="wrapper-contents">
@@ -110,7 +110,7 @@ get_header('main'); ?>
                                 <h3>Tradeshift<sup>&reg;</sup> <span><?php _e("Buy", "Tradeshift"); ?></span></h3>
                                 <h4><?php _e("Own your supply chain marketplace.", "Tradeshift"); ?></h4>
                                 <p><?php _e("With private marketplaces that you own, stock, and manage, you can make procurement more like buying.", "Tradeshift"); ?></p>
-                                <a href="/enterprise/solutions/buy/"><?php _e('How it works &raquo;', 'Tradeshift'); ?></a>
+                                <a href="/buy/"><?php _e('How it works &raquo;', 'Tradeshift'); ?></a>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@ get_header('main'); ?>
                                 <h3>Tradeshift<sup>&reg;</sup> <span><?php _e("Apps", 'Tradeshift'); ?></span></h3>
                                 <h4><?php _e("Accelerate your supply chain digitization.", 'Tradeshift'); ?></h4>
                                 <p><?php _e("Extend, customize, or build any part of your supply chain solution with a fully stocked app store and a flexible, open platform.", "Tradeshift"); ?></p>
-                                <a href="/enterprise/solutions/apps/"><?php _e('How it works &raquo;', 'Tradeshift'); ?></a>
+                                <a href="/apps/"><?php _e('How it works &raquo;', 'Tradeshift'); ?></a>
                             </div>
                         </div>
 
@@ -143,7 +143,7 @@ get_header('main'); ?>
                                 </div>
                                 <div class="item-container">
                                     <p><?php _e("[Flipbook] Pro Tips For Accounts Payable: 6 Complaints Suppliers Make About E-invoicing&mdash;and What to Do About Them.", "Tradeshift"); ?></p>
-                                    <a href="/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-suppliers-make-about-e-invoicing-and-what-to-do-about-them/"><?php _e('Download Now &raquo;', 'Tradeshift'); ?></a>
+                                    <a href="https://tradeshift.com/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-suppliers-make-about-e-invoicing-and-what-to-do-about-them/"><?php _e('Download Now &raquo;', 'Tradeshift'); ?></a>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@ get_header('main'); ?>
                                     <div class="report-body">
                                         <h3><?php _e('[Complimentary Report] Gartner Magic Quadrant for Procure-to-Pay Suites', 'Tradeshift'); ?></h3>
                                         <p><?php _e('Shift Happened. Tradeshift shows strong momentum debuting in the Gartner Magic Quadrant for P2P Suites.', 'Tradeshift'); ?></p>
-                                        <a href="/resources/complimentary-report-gartner-magic-quadrant-for-procure-to-pay-suites/"><?php _e('Learn more &raquo;', 'Tradeshift'); ?></a>
+                                        <a href="https://tradeshift.com/resources/complimentary-report-gartner-magic-quadrant-for-procure-to-pay-suites/"><?php _e('Learn more &raquo;', 'Tradeshift'); ?></a>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@ get_header('main'); ?>
                             <div class="column webinar hidden-xs">
                                 <span class="caption"><?php _e('Webinars | Global | Nov 16, 2017', 'Tradeshift'); ?></span>
                                 <span class="title"><?php _e('Artificial Intelligence in Procurement: A Tradeshift Webinar featuring Gartner Expert Magnus Berfors and Chistian Lanng', 'Tradeshift'); ?></span>
-                                <a href="/resources/artificial-intelligence-procurement-demand-webinar-featuring-gartner-expert-magnus-berfors-christian-lanng/" class="target"><?php _e('Watch the webinar &raquo;', 'Tradeshift'); ?></a>
+                                <a href="https://tradeshift.com/resources/artificial-intelligence-procurement-demand-webinar-featuring-gartner-expert-magnus-berfors-christian-lanng/" class="target"><?php _e('Watch the webinar &raquo;', 'Tradeshift'); ?></a>
                             </div>
                             <div class="column latest_news">
                                 <span class="caption"><?php _e('Latest news', 'Tradeshift'); ?></span>
@@ -468,16 +468,16 @@ get_header('main'); ?>
             setTimeout(function(){
                 $('.carousel-testimonials').carousel('cycle');
             }, 500)
-            
+
         });
         //Enable swiping...
         $(".carousel-inner").swipe( {
             //Generic swipe handler for all directions
             swipeLeft:function(event, direction, distance, duration, fingerCount) {
-                $(".carousel-inner").parent().carousel('next'); 
+                $(".carousel-inner").parent().carousel('next');
             },
             swipeRight: function() {
-                $(".carousel-inner").parent().carousel('prev'); 
+                $(".carousel-inner").parent().carousel('prev');
             },
             //Default is 15px, set to 0 so any distance triggers swipe
             threshold:15
