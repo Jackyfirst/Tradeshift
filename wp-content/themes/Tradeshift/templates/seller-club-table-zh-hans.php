@@ -33,31 +33,31 @@
 						<div class="pricing is-row flex">
 							<div class="col-4 column no-margin"></div>
 							<div class="col-2 column col-free">
-								<div><?php _e("Trendsetter", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Trendsetter", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.free}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-silver">
-								<div><?php _e("Momentum maker", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Momentum maker", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.silver}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-gold">
-								<div><?php _e("Pacesetter", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Pacesetter", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.gold}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum">
-								<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.platinum}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum-x">
-								<div><?php _e("Game changer", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Game changer", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.platinum_x}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
@@ -347,17 +347,19 @@
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading">价格** (人民币：元)</div>
 								<div class="col-2 column col-free">免费</div>
-								<div class="col-2 column col-silver">9000</div>
-								<div class="col-2 column col-gold">28000</div>
-								<div class="col-2 column col-platinum">36000</div>
-								<div class="col-2 column col-platinum-x">130000</div>
+								<div class="col-2 column col-silver">9,000</div>
+								<div class="col-2 column col-gold">28,000</div>
+								<div class="col-2 column col-platinum">36,000</div>
+								<div class="col-2 column col-platinum-x">130,000</div>
 							</div>
 						</div>
 						<div class="plans-support is-row" style="width: 100%">
+							<!--
 							<div class="col-12 flex">
 								<div class="col-6 column no-margin text-left additional-rates sm"><sup>*</sup>： 在融资支持服务里会对客户的直接“买家以及间接客户”进行调查验证，该项收费会依据客户的实际买家情况进行额外收费，即每增加一个相关调查会在套餐价格上增收600元人民币。</div>
 								<div class="col-4 column additional-rates md"><sup>**</sup>：所有在上述套餐之外的额外服务内容，Tradeshift将会按照实际收费标准另行报价</div>
 							</div>
+						-->
 						</div>
 					</div>
 					<div class="packages-sm hidden-lg hidden-md">

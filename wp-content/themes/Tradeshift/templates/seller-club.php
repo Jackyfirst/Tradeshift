@@ -88,11 +88,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<!--
 	<div class="faq">
 		<div class="row">
 			<p><?php _e("For more information, check out our <a href=\"/seller-club-faq/\">FAQ site <i class=\"fa fa-arrow-circle-right\"></i></a>", "Tradeshift"); ?></p>
 		</div>
 	</div>
+-->
 </main>
 <!-- Modal View of Marketo Forms2 -->
 <div class="modal fade" id="mktoModal1" tabindex="-1">
@@ -113,7 +115,7 @@ get_header(); ?>
 						//Add an onSuccess handler
 						if(typeof formSubmitted === 'undefined') {
 							form.onSuccess(function(values, followUpUrl){
-								
+
 								var $emailMkto = form.vals().Email;
 								var $companyMkto = form.vals().Company;
 								var $companyRFAnnualRev = form.vals().RF_SITE_AnnualRev__c;
@@ -151,19 +153,19 @@ get_header(); ?>
 		data() {
 			return {
 				pricing: {
-					free: '$0',
-					silver: '$249',
-					gold: '$699',
-					platinum: '$2499',
-					platinum_x: '*',
-					
+					free: '￥0',
+					silver: '￥9,000',
+					gold: '￥28,000',
+					platinum: '￥36,000',
+					platinum_x: '￥130,000',
+
 				},
 				coface: {
 					silver: '$150',
 					gold: '$300',
 					platinum: '$900',
 					platinum_x: '$5,000',
-					
+
 				}
 			};
 		},
@@ -182,6 +184,18 @@ get_header(); ?>
 				vm.coface.platinum = "£660";
 				vm.coface.platinum_x = "£3,550";
 
+			} else if(countryCode == "CN") {
+				vm.pricing.free = "￥ 0";
+				vm.pricing.silver = "￥ 9,000";
+				vm.pricing.gold = "￥ 28,000";
+				vm.pricing.platinum = "￥ 36,000";
+				vm.pricing.platinum_x = "￥ 130,000";
+				vm.coface.silver = "￥Nok 1200";
+				vm.coface.gold = "￥ 9,000";
+				vm.coface.platinum = "￥ 28,000";
+				vm.coface.platinum_x = "￥ 36,000";
+				vm.coface.platinum_x = "￥ 130,000";
+
 			} else if(countryCode == "NOR") {
 				vm.pricing.free = "0 kr";
 				vm.pricing.silver = "1,999 kr";
@@ -190,7 +204,7 @@ get_header(); ?>
 				vm.coface.silver = "Nok 1200";
 				vm.coface.gold = "Nok 2400";
 				vm.coface.platinum = "Nok 7200";
-				vm.coface.platinum_x = "Nok 40000";	
+				vm.coface.platinum_x = "Nok 40000";
 
 			} else if(continentCode == "EU" || "<?php echo ICL_LANGUAGE_CODE; ?>" == "fr" || "<?php echo ICL_LANGUAGE_CODE; ?>" == "de") {
 				vm.pricing.free = "€0";
@@ -206,7 +220,7 @@ get_header(); ?>
 		return function(){geoip2.country( onSuccess);};
 	}());
 	updatePrincing();
-	
+
 	new Vue({
 		el: '#app',
 		data() {
@@ -229,12 +243,12 @@ get_header(); ?>
 				window.requestAnimationFrame(this.update.bind(this));
 			}
 		},
-		
+
 		created() {
 			window.requestAnimationFrame(this.update.bind(this));
 		}
 	});
-	
+
 	$(document).ready(function(){
 		$('.hero a[href*="#"]:not([href="#"])').click(function() {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
