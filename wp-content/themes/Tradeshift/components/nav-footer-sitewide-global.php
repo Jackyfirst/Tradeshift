@@ -44,7 +44,7 @@
     <p><?php _e("Talk to us about how Tradeshift can help your business. &nbsp;", "Tradeshift"); ?></p>
 				<p>
         <span class="sales-phone">
-            <i class="fa fa-phone"> </i> 
+            <i class="fa fa-phone"> </i>
             <span class="phone_default">4000-889-806</span>
             <span class="phone_us non-active">+1-800-381-3585</span>
             <span class="phone_uk non-active">+44-(0)20-3751-0410</span>
@@ -55,7 +55,7 @@
 </div>
 <div class="feedback hidden-md hidden-lg">
     <h5><?php _e("Feedback", "Tradeshift"); ?></h5>
-    <a href="mailto:support@tradeshift.com"><?php _e("Give Us Feedback", "Tradeshift"); ?></a>
+    <a href="mailto:marketing.cn@tradeshift.com"><?php _e("Give Us Feedback", "Tradeshift"); ?></a>
 </div>
 <nav class="footer-menu-links">
     <div class="company">
@@ -108,8 +108,8 @@
     </div>
     <div class="support">
         <h5><?php _e("Support", "Tradeshift"); ?></h5>
-        <p><a href="https://support.tradeshift.com/home"><?php _e("Enterprise support", "Tradeshift"); ?></a></p>
-        <p><a href="https://support.tradeshift.com/home" class="univ-footer-nav-links"><?php _e("Seller Support", "Tradeshift"); ?></a>.</p>
+        <p><a href="https://cn-support.tradeshift.com"><?php _e("Enterprise support", "Tradeshift"); ?></a></p>
+        <p><a href="https://cn-support.tradeshift.com" class="univ-footer-nav-links"><?php _e("Seller Support", "Tradeshift"); ?></a>.</p>
     </div>
     <div class="give-us-a-call-md visible-md visible-lg">
         <h5><?php _e("Contact Sales", "Tradeshift"); ?></h5>
@@ -127,6 +127,6 @@
     </div>
     <div class="feedback visible-md visible-lg">
         <h5><?php _e("Feedback", "Tradeshift"); ?></h5>
-        <a href="mailto:support@tradeshift.com"><?php _e("Give Us Feedback", "Tradeshift"); ?></a>
+        <a href="mailto:marketing.cn@tradeshift.com"><?php _e("Give Us Feedback", "Tradeshift"); ?></a>
     </div>
 </nav>
