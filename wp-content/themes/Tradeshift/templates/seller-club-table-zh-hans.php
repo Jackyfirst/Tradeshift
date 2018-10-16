@@ -343,6 +343,7 @@
 								<div class="col-2 column col-platinum-x">需要</div>
 							</div>
 						</div>
+						<!--
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading">价格** (人民币：元)</div>
@@ -353,6 +354,7 @@
 								<div class="col-2 column col-platinum-x">130,000</div>
 							</div>
 						</div>
+					-->
 						<div class="plans-support is-row" style="width: 100%">
 							<!--
 							<div class="col-12 flex">

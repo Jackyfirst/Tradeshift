@@ -69,7 +69,7 @@ get_header(); ?>
 
     </div>
     <img
-     class="partner-logo-block"
+     class="partner-logo-block hidden-md-lg"
      alt="Deloitte, BearingPoint, Atos, Tech Mahindra, Optis, Viseo, The Shelby Group"
      src="/wp-content/themes/Tradeshift/img/partner/consulting-logos-sm.png"
     >
@@ -88,8 +88,12 @@ get_header(); ?>
       </a>
      </div>
     </div>
-    <div class="partner-logo-block">
-     <?php echo file_get_contents('./wp-content/themes/Tradeshift/img/partner/process-logos-sm.svg'); ?>
+    <div class="partner-logo-block hidden-md-lg">
+     <img
+     class="partner-logo-block hidden-md-lg"
+     alt="Deloitte, BearingPoint, Atos, Tech Mahindra, Optis, Viseo, The Shelby Group"
+     src="/wp-content/themes/Tradeshift/img/partner/process-logos-sm.png"
+    >
     </div>
    </div>
 
@@ -155,13 +159,21 @@ get_header(); ?>
 
    <div class="col-md-3">
     <div class="partner-logo-block">
-     <?php echo file_get_contents('./wp-content/themes/Tradeshift/img/partner/process-logos.svg'); ?>
+      <img
+     class="partner-logo-block"
+     alt="Cognizant, Canon, DXC.technology, Genpact, EXL, WINS, Capgemini, Wipro"
+     src="/wp-content/themes/Tradeshift/img/partner/BPO-logos.png"
+     >
     </div>
    </div>
 
    <div class="col-md-3">
     <div class="partner-logo-block">
-     <?php echo file_get_contents('./wp-content/themes/Tradeshift/img/partner/tech-logos.svg'); ?>
+      <img
+     class="partner-logo-block"
+     alt="Cognizant, Canon, DXC.technology, Genpact, EXL, WINS, Capgemini, Wipro"
+     src="/wp-content/themes/Tradeshift/img/partner/technology-logos.png"
+     >
     </div>
    </div>
 
@@ -190,7 +202,7 @@ get_header(); ?>
     >
    </div>
    <div class="col-md-5 col-md-offset-2 hidden-xs-sm">
-    <h3>Join our Partner Community</h3>
+    <h3><?php _e("Join our Partner Community", "Tradeshift"); ?></h3>
     <button
     class="extra-wide-btn btn btn-white btn-primary-cta"
     data-toggle="modal"

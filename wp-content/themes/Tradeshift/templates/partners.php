@@ -106,7 +106,7 @@ get_header(); ?>
             <p><?php _e("Tradeshift’s open platform enables technology providers and developers to build apps that add value to the buyer-supplier relationship.", 'Tradeshift'); ?></p>
             <p><?php _e("The Tradeshift App Engine is the power source for all Tradeshift apps. We provide an open, secure platform. Our partners bring best-in-class solutions that run on the App Engine and provide all the functionality you’ll need.", 'Tradeshift'); ?></p>
             <p><a href="http://developer.tradeshift.com" target="_blank"><?php _e('Learn more about developing apps on Tradeshift &raquo;', 'Tradeshift'); ?></a></p>
-            <p><a href="/solutions/apps"><?php _e('Learn more about Tradeshift Apps &raquo;', 'Tradeshift'); ?></a></p>
+            <p><a href="/apps"><?php _e('Learn more about Tradeshift Apps &raquo;', 'Tradeshift'); ?></a></p>
         </div>
     </div>
     <div class="row testimonial-partners">
@@ -361,22 +361,22 @@ get_header(); ?>
                 <div class="contents">
                     <div class="logo-wrapper">
                         <div class="logo-ecovadis">
-                            <a href="/partners/ecovadis/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-ecovadis-v2.png" alt="Ecovadis" /></a>
+                            <a href="https://tradeshift.com/partners/ecovadis/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-ecovadis-v2.png" alt="Ecovadis" /></a>
                         </div>
                         <div class="logo-wipro visible-xs">
-                            <a href="http://wipro.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-wipro.png" alt="Wipro" /></a>
+                            <a href="https://www.wipro.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-wipro.png" alt="Wipro" /></a>
                         </div>
                         <div class="logo-c2fo">
-                            <a href="/partners/c2fo/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-c2fo.png" alt="C2FO" /></a>
+                            <a href="https://tradeshift.com/partners/c2fo/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-c2fo.png" alt="C2FO" /></a>
                         </div>
                         <div class="logo-wipro hidden-xs">
-                            <a href="http://wipro.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-wipro.png" alt="Wipro" /></a>
+                            <a href="https://www.wipro.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-wipro.png" alt="Wipro" /></a>
                         </div>
                         <div class="logo-quyntess">
-                            <a href="/partners/quyntess/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-quyntess.png" alt="Quyntess" /></a>
+                            <a href="https://tradeshift.com/partners/quyntess/"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-quyntess.png" alt="Quyntess" /></a>
                         </div>
                         <div class="logo-determine">
-                            <a href="/partners/determine"><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-determine.png" alt="Determine" /></a>
+                            <a href="https://tradeshift.com/partners/determine/   "><img src="<?php echo get_template_directory_uri(); ?>/img/partnersv2/logo-determine.png" alt="Determine" /></a>
                         </div>
                     </div>
                 </div>
