@@ -385,7 +385,7 @@ get_header(); ?>
 							<h2><?php _e("Find out more about our procurement solutions.", 'Tradeshift'); ?></h2>
 							<div class="resource-wrapper">
 								<a class="trigger-res-1" href="https://tradeshift.com/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><img class="img-responsive" src="/wp-content/uploads/2015/12/Spend-Matters_blog-1.png" /></a>
-								<p><?php _e("Rethink eProcurement ", 'Tradeshift'); ?><br class="visible-sm" /><a class="trigger-res-1"  href="/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><?php _e('Download &raquo;', 'Tradeshift'); ?></a></p>
+								<p><?php _e("Rethink eProcurement ", 'Tradeshift'); ?><br class="visible-sm" /><a class="trigger-res-1"  href="https://tradeshift.com/resources/spend-matters-pro-deep-dive-tradeshift-rethinks-eprocurement-part-one/"><?php _e('Download &raquo;', 'Tradeshift'); ?></a></p>
 							</div>
 							<div class="resource-wrapper">
 								<a class="trigger-res-2" href="/resources/tradeshift-buy-video/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/solutions/buy/resources-demo-vid.jpg" /></a>

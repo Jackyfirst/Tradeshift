@@ -289,7 +289,7 @@ get_header('main'); ?>
 											'Tradeshift'
 										); ?>
                                     </p>
-                                    <a href="<?php echo '/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-' .
+                                    <a href="<?php echo 'https://tradeshift.com/resources/flipbook-pro-tips-for-accounts-payable-6-complaints-' .
 										'suppliers-make-about-e-invoicing-and-what-to-do-about-them/'; ?>">
 										<?php _e('Download Now &raquo;', 'Tradeshift'); ?>
                                     </a>
