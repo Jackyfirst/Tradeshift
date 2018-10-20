@@ -12,7 +12,7 @@
 					<?php if (is_mobile()): ?>
 					<div class="privacy-terms">
 						<ul id="privacy" class="menu-list">
-							<li id="menu-item-1358"><a title="Privacy Policy" href="/privacy-policy/" class="univ-footer-nav-links"><?php _e("Privacy Policy", "Tradeshift"); ?></a></li>
+							<li id="menu-item-1358"><a title="Privacy Policy" href="/privacy-policy/" class="univ-footer-nav-links"><?php _e("0", "Tradeshift"); ?></a></li>
 							<li id="menu-item-1360"><a title="Terms of Service" href="/terms-of-service/" class="univ-footer-nav-links"><?php _e("Terms of Service", "Tradeshift"); ?></a></li>
 							<li id="menu-item-1359">&copy;Tradeshift <?php echo date( 'Y' ); ?></li>
 						</ul>
@@ -99,8 +99,8 @@
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <script>
-		        	MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4419, function (form) {
-						translateForm('#mktoForm_4419');
+		        	MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4476, function (form) {
+						translateForm('#mktoForm_4476');
 						// Returns true if all the fields in the form have non-blank values set.
 						if(form.allFieldsFilled()) {
 							var element = document.getElementById("mktoUserFirstName");
@@ -123,7 +123,7 @@
 		      <div class="modal-body">
 
 		        <script src="//app-sjo.marketo.com/js/forms2/js/forms2.min.js"></script>
-				<form data-should-watch-and-translate id="mktoForm_4419"></form>
+				<form data-should-watch-and-translate id="mktoForm_4476"></form>
 				<script type="text/javascript">
 
 
