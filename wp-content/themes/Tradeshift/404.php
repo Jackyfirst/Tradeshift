@@ -2,7 +2,7 @@
 /*
 Template Name: General - Custom 404
 */
-get_header('main-only-slide-out'); ?>		
+get_header('main'); ?>		
 	<!-- Main Content Starts -->
 		<main class="main-content general custom-404">
 			<div class="container">
