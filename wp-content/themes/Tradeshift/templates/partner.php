@@ -4,7 +4,7 @@ Template Name: Partner
 */
 get_header(); ?>
 
-<?php $formId = marketo_form(2288); ?>
+<?php $formId = marketo_form(4476); ?>
 
 <main class="main-content bg-brand-accent-p">
  <div class="container-fluid img-partner">
