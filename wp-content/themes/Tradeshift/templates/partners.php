@@ -409,10 +409,10 @@ get_header(); ?>
                     <p><?php _e("Whether you're a well-established firm or a start-up, if you have an established market presence – or just a good idea! – we want to speak with you. Fill out the information below and our Alliance team will be in touch with you shortly.", 'Tradeshift'); ?></p>
                     <script src="//app-sjo.marketo.com/js/forms2/js/forms2.js"></script>
                     <div class="partner-cta-form">
-                        <form id="mktoForm_302"></form>
+                        <form id="mktoForm_4482"></form>
                         <script type="text/javascript">
-                            MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 302, function(form){
-                                form.vals({"Marketing_Resource_Name__c":"Partner page"});
+                            MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4482, function(form){
+                                form.vals({"Marketing_Resource_Name__c":"Become a Partner page"});
                             });
                         </script>
                     </div>
