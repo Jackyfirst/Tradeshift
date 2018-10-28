@@ -12,7 +12,7 @@ get_header(); ?>
 					<div class="left-box">
 						<h1><?php _e("Tradeshift<sup>&reg;</sup> <span class=\"isBlueText\">Pay</span> Integrated Financial Services", 'Tradeshift'); ?></h1>
 						<p><?php _e("Pay suppliers on time while keeping your cash on hand longer. Find out how supply chain finance, dynamic discounting, flexible finance and virtual credit cards can help your business optimize working capital.", 'Tradeshift'); ?></p>
-						<button data-toggle="modal" data-target="#mktoModal2" class="btn btn-primary-cta-ent default_btn"><?php _e("Schedule a demo", 'Tradeshift'); ?></button>
+						<button data-toggle="modal" data-target="#mktoModal" class="btn btn-primary-cta-ent default_btn"><?php _e("Schedule a demo", 'Tradeshift'); ?></button>
 					</div>
 				</div>
 			</div>
@@ -99,13 +99,35 @@ get_header(); ?>
 					<p class="lead">
 						<?php _e("Contact us to see what Tradeshift<sup>&reg;</sup> Pay can do for your enterprise.", 'Tradeshift'); ?>
 					</p>
-					<button data-toggle="modal" data-target="#mktoModal2" class="btn btn-white btn btn-cta btn-nm"><?php _e("Schedule a demo", 'Tradeshift'); ?></button>
+					<button data-toggle="modal" data-target="#mktoModal" class="btn btn-white btn btn-cta btn-nm"><?php _e("Schedule a demo", 'Tradeshift'); ?></button>
 				</div>
 			</div>
 		</div>
 	</div>
 </main>
 
-<?php $form=true; ?>
 
+<!-- Modal View of Marketo Forms2 -->
+<div class="modal fade" id="mktoModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3 id="myModalLabel"><?php _e("Request a Demo", 'Tradeshift'); ?></h3>
+				<p class="lead"><?php _e("Start your journey with a free demo today.", 'Tradeshift'); ?></p>
+			</div>
+			<div class="modal-body">
+				<script src="//app-sjo.marketo.com/js/forms2/js/forms2.min.js"></script>
+		<form id="mktoForm_4536"></form>
+		<script type="text/javascript">// <![CDATA[
+				MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4536, function(form){
+					 form.vals({"Marketing_Resource_Name__c":"Solutions - Tradeshift Buy"});
+			});
+		// ]]></script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php $form=true; ?>
 <?php get_footer(); ?>

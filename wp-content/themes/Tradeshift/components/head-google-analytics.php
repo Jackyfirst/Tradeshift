@@ -6,7 +6,9 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-10953005-1', 'auto');
+  ga('create', 'UA-127727222-1', 'auto', {'name':'China'});
   ga('send', 'pageview');
+  ga('China.send', 'pageview');
 
 </script>
 
@@ -35,3 +37,6 @@
        a.appendChild(r);
    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
+<!-- Baidu Console -->
+<meta name="baidu-site-verification" content="2YQMtji54g" />
