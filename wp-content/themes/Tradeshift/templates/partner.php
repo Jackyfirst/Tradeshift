@@ -5,7 +5,6 @@ Template Name: Partner
 get_header(); ?>
 
 <?php $formId = marketo_form(4537); ?>
-<?php get_template_part( 'components/marketo', 'form' ); ?>
 
 <main class="main-content bg-brand-accent-p">
  <div class="container-fluid img-partner">
@@ -19,7 +18,7 @@ get_header(); ?>
      </p>
 
      <div class="text-center">
-      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#<?php echo $formId;?>" >
+      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#mktoModal" >
        <?php _e("Talk to a partner expert", "Tradeshift"); ?>
       </a>
      </div>
@@ -63,7 +62,7 @@ get_header(); ?>
       <p>
        <?php _e("Choose a consulting, implementation or advisory partner with deep subject matter knowledge, and technical skills. These partners can help you define your goals and make sure you meet them.", "Tradeshift"); ?>
       </p>
-      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#<?php echo $formId;?>" >
+      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#mktoModal" >
        <?php _e("Find a partner", "Tradeshift"); ?>
       </a>
      </div>
@@ -84,7 +83,7 @@ get_header(); ?>
       <p>
        <?php _e("Discover a partner that can marry functional and process excellence with Tradeshift’s modern platform to deliver greater efficiency, effectiveness and cost savings.", "Tradeshift"); ?>
       </p>
-      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#<?php echo $formId;?>" >
+      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#mktoModal" >
        <?php _e("Find a partner", "Tradeshift"); ?>
       </a>
      </div>
@@ -112,7 +111,7 @@ get_header(); ?>
         <?php _e("Learn more about developing apps on the Tradeshift platform »", "Tradeshift"); ?>
        </a>
       </p>
-      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#<?php echo $formId;?>" >
+      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#mktoModal" >
        <?php _e("Find a partner", "Tradeshift"); ?>
       </a>
      </div>
@@ -135,7 +134,7 @@ get_header(); ?>
        <?php _e("Find banks offering financial services on the Tradeshift platform. Optimize working capital with supply
        chain finance, commercial card programs, credit lines and more.", "Tradeshift"); ?>
       </p>
-      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#<?php echo $formId;?>" >
+      <a class="btn btn-primary-cta" data-toggle="modal" data-target="#mktoModal" >
        <?php _e("Find a partner", "Tradeshift"); ?>
       </a>
      </div>
@@ -207,7 +206,7 @@ get_header(); ?>
     <button
     class="extra-wide-btn btn btn-white btn-primary-cta"
     data-toggle="modal"
-    data-target="#<?php echo $formId;?>"
+    data-target="#mktoModal"
     >
     <?php _e("Click here", "Tradeshift"); ?>
    </button>
@@ -218,7 +217,7 @@ get_header(); ?>
    <button
    class="extra-wide-btn btn btn-white btn-primary-cta"
    data-toggle="modal"
-   data-target="#<?php echo $formId;?>"
+   data-target="#mktoModal"
    >
     <?php _e("Click here", "Tradeshift"); ?>
   </button>
@@ -227,5 +226,27 @@ get_header(); ?>
 </div>
 
 </main>
+
+<!-- Marketo Form -->
+<div class="modal fade" id="mktoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 id="myModalLabel"><?php _e("Request a Demo", 'Tradeshift'); ?></h3>
+        <p class="lead"><?php _e("Start your journey with a free demo today.", 'Tradeshift'); ?></p>
+      </div>
+      <div class="modal-body">
+        <script src="//app-sjo.marketo.com/js/forms2/js/forms2.min.js"></script>
+    <form id="mktoForm_4537"></form>
+    <script type="text/javascript">// <![CDATA[
+        MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4537, function(form){
+           form.vals({"Marketing_Resource_Name__c":"Find a Partner page"});
+      });
+    // ]]></script>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>

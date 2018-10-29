@@ -435,7 +435,7 @@ get_header(); ?>
 				<form id="mktoForm_4484"></form>
 				<script type="text/javascript">// <![CDATA[
 					MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4484, function(form){
-						form.vals({"Marketing_Resource_Name__c":"Tradeshift page"});
+						form.vals({"Marketing_Resource_Name__c":"About page"});
 					});
 					// ]]>
 				</script>

@@ -121,7 +121,7 @@ get_header(); ?>
 		<form id="mktoForm_4536"></form>
 		<script type="text/javascript">// <![CDATA[
 				MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 4536, function(form){
-					 form.vals({"Marketing_Resource_Name__c":"Solutions - Tradeshift Buy"});
+					 form.vals({"Marketing_Resource_Name__c":"Solutions - Tradeshift Buy - Supply Chain Finance"});
 			});
 		// ]]></script>
 			</div>
