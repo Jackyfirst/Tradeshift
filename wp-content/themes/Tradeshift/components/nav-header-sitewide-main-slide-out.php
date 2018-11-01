@@ -197,7 +197,7 @@
         #solutionsNav li {
             padding-right: 18px !important;
         }
-        .smartling-fr #solutionsNav li a { 
+        .smartling-fr #solutionsNav li a {
             font-size: 11px !important;
         }
         .smartling-fr #solutionsNav li {
@@ -244,7 +244,7 @@ $lang = ICL_LANGUAGE_CODE == 'en' || ICL_LANGUAGE_CODE == 'zh-hans' ? '' : ICL_L
 
 $urls = [
 	'landing' => '/' . $lang,
-	'login' => "//go.tradeshift.com/${lang}login",
+	'login' => "//cn-go.tradeshift.com/${lang}login",
 	'pay' => "/${lang}enterprise/solutions/pay/",
 	'scf' => "/${lang}supply-chain-finance",
 	'buy' => "/${lang}enterprise/solutions/buy",
