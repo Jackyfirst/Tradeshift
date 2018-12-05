@@ -40,3 +40,14 @@
 
 <!-- Baidu Console -->
 <meta name="baidu-site-verification" content="2YQMtji54g" />
+
+<!-- Baidu Tongji -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef6ca1557e4d5ff05db7ad0bdf1c2f77";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
