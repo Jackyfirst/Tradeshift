@@ -69,7 +69,7 @@ export default {
         }
         case "zh-hans": {
           this.h1_hhero = "Tradeshift是一家企业型商务公司。";
-          this.h2_hhero = "重新定义采购和应付账款。通过数字市场、支付和应用程序，让您的供应链通向未来。";
+          this.h2_hhero = "重新定义采购和应付账款。通过数字市场、支付和应用程序，让您的供应链连通未来。";
           this.btn_hhero = "与专家交谈";
           break;
         }

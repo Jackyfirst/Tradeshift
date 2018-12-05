@@ -375,10 +375,10 @@ $wpml_permalink = [
                         <li class="dropdown resources">
                             <a href="#javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php _e("Resources", "Tradeshift"); ?></a>
                             <ul class="dropdown-menu">
-                                <li><a href="https://tradeshift.com/resources"><?php _e("Resource center", "Tradeshift"); ?></a></li>
-                                <li><a href="<?php echo $urls['blog']; ?>"><?php _e("Blog", "Tradeshift"); ?></a></li>
-                                <li><a href="https://tradeshift.com/events-and-webinars/"><?php _e("Events and webinars", "Tradeshift"); ?></a></li>
-                                <li><a href="<?php echo $urls['frontiers']; ?>"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
+                                <li><a href="https://tradeshift.com/resources" target="_blank"><?php _e("Resource center", "Tradeshift"); ?></a></li>
+                                <li><a href="<?php echo $urls['blog']; ?>" target="_blank"><?php _e("Blog", "Tradeshift"); ?></a></li>
+                                <li><a href="https://tradeshift.com/events-and-webinars/" target="_blank"><?php _e("Events and webinars", "Tradeshift"); ?></a></li>
+                                <li><a href="<?php echo $urls['frontiers']; ?>" target="_blank"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
                             </ul>
                         </li>
 
@@ -388,7 +388,7 @@ $wpml_permalink = [
                             <a href="#javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php _e("About", "Tradeshift"); ?></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo $urls['about']; ?>"><?php _e("About", "Tradeshift"); ?></a></li>
-                                <li><a href="https://tradeshift.com/press"><?php _e("Press", "Tradeshift"); ?></a></li>
+                                <li><a href="https://tradeshift.com/press" target="_blank"><?php _e("Press", "Tradeshift"); ?></a></li>
                             </ul>
                         </li>
 
