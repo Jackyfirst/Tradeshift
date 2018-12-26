@@ -8,7 +8,7 @@
 					<div class="rootTable hidden-sm hidden-xs">
 						<div class="badges is-row flex">
 							<div class="col-4 column no-margin no-badge"></div>
-							<div class="col-2 column no-badge"></div>
+							<!--<div class="col-2 column no-badge"></div>-->
 							<div class="col-2 column">
 								<img src="<?php echo get_template_directory_uri();?>/img/seller-club/seller-silver@2x.png" alt="<?php _e("Enterprise Silver Plan | Tradeshift", "Tradeshift"); ?>" />
 							</div>
@@ -24,7 +24,7 @@
 						</div>
 						<div class="plans is-row flex">
 							<div class="col-4 column no-margin"></div>
-							<div class="col-2 column plan-name free">免费版</div>
+							<!--<div class="col-2 column plan-name free">免费版</div>-->
 							<div class="col-2 column plan-name silver">白银版</div>
 							<div class="col-2 column plan-name gold">黄金版</div>
 							<div class="col-2 column plan-name platinum">白金版</div>
@@ -32,41 +32,41 @@
 						</div>
 						<div class="pricing is-row flex">
 							<div class="col-4 column no-margin"></div>
-							<div class="col-2 column col-free">
-								<!--<div><?php _e("Trendsetter", "Tradeshift"); ?></div>-->
+							<!--	<div class="col-2 column col-free">
+							<div><?php _e("Trendsetter", "Tradeshift"); ?></div>
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price"><div v-cloak>{{pricing.free}}</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
-							</div>
+							</div>-->
 							<div class="col-2 column col-silver">
-								<!--<div><?php _e("Momentum maker", "Tradeshift"); ?></div>-->
+								<!--<div><?php _e("Momentum maker", "Tradeshift"); ?></div>
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
-								<div class="price"><div v-cloak>{{pricing.silver}}</div></div>
+								<div class="price"><div v-cloak>{{pricing.silver}}</div></div>-->
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-gold">
-								<!--<div><?php _e("Pacesetter", "Tradeshift"); ?></div>-->
+								<!--<div><?php _e("Pacesetter", "Tradeshift"); ?></div>
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
-								<div class="price"><div v-cloak>{{pricing.gold}}</div></div>
+								<div class="price"><div v-cloak>{{pricing.gold}}</div></div>-->
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum">
-								<!--<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>-->
+								<!--<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
-								<div class="price"><div v-cloak>{{pricing.platinum}}</div></div>
+								<div class="price"><div v-cloak>{{pricing.platinum}}</div></div>-->
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum-x">
-								<!--<div><?php _e("Game changer", "Tradeshift"); ?></div>-->
+								<!--<div><?php _e("Game changer", "Tradeshift"); ?></div>
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
-								<div class="price"><div v-cloak>{{pricing.platinum_x}}</div></div>
+								<div class="price"><div v-cloak>{{pricing.platinum_x}}</div></div>-->
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 						</div>
 						<div class="plans-invoicing is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue"><div class="heading">文档处理</div></div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -74,7 +74,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">电子商业文档处理</div>
-								<div class="col-2 column col-free"><i class="fa fa-check-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-check-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -82,7 +82,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">电子商业发票开具</div>
-								<div class="col-2 column col-free"><i class="fa fa-check-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-check-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -90,7 +90,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">中国增值税电子发票开具</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -98,7 +98,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">中国增值税专用发票开具</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -106,7 +106,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">&nbsp; 中国增值税发票查验及查重 （每年）</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver">至多1000张</div>
 								<div class="col-2 column col-gold">至多3000张</div>
 								<div class="col-2 column col-platinum">至多5000张</div>
@@ -114,7 +114,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">&nbsp; 中国增值税发票全票面信息 （每年）</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver">至多1000张</div>
 								<div class="col-2 column col-gold">至多3000张</div>
 								<div class="col-2 column col-platinum">至多5000张</div>
@@ -122,7 +122,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">中国增值税发票认证</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -130,7 +130,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">文档集成管理(与ERP)</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -140,7 +140,7 @@
 								<div class="col-4 column no-margin text-left heading">
 									<div class="heading">文档集成数量(每年)</div>
 								</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver">至多300张</div>
 								<div class="col-2 column col-gold">至多3000张</div>
 								<div class="col-2 column col-platinum">至多30000张</div>
@@ -148,7 +148,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">公司组织管理(分公司/部门)</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver">至多1个</div>
 								<div class="col-2 column col-gold">至多3个</div>
 								<div class="col-2 column col-platinum">至多5个</div>
@@ -156,7 +156,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">企业关系管理(采购商/供应商)</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver">至多1个</div>
 								<div class="col-2 column col-gold">至多3个</div>
 								<div class="col-2 column col-platinum">至多5个</div>
@@ -166,7 +166,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue"><div class="heading">平台服务支持</div></div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -174,7 +174,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">对账协同管理(采购商/供应商)</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-times-circle"></i></div>
@@ -182,7 +182,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">商业文档历史记录</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -190,7 +190,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">报表及Dashboard</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -200,7 +200,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue"><div class="heading">融资支持服务*</div></div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -208,7 +208,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">Tradeshift的客户档案及优化服务(Profile Pack)</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -216,7 +216,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">融资对接国内买家服务</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold">至多10个</div>
 								<div class="col-2 column col-platinum">至多18个</div>
@@ -224,7 +224,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">融资对接海外买家服务</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-times-circle"></i></div>
@@ -234,7 +234,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue"><div class="heading">电商支持服务</div></div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -242,7 +242,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">在Tradeshift在线采购市场内管理自己产品档案</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -250,7 +250,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">对采购商采购系统的Punch Out功能支持</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -260,7 +260,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue"><div class="heading">支持与服务</div></div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -268,7 +268,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">Tradeshift团队的服务支持</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold">适度支持</div>
 								<div class="col-2 column col-platinum">适度支持</div>
@@ -276,7 +276,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">Tradeshift专业客户经理</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-times-circle"></i></div>
@@ -284,7 +284,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">高级报表功能</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -294,7 +294,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue heading">活动邀请</div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -302,7 +302,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">Tradeshift卖家线下活动</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver col-silver"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-check-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -310,7 +310,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">Tradeshift买家线下活动</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-check-circle"></i></div>
@@ -318,7 +318,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left"><div class="heading">Tradeshift独家线下活动</div></div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-platinum"><i class="fa fa-times-circle"></i></div>
@@ -328,7 +328,7 @@
 						<div class="plans-support is-row" style="width: 100%">
 							<div class="col-12 flex">
 								<div class="col-4 column no-margin text-left heading-is-blue heading">IT实施要求</div>
-								<div class="col-2 column col-free"></div>
+								<!--<div class="col-2 column col-free"></div>-->
 								<div class="col-2 column col-silver"></div>
 								<div class="col-2 column col-gold"></div>
 								<div class="col-2 column col-platinum"></div>
@@ -336,7 +336,7 @@
 							</div>
 							<div class="col-12 flex parent-row">
 								<div class="col-4 column no-margin text-left heading">对客户IT集成能力的要求</div>
-								<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>
+								<!--<div class="col-2 column col-free"><i class="fa fa-times-circle"></i></div>-->
 								<div class="col-2 column col-silver"><i class="fa fa-times-circle"></i></div>
 								<div class="col-2 column col-gold">可能需要</div>
 								<div class="col-2 column col-platinum">可能需要</div>
