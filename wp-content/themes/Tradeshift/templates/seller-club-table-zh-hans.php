@@ -367,7 +367,7 @@
 					<div class="packages-sm hidden-lg hidden-md">
 						<div id="accordion" class="panel-group">
 							<!-- Free -->
-							<div class="panel panel-default">
+							<!--<div class="panel panel-default">
 								<div class="panel-heading plan-name free">
 									Free
 								</div>
@@ -386,7 +386,7 @@
 										<div class="cta" data-toggle="modal" data-target="#mktoModal2"><?php _e("Learn more", 'Tradeshift'); ?></div>
 									</div>
 								</div>
-							</div>
+							</div>-->
 
 							<!-- Enterprise Silver -->
 							<div class="panel panel-default">
@@ -395,7 +395,7 @@
 								</div>
 								<div class="accordion-preview">
 									<div class="name-secondary"><?php _e("Momentum maker", "Tradeshift"); ?></div>
-									<div class="price">{{pricing.silver}}</div>
+									<!--<div class="price">{{pricing.silver}}</div>-->
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="expand"><i class="fa fa-angle-down"></i></a>
 								</div>
 								<div id="collapseOne" class="panel-content panel-collapse collapse">
@@ -421,7 +421,7 @@
 								</div>
 								<div class="accordion-preview">
 									<div class="name-secondary"><?php _e("Pacesetter", "Tradeshift"); ?></div>
-									<div class="price">{{pricing.gold}}</div>
+									<!--<div class="price">{{pricing.gold}}</div>-->
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="expand"><i class="fa fa-angle-down"></i></a>
 								</div>
 								<div id="collapseThree" class="panel-content panel-collapse collapse">
@@ -449,7 +449,7 @@
 								</div>
 								<div class="accordion-preview">
 									<div class="name-secondary"><?php _e("Spotlight grabber", "Tradeshift"); ?></div>
-									<div class="price">{{pricing.platinum}}</div>
+									<!--<div class="price">{{pricing.platinum}}</div>-->
 									<a data-toggle="collapse" href="#collapseFour" class="expand"><i class="fa fa-angle-down"></i></a>
 								</div>
 								<div id="collapseFour" class="panel-content panel-collapse collapse">
@@ -477,7 +477,7 @@
 								</div>
 								<div class="accordion-preview">
 									<div class="name-secondary"><?php _e("Game changer", "Tradeshift"); ?></div>
-									<div class="price">*</div>
+									<!--<div class="price">*</div>-->
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="expand"><i class="fa fa-angle-down"></i></a>
 								</div>
 								<div id="collapseFive" class="panel-content panel-collapse collapse">
