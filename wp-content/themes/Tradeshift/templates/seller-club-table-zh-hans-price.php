@@ -39,25 +39,25 @@
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>-->
 							<div class="col-2 column col-silver">
-								<div><?php _e("Momentum maker", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Momentum maker", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price1"><div v-cloak>￥9,000</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-gold">
-								<div><?php _e("Pacesetter", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Pacesetter", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price1"><div v-cloak>￥28,000</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum">
-								<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Spotlight grabber", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price1"><div v-cloak>￥36,000</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
 							</div>
 							<div class="col-2 column col-platinum-x">
-								<div><?php _e("Game changer", "Tradeshift"); ?></div>
+								<!--<div><?php _e("Game changer", "Tradeshift"); ?></div>-->
 								<div class="periodic"><?php _e("Quarterly", "Tradeshift"); ?></div>
 								<div class="price1"><div v-cloak>￥130,000</div></div>
 								<div class="cta" data-toggle="modal" data-target="#mktoModal1"><?php _e("Learn more", 'Tradeshift'); ?></div>
