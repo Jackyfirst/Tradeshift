@@ -57,12 +57,17 @@ get_header();
 					<!-- Start right column contents - lead gen form and related materials -->
 					<div class="cta-form-related-material">
 						<!-- Lead Gen Form -->
-						<?php if ($mkto_id) : ?>
-							<div class="cta-form">
-								<h3><?php _e("Get this resource", "Tradeshift"); ?></h3>
-								<form id="mktoForm_<?php echo $mkto_id;?>"></form>
-							</div>
-						<?php endif; ?>
+						<script src="//app-sjo.marketo.com/js/forms2/js/forms2.js"></script>
+						<div class="cta-form">
+							<h3><?php _e("Get this resource", "Tradeshift"); ?></h3>
+
+							<form id="mktoForm_5957"></form>
+							<script type="text/javascript">
+									MktoForms2.loadForm("//app-sjo.marketo.com", "213-SPR-003", 5957, function(form){
+										 form.vals({"Marketing_Resource_Name__c":"Treasury Game Plan 2019"});
+								});
+							</script>
+						</div>
 
 						<!-- Related Materials -->
 						<?php

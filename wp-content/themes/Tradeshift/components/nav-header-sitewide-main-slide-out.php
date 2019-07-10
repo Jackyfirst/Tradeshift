@@ -244,7 +244,7 @@ $lang = ICL_LANGUAGE_CODE == 'en' || ICL_LANGUAGE_CODE == 'zh-hans' ? '' : ICL_L
 
 $urls = [
 	'landing' => '/' . $lang,
-	'login' => "//cn-go.tradeshift.com/${lang}login",
+	'login' => "//go.tradeshiftchina.cn/login/${lang}login",
 	'pay' => "/${lang}enterprise/solutions/pay/",
 	'scf' => "/${lang}supply-chain-finance",
 	'buy' => "/${lang}enterprise/solutions/buy",
@@ -324,7 +324,7 @@ $wpml_permalink = [
                                 <li><a href="<?php echo $wpml_permalink['de']; ?>">Deutsch</a></li>
                                 <li><a href="<?php echo $wpml_permalink['ja']; ?>">日本語</a></li>
                                 <li><a href="<?php echo $wpml_permalink['fr']; ?>">Français</a></li>
-                                <li><a href="https://cn.tradeshift.com/">中文</a></li>
+                                <li><a href="https://tradeshiftchina.cn/">中文</a></li>
                             </ul>
                         </div>
                     </div>
@@ -376,9 +376,9 @@ $wpml_permalink = [
                             <a href="#javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php _e("Resources", "Tradeshift"); ?></a>
                             <ul class="dropdown-menu">
                                 <li><a href="https://tradeshift.com/resources" target="_blank"><?php _e("Resource center", "Tradeshift"); ?></a></li>
-                                <li><a href="<?php echo $urls['blog']; ?>" target="_blank"><?php _e("Blog", "Tradeshift"); ?></a></li>
+                                <li><a href="https://hub.tradeshift.com/tradeshift-blog" target="_blank"><?php _e("Blog", "Tradeshift"); ?></a></li>
                                 <li><a href="https://tradeshift.com/events-and-webinars/" target="_blank"><?php _e("Events and webinars", "Tradeshift"); ?></a></li>
-                                <li><a href="<?php echo $urls['frontiers']; ?>" target="_blank"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
+                                <li><a href="https://tradeshift.com/frontiers" target="_blank"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
                             </ul>
                         </li>
 
@@ -465,11 +465,10 @@ $wpml_permalink = [
                     <!-- ######################################## -->
                     <li class="nav-list"><a id="slide-resources-trigger" href="javascript:void(0)" class="no-subnav main-header-nav-links subnav-trigger"><?php _e("Resources", "Tradeshift"); ?></a>
                         <ul class="subnav">
-                            <li><a href="<?php echo $urls['resources']; ?>" class="main-header-nav-links"><?php _e("Resource center", "Tradeshift"); ?></a></li>
-                            <li><a href="<?php echo $urls['blog']; ?>" class="main-header-nav-links"><?php _e("Blog", "Tradeshift"); ?></a></li>
-                            <li><a href="<?php echo $urls['events']; ?>" class="main-header-nav-links"><?php _e("Events and webinars", "Tradeshift"); ?></a></li>
-                            <li><a href="<?php echo $urls['estimator']; ?>"><?php _e("Value Estimator", "Tradeshift"); ?></a></li>
-                            <li><a href="<?php echo $urls['frontiers']; ?>"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
+                            <li><a href="https://tradeshift.com/resources" class="main-header-nav-links"><?php _e("Resource center", "Tradeshift"); ?></a></li>
+                            <li><a href="https://hub.tradeshift.com/tradeshift-blog" class="main-headehttps://tradeshift.com/resourcesr-nav-links"><?php _e("Blog", "Tradeshift"); ?></a></li>
+                            <li><a href="https://tradeshift.com/events-and-webinars/" class="main-header-nav-links"><?php _e("Events and webinars", "Tradeshift"); ?></a></li>
+                            <li><a href="https://tradeshift.com/frontiers"><?php _e("Frontiers", "Tradeshift"); ?></a></li>
                         </ul>
                     </li>
 
@@ -479,7 +478,7 @@ $wpml_permalink = [
                         <ul class="subnav">
                             <li><a href="<?php echo $urls['about']; ?>" class="main-header-nav-links"><?php _e("About", "Tradeshift"); ?></a></li>
                             <li><a href="<?php echo $urls['jobs']; ?>" class="main-header-nav-links"><?php _e("Jobs", "Tradeshift"); ?></a></li>
-                            <li><a href="<?php echo $urls['press']; ?>" class="main-header-nav-links"><?php _e("Press", "Tradeshift"); ?></a></li>
+                            <li><a href="https://tradeshift.com/press" class="main-header-nav-links"><?php _e("Press", "Tradeshift"); ?></a></li>
                         </ul>
                     </li>
 
