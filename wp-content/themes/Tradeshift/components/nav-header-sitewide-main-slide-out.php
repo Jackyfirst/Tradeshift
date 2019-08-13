@@ -320,10 +320,13 @@ $wpml_permalink = [
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo $wpml_permalink['en']; ?>">English</a></li>
-                                <li><a href="<?php echo $wpml_permalink['de']; ?>">Deutsch</a></li>
-                                <li><a href="<?php echo $wpml_permalink['ja']; ?>">日本語</a></li>
-                                <li><a href="<?php echo $wpml_permalink['fr']; ?>">Français</a></li>
+                                <li><a href="https://tradeshift.com/">English</a></li>
+                                <li><a href="https://tradeshift.com/de">Deutsch</a></li>
+                                <li><a href="https://tradeshift.com/es">Español</a></li>
+                                <li><a href="https://tradeshift.com/fr">Français</a></li>
+                                <li><a href="https://tradeshift.com/it">Italiano</a></li>
+                                <li><a href="https://tradeshift.com/ja">日本語</a></li>
+                                <li><a href="https://tradeshift.com/pt-br">Português</a></li>
                                 <li><a href="https://tradeshiftchina.cn/">中文</a></li>
                             </ul>
                         </div>
