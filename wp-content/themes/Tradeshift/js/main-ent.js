@@ -606,6 +606,18 @@ $(function() {
 		template: '<div class="popover blue 2018"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content sl_translate"></div></div>'
 	});
 
+  $('#monthyear12018_2').popover({
+		placement: 'bottom',
+		trigger: 'hover',
+		template: '<div class="popover blue 2018"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content sl_translate"></div></div>'
+	});
+
+  $('#monthyear12019').popover({
+		placement: 'top',
+		trigger: 'hover',
+		template: '<div class="popover blue 2018"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content sl_translate"></div></div>'
+	});
+
 	$('#monthyear122010').popover({
 		placement: 'top',
 		trigger: 'hover',

@@ -104,6 +104,7 @@ get_header(); ?>
 								<th scope="col" class="y2016">2016</th>
 								<th scope="col" class="y2017">2017</th>
 								<th scope="col" class="y2018">2018</th>
+								<th scope="col" class="y2018">2019</th>
 							</tr>
 							</thead>
 							<tbody>
@@ -157,6 +158,10 @@ get_header(); ?>
 								</td>
 								<td class="y2018">
 									<button type="button" id="monthyear12018" class="btn btn-timeline btn-blue my12018" data-toggle="popover" data-content="<?php _e("Tradeshift Raises $250 Million In Series E Funding Round, Bringing Company Valuation to $1.1 Billion", 'Tradeshift'); ?>" data-html="true"> </button>
+									<button type="button" id="monthyear12018_2" class="btn btn-timeline btn-blue my12018" data-toggle="popover" data-content="<?php _e("Tradeshift acquires Belgian firm Babelway facilitating 'a cloud-based integration platform, allowing anyone who wants to integrate with the Tradeshift platform to do so fast, easily and using a cloud-based UI.'", 'Tradeshift'); ?>" data-html="true"> </button>
+								</td>
+								<td class="y2018">
+									<button type="button" id="monthyear12019" class="btn btn-timeline btn-blue my12018" data-toggle="popover" data-content="<?php _e("Establishment of Tradeshift Frontiers (announced in January 2018), an innovation lab and incubator that will focus on transforming supply chains through emerging technologies, such as distributed ledgers, artificial intelligence and the Internet of Things.", 'Tradeshift'); ?>" data-html="true"> </button>
 								</td>
 							</tr>
 							</tbody>

@@ -244,7 +244,7 @@ $lang = ICL_LANGUAGE_CODE == 'en' || ICL_LANGUAGE_CODE == 'zh-hans' ? '' : ICL_L
 
 $urls = [
 	'landing' => '/' . $lang,
-	'login' => "//go.tradeshiftchina.cn/login/${lang}login",
+	'login' => "//go.tradeshiftchina.cn/${lang}login",
 	'pay' => "/${lang}enterprise/solutions/pay/",
 	'scf' => "/${lang}supply-chain-finance",
 	'buy' => "/${lang}enterprise/solutions/buy",
@@ -253,7 +253,7 @@ $urls = [
 	'seller' => "/${lang}seller-club",
 	'invoice' => "/${lang}roles/sb/small-business-free-invoicing/",
 	'partner' => "/${lang}partner",
-	'become_a_partner' => "/${lang}become-a-partner",
+
 	'resources' => "/${lang}resources",
 	'blog' => "//blog.tradeshift.com",
 	'events' => "/${lang}events-and-webinars",
@@ -366,7 +366,7 @@ $wpml_permalink = [
                         <li class="dropdown solution"><a href="#javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php _e("Partners", "Tradeshift"); ?></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo $urls['partner']; ?>"><?php _e("Find a Partner", "Tradeshift"); ?></a></li>
-                                <li><a href="<?php echo $urls['become_a_partner']; ?>"><?php _e("Become a Partner", "Tradeshift"); ?></a></li>
+                          <!--      <li><a href="<?php echo $urls['become_a_partner']; ?>"><?php _e("Become a Partner", "Tradeshift"); ?></a></li>-->
                             </ul>
                         </li>
 
